@@ -23,3 +23,9 @@ test('published document links are rendered while source-file and remote links a
  assert(html.includes('href="docs/ADDING_A_MODEL.zh-CN.html"'));
  assert(html.includes('href="src/App.vue"'));assert(html.includes('href="https://example.com/README.md"'));
 });
+
+test('nested module documentation navigation returns to the application root',()=>{
+ const html=renderDocument('# Anatomy','src/modules/human-anatomy/README.md');
+ assert(html.includes('href="../../../?view=library&lang=en"'));
+ assert(html.includes('href="../../../?view=guide&lang=en"'));
+});

@@ -5,6 +5,8 @@ The solar system is the first implemented subject. Open a shared workbench,
 explore a model, and inspect where its geometry and appearance came from.
 Independent subjects can be contributed without changing the app shell.
 
+**[Live preview — atlas.fancivision.com](https://atlas.fancivision.com/)**
+
 [中文说明](README.zh-CN.md) · [Data methods](docs/DATA.md) · [Asset credits](THIRD_PARTY.md)
 
 [Add a 3D model](docs/ADDING_A_MODEL.md) · [Architecture](docs/ARCHITECTURE.md)
@@ -15,7 +17,10 @@ Independent subjects can be contributed without changing the app shell.
 
 - Model library, subject search/filter, contributor guide and a responsive shared workbench.
 - Runnable module starter: `npm run create:model -- my-structure`. See the [integration guide](docs/ADDING_A_MODEL.md).
-- Subject-specific units, scenes and lazy data loading; anatomy is not yet implemented.
+- Independent human anatomy module: male BodyParts3D / female HRA sample switching,
+  sourced skeletal, vascular and partial neural layers, and an internal head cutaway.
+  Female skeletal coverage is incomplete; approximate traditional meridians are
+  available only on the male reference. [Coverage and sources](src/modules/human-anatomy/README.md).
 - One kilometre per world unit for both body axes and positions; no planet enlargement.
 - Searchable snapshot of 471 bodies, including 461 planetary/Pluto satellites.
 - Drag, wheel/pinch zoom, fly-to, system views and mobile side panels.
@@ -62,6 +67,7 @@ npm test
 npx playwright install chromium
 npm run test:browser
 npm run test:shell
+npm run test:anatomy
 npm run test:earth
 npm run build
 npm run test:production
@@ -119,8 +125,9 @@ offline fallback; it becomes blurry at close zoom. See [Earth imagery](docs/EART
 
 See `data/asset-manifest.json` for checksums and `docs/DATA.md` for rebuilding.
 See [architecture](docs/ARCHITECTURE.md) for module and localization boundaries.
-Future subjects such as anatomy are reserved through a module registry; no
-anatomy models or clinical features are implemented or advertised.
+The human anatomy subject follows the same module contract. Its neural coverage
+is partial and its meridians are approximate diagrams, not measured anatomy.
+No clinical features are provided.
 Development is AI-assisted using Codex. Scientific review and corrections are
 welcome; generated code is not evidence of scientific accuracy.
 

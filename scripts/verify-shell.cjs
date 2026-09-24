@@ -12,6 +12,8 @@ const {createModel}=require('./create-model.cjs');
  assert.throws(()=>createModel('structure-example',{root:fixtureRoot}),/EEXIST/);
  for(const id of ['../outside','UPPER','con','a/b',''])assert.throws(()=>createModel(id,{root:fixtureRoot}));
  const {createServer}=await import('vite');
+ const {modelModules}=await import('../src/modules/registry.js');
+ const expectedModelCount=Object.keys(modelModules).length+1; // Plus the generated test-only module.
  const server=await createServer({root,plugins:[{name:'test-contributed-module',enforce:'pre',transform(code,id){
   if(id.replaceAll('\\','/').endsWith('/src/modules/registry.js'))return code.replace('// MODULE_IMPORTS:',`import example from '/@fs/${fixture.replaceAll('\\','/')}/module.js';\n// MODULE_IMPORTS:`).replace('// MODULE_ENTRIES:', '[example.id]:example,\n// MODULE_ENTRIES:');
  }}],server:{host:'127.0.0.1',port:0}});await server.listen();
@@ -23,11 +25,11 @@ const {createModel}=require('./create-model.cjs');
   await page.addInitScript(()=>localStorage.setItem('opensolar.imagery','off'));
   const base=`http://127.0.0.1:${server.httpServer.address().port}/`;
   await page.goto(base);await page.waitForSelector('.model-card');
-  assert.equal(await page.locator('.model-card').count(),2);
+  assert.equal(await page.locator('.model-card').count(),expectedModelCount);
   assert.equal(requests.some(url=>new URL(url).pathname==='/data.js'),false);
   await page.fill('#modelSearch','太阳');assert.equal(await page.locator('.model-card').count(),1);
   await page.fill('#modelSearch','no-such-model');assert.equal(await page.locator('.model-card').count(),0);
-  await page.locator('.library-empty button').click();assert.equal(await page.locator('.model-card').count(),2);
+  await page.locator('.library-empty button').click();assert.equal(await page.locator('.model-card').count(),expectedModelCount);
   await page.locator('[data-model="structure-example"] .primary-link').click();await page.waitForSelector('.structure-canvas canvas');
   assert.equal(await page.evaluate(()=>typeof window.SOLAR_DATA),'undefined','Independent model must not depend on astronomy');
   const canvas=await page.locator('.structure-canvas canvas').boundingBox();

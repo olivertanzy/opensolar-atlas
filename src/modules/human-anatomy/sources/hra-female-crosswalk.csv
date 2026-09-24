@@ -1,0 +1,876 @@
+node_name,OntologyID,label
+VH_F_integumentary_system,UBERON:0013754,integumentary system layer
+VH_F_subcutaneous_abdominal_adipose_tissue,UBERON:0014455,subcutaneous abdominal adipose tissue
+VH_F_skin,UBERON:0002097,skin of body
+VH_F_mammary_gland_L,FMA:57991,Left mammary gland
+VH_F_fat_L,FMA:73166,Interlobar adipose tissue of left mammary gland
+VH_F_areolar_tubercles_L,UBERON:0011828,areolar tubercle
+VH_F_nipple_L,UBERON:0013772,left nipple
+VH_F_areola_L,FMA:223679,Left female areola
+VH_F_mammary_lobes_L,UBERON:0018140,mammary lobe
+VH_F_main_lactiferous_ducts_L,UBERON:0015134,main lactiferous duct
+VH_F_main_lactiferous_sinuses_L,FMA:58088,Lactiferous sinus
+VH_F_suspensory_ligaments_L,FMA:73119,Suspensory ligament of left breast
+VH_F_mammary_gland_R,FMA:57987,Right mammary gland
+VH_F_fat_R,FMA:73165,Interlobar adipose tissue of right mammary gland
+VH_F_areolar_tubercles_R,UBERON:0011828,areolar tubercle
+VH_F_nipple_R,UBERON:0013773,right nipple
+VH_F_areola_R,FMA:223677,Right female areola
+VH_F_main_lactiferous_sinuses_R,FMA:58088,Lactiferous sinus
+VH_F_main_lactiferous_ducts_R,UBERON:0015134,main lactiferous duct
+VH_F_mammary_lobes_R,UBERON:0018140,mammary lobe
+VH_F_suspensory_ligaments_R,FMA:73118,Suspensory ligament of right breast
+VH_F_nervous_system,UBERON:0001017,central nervous system
+VH_F_eyes,UBERON:0000970,eye
+VH_F_eye_R,UBERON:0004549,right eye
+VH_F_retina_R,FMA:58302,Right retina
+VH_F_fovea_R,FMA:58661,Right fovea centralis
+VH_F_macula_lutea_R,FMA:58638,Right macula lutea
+VH_F_optic_disc_R,FMA:58635,Right optic disc
+VH_F_palpebral_conjunctiva_of_right_upper_eyelid,FMA:223076,Palpebral conjunctiva of right upper eyelid
+VH_F_palpebral_conjunctiva_of_right_lower_eyelid,FMA:223074,Palpebral conjunctiva of right lower eyelid
+VH_F_sclera_R,FMA:58271,Right sclera
+VH_F_optic_choroid_R,FMA:58299,Right choroid
+VH_F_pupil_R,UBERON:0010224,right pupil
+VH_F_ciliary_processes_R,UBERON:0010427,ciliary processes
+VH_F_suspensory_ligament_of_lens_R,FMA:58839,Suspensory ligament of right lens
+VH_F_ora_serrata_of_retina_R,FMA:58601,Right ora serrata
+VH_F_corneo_scleral_junction_R,FMA:58343,Right corneoscleral junction
+VH_F_lens_R,FMA:58242,Right lens
+VH_F_schlemms_canal_R,FMA:51874,Right scleral venous sinus
+VH_F_aqueous_humor_R,FMA:58820,Aqueous humor of right eyeball
+VH_F_ciliary_body_R,FMA:58296,Right ciliary body
+VH_F_ciliary_muscle_R,FMA:49152,Right ciliary muscle
+VH_F_trabecular_meshwork_R,UBERON:0005969,eye trabecular meshwork
+VH_F_iris_R,FMA:58236,Right iris
+VH_F_bulbar_conjunctiva_R,FMA:59028,Right bulbar conjunctiva
+VH_F_cornea_R,FMA:58239,Right cornea
+VH_F_vitreous_humor_R,FMA:261236,Humor of right vitreous body
+VH_F_eye_L,UBERON:0004548,left eye
+VH_F_retina_L,FMA:58303,Left retina
+VH_F_fovea_L,FMA:58663,Left fovea centralis
+VH_F_macula_lutea_L,FMA:58639,Left macula lutea
+VH_F_optic_disc_L,FMA:58636,Left optic disc
+VH_F_palpebral_conjunctiva_of_left_upper_eyelid,FMA:223078,Palpebral conjunctiva of left upper eyelid
+VH_F_palpebral_conjunctiva_of_left_lower_eyelid,FMA:223075,Palpebral conjunctiva of left lower eyelid
+VH_F_vitreous_humor_L,FMA:261238,Humor of left vitreous body
+VH_F_cornea_L,FMA:58240,Left cornea
+VH_F_bulbar_conjunctiva_L,FMA:59029,Left bulbar conjunctiva
+VH_F_iris_L,FMA:58237,Left iris
+VH_F_trabecular_meshwork_L,UBERON:0005969,eye trabecular meshwork
+VH_F_ciliary_body_L,FMA:58297,Left ciliary body
+VH_F_ciliary_muscle_L,FMA:49153,Left ciliary muscle
+VH_F_aqueous_humor_L,FMA:58821,Aqueous humor of left eyeball
+VH_F_schlemms_canal_L,FMA:51875,Left scleral venous sinus
+VH_F_lens_L,FMA:58243,Left lens
+VH_F_corneo_scleral_junction_L,FMA:58344,Left corneoscleral junction
+VH_F_ora_serrata_of_retina_L,FMA:58602,Left ora serrata
+VH_F_suspensory_ligament_of_lens_L,FMA:58840,Suspensory ligament of left lens
+VH_F_ciliary_processes_L,UBERON:0010427,ciliary processes
+VH_F_pupil_L,UBERON:0010223,left pupil
+VH_F_optic_choroid_L,FMA:58300,Left choroid
+VH_F_sclera_L,FMA:58272,Left sclera
+VH_F_dura_mater_right,UBERON:0002363,dura mater
+VH_F_right_optic_nerve,FMA:50875,Right optic nerve
+VH_F_dura_mater_left,UBERON:0002363,dura mater
+VH_F_left_optic_nerve,FMA:50878,Left optic nerve
+Allen_brain,UBERON:0000955,brain
+VH_F_optic_chiasm,UBERON:0000959,optic chiasma
+Allen_brain_hemisphere_L,UBERON:0002812,left cerebral hemisphere
+Allen_olfactory_bulb_L,UBERON:0002264,olfactory bulb
+Allen_anterior_olfactory_nucleus_L,UBERON:0002266,anterior olfactory nucleus
+Allen_piriform_region_L,UBERON:0004725,piriform cortex
+Allen_putamen_L,UBERON:0008884,left putamen
+Allen_pineal_body_L,UBERON:0001905,pineal body
+Allen_anterior_commissure_L,UBERON:0000935,anterior commissure
+Allen_corpus_callosum_L,UBERON:0002336,corpus callosum
+Allen_fornix_L,UBERON:0000052,fornix of brain
+Allen_optic_tract_L,UBERON:0001908,optic tract
+Allen_cerebellar_vermis_L,UBERON:0004720,cerebellar vermis
+Allen_primary_motor_cortex_L,UBERON:0002703,primary motor cortex
+Allen_superior_frontal_gyrus_L,UBERON:0002661,superior frontal gyrus
+Allen_middle_frontal_gyrus_L,UBERON:0002702,middle frontal gyrus
+Allen_inferior_frontal_gyrus_triangular_part_L,UBERON:0002629,triangular part of inferior frontal gyrus
+Allen_inferior_frontal_gyrus_opercular_part_L,UBERON:0002980,opercular part of inferior frontal gyrus
+Allen_gyrus_rectus_straight_gyrus_L,UBERON:0004671,gyrus rectus
+Allen_medial_orbital_gyrus_L,UBERON:0002570,medial orbital gyrus
+Allen_anterior_intermediate_orbital_gyrus_L,UBERON:0002644,intermediate orbital gyrus
+Allen_posterior_intermediate_orbital_gyrus_L,UBERON:0002644,intermediate orbital gyrus
+Allen_lateral_orbital_gyrus_L,UBERON:0002564,lateral orbital gyrus
+Allen_paracentral_lobule_rostral_part_L,UBERON:0035932,anterior segment of paracentral lobule
+Allen_frontal_operculum_L,UBERON:0002947,frontal operculum
+Allen_postcentral_gyrus_L,UBERON:0002581,postcentral gyrus
+Allen_precuneus_L,UBERON:0006093,precuneus cortex
+Allen_superior_temporal_gyrus_L,UBERON:0002769,superior temporal gyrus
+Allen_middle_temporal_gyrus_L,UBERON:0002771,middle temporal gyrus
+Allen_inferior_temporal_gyrus_L,UBERON:0002751,inferior temporal gyrus
+Allen_planum_temporale_L,UBERON:0022268,planum temporale
+Allen_temporal_pole_L,UBERON:0002576,temporal pole
+Allen_planum_polare_L,UBERON:0023861,planum polare
+Allen_occipital_pole_L,UBERON:0002902,occipital pole
+Allen_cuneus_L,UBERON:0006092,cuneus cortex
+Allen_lingual_gyrus_medial_occipitotemporal_gyrus_L,UBERON:0002943,lingual gyrus
+Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_L,UBERON:0022364,occipital fusiform gyrus
+Allen_inferior_occipital_gyrus_L,UBERON:0014608,inferior occipital gyrus
+Allen_superior_occipital_gyrus_L,UBERON:0002948,superior occipital gyrus
+Allen_cingulate_gyrus_rostral_anterior_part_L,UBERON:0002756,anterior cingulate gyrus
+Allen_cingulate_gyrus_caudal_posterior_part_L,UBERON:0002740,posterior cingulate gyrus
+Allen_ingulo_parahippocampal_isthmus_L,UBERON:0002738,isthmus of cingulate gyrus
+Allen_subcallosal_gyrus_parolfactory_gyrus_L,UBERON:0003020,subcallosal area
+Allen_anterior_parahippocampal_gyrus_L,UBERON:0022383,anterior parahippocampal gyrus
+Allen_posterior_parahippocampal_gyrus_L,UBERON:0002657,posterior parahippocampal gyrus
+Allen_substantia_nigra_L,UBERON:0002038,substantia nigra
+Allen_superior_colliculus_L,UBERON:0001945,superior colliculus
+Allen_cerebral_peduncle_crus_cerebri_L,UBERON:0002623,cerebral peduncle
+Allen_basilar_part_of_pons_L,UBERON:0002151,pontine nuclear group
+Allen_pontine_tegmentum_L,UBERON:0003023,pontine tegmentum
+Allen_fourth_ventricle_L,UBERON:0002422,fourth ventricle
+Allen_parietal_operculum_L,UBERON:0002911,parietal operculum
+Allen_optic_radiation_L,UBERON:0022264,optic radiation
+Allen_hippocampus_L,UBERON:0002421,hippocampal formation
+Allen_brain_hemisphere_R,UBERON:0002813,right cerebral hemisphere
+Allen_putamen_R,UBERON:0008885,right putamen
+Allen_pineal_body_R,UBERON:0001905,pineal body
+Allen_anterior_commissure_R,UBERON:0000935,anterior commissure
+Allen_corpus_callosum_R,UBERON:0002336,corpus callosum
+Allen_fornix_R,UBERON:0000052,fornix of brain
+Allen_optic_tract_R,UBERON:0001908,optic tract
+Allen_primary_motor_cortex_R,UBERON:0002703,primary motor cortex
+Allen_superior_frontal_gyrus_R,UBERON:0002661,superior frontal gyrus
+Allen_middle_frontal_gyrus_R,UBERON:0002702,middle frontal gyrus
+Allen_inferior_frontal_gyrus_triangular_part_R,UBERON:0002629,triangular part of inferior frontal gyrus
+Allen_inferior_frontal_gyrus_opercular_part_R,UBERON:0002980,opercular part of inferior frontal gyrus
+Allen_gyrus_rectus_straight_gyrus_R,UBERON:0004671,gyrus rectus
+Allen_medial_orbital_gyrus_R,UBERON:0002570,medial orbital gyrus
+Allen_anterior_intermediate_orbital_gyrus_R,UBERON:0002644,intermediate orbital gyrus
+Allen_posterior_intermediate_orbital_gyrus_R,UBERON:0002644,intermediate orbital gyrus
+Allen_lateral_orbital_gyrus_R,UBERON:0002564,lateral orbital gyrus
+Allen_paracentral_lobule_rostral_part_R,UBERON:0035932,anterior segment of paracentral lobule
+Allen_frontal_operculum_R,UBERON:0002947,frontal operculum
+Allen_postcentral_gyrus_R,UBERON:0002581,postcentral gyrus
+Allen_precuneus_R,UBERON:0006093,precuneus cortex
+Allen_superior_temporal_gyrus_R,UBERON:0002769,superior temporal gyrus
+Allen_middle_temporal_gyrus_R,UBERON:0002771,middle temporal gyrus
+Allen_inferior_temporal_gyrus_R,UBERON:0002751,inferior temporal gyrus
+Allen_planum_temporale_R,UBERON:0022268,planum temporale
+Allen_temporal_pole_R,UBERON:0002576,temporal pole
+Allen_planum_polare_R,UBERON:0023861,planum polare
+Allen_occipital_pole_R,UBERON:0002902,occipital pole
+Allen_cuneus_R,UBERON:0006092,cuneus cortex
+Allen_lingual_gyrus_medial_occipitotemporal_gyrus_R,UBERON:0002943,lingual gyrus
+Allen_lateral_occipitotemporal_fusiform_gyrus_occipital_part_R,UBERON:0022364,occipital fusiform gyrus
+Allen_inferior_occipital_gyrus_R,UBERON:0014608,inferior occipital gyrus
+Allen_superior_occipital_gyrus_R,UBERON:0002948,superior occipital gyrus
+Allen_cingulate_gyrus_rostral_anterior_part_R,UBERON:0002756,anterior cingulate gyrus
+Allen_cingulate_gyrus_caudal_posterior_part_R,UBERON:0002740,posterior cingulate gyrus
+Allen_ingulo_parahippocampal_isthmus_R,UBERON:0002738,isthmus of cingulate gyrus
+Allen_subcallosal_gyrus_parolfactory_gyrus_R,UBERON:0003020,subcallosal area
+Allen_anterior_parahippocampal_gyrus_R,UBERON:0022383,anterior parahippocampal gyrus
+Allen_posterior_parahippocampal_gyrus_R,UBERON:0002657,posterior parahippocampal gyrus
+Allen_red_nucleus_R,UBERON:0001947,red nucleus
+Allen_substantia_nigra_R,UBERON:0002038,substantia nigra
+Allen_superior_colliculus_R,UBERON:0001945,superior colliculus
+Allen_inferior_colliculus_R,UBERON:0001946,inferior colliculus
+Allen_cerebral_peduncle_crus_cerebri_R,UBERON:0002623,cerebral peduncle
+Allen_basilar_part_of_pons_R,UBERON:0002151,pontine nuclear group
+Allen_pontine_tegmentum_R,UBERON:0003023,pontine tegmentum
+Allen_fourth_ventricle_R,UBERON:0002422,fourth ventricle
+Allen_parietal_operculum_R,UBERON:0002911,parietal operculum
+Allen_optic_radiation_R,UBERON:0022264,optic radiation
+Allen_hypothalamus_L,UBERON:0001898,hypothalamus
+Allen_hypothalamus_R,UBERON:0001898,hypothalamus
+Allen_red_nucleus_L,UBERON:0001947,red nucleus
+Allen_inferior_colliculus_L,UBERON:0001946,inferior colliculus
+Allen_hippocampus_R,UBERON:0002421,hippocampal formation
+VH_F_spinal_cord,UBERON:0002240,spinal cord
+VH_F_C1_segment_of_cervical_spinal_cord,UBERON:0006469,C1 segment of cervical spinal cord
+VH_F_C2_segment_of_cervical_spinal_cord,UBERON:0006489,C2 segment of cervical spinal cord
+VH_F_C3_segment_of_cervical_spinal_cord,UBERON:0006488,C3 segment of cervical spinal cord
+VH_F_C4_segment_of_cervical_spinal_cord,UBERON:0006490,C4 segment of cervical spinal cord
+VH_F_C5_segment_of_cervical_spinal_cord,UBERON:0006491,C5 segment of cervical spinal cord
+VH_F_C6_segment_of_cervical_spinal_cord,UBERON:0006492,C6 segment of cervical spinal cord
+VH_F_C7_segment_of_cervical_spinal_cord,UBERON:0006493,C7 segment of cervical spinal cord
+VH_F_C8_segment_of_cervical_spinal_cord,UBERON:0006470,C8 segment of cervical spinal cord
+VH_F_first_thoracic_spinal_cord_segment,UBERON:0006457,first thoracic spinal cord segment
+VH_F_second_thoracic_spinal_cord_segment,UBERON:0006458,second thoracic spinal cord segment
+VH_F_third_thoracic_spinal_cord_segment,UBERON:0006459,third thoracic spinal cord segment
+VH_F_fourth_thoracic_spinal_cord_segment,UBERON:0006452,fourth thoracic spinal cord segment
+VH_F_fifth_thoracic_spinal_cord_segment,UBERON:0006453,fifth thoracic spinal cord segment
+VH_F_seventh_thoracic_spinal_cord_segment,UBERON:0006455,seventh thoracic spinal cord segment
+VH_F_eigth_thoracic_spinal_cord_segment,UBERON:0006456,eighth thoracic spinal cord segment
+VH_F_sixth_thoracic_spinal_cord_segment,UBERON:0006454,sixth thoracic spinal cord segment
+VH_F_ninth_thoracic_spinal_cord_segment,UBERON:0006465,ninth thoracic spinal cord segment
+VH_F_tenth_thoracic_spinal_cord_segment,UBERON:0006466,tenth thoracic spinal cord segment
+VH_F_eleventh_thoracic_spinal_cord_segment,UBERON:0006467,eleventh thoracic spinal cord segment
+VH_F_twelfth_thoracic_spinal_cord_segment,UBERON:0006468,twelfth thoracic spinal cord segment
+VH_F_first_lumbar_spinal_cord_segment,UBERON:0006448,first lumbar spinal cord segment
+VH_F_second_lumbar_spinal_cord_segment,UBERON:0006450,second lumbar spinal cord segment
+VH_F_third_lumbar_spinal_cord_segment,UBERON:0006449,third lumbar spinal cord segment
+VH_F_fourth_lumbar_spinal_cord_segment,UBERON:0006451,fourth lumbar spinal cord segment
+VH_F_fifth_lumbar_spinal_cord_segment,UBERON:0006447,fifth lumbar spinal cord segment
+VH_F_first_sacral_spinal_cord_segment,UBERON:0006460,first sacral spinal cord segment
+VH_F_second_sacral_spinal_cord_segment,UBERON:0006461,second sacral spinal cord segment
+VH_F_third_sacral_spinal_cord_segment,UBERON:0006462,third sacral spinal cord segment
+VH_F_fourth_sacral_spinal_cord_segment,UBERON:0006463,fourth sacral spinal cord segment
+VH_F_muscular_system,UBERON:0001630,muscle organ
+VH_F_muscles_of_eye,UBERON:0004277,eye muscle
+VH_F_ocular_muscles_L,FMA:49149,Ocular muscle
+VH_F_medial_rectus_extraocular_muscle_L,FMA:49057,Left medial rectus
+VH_F_inferior_rectus_extraocular_muscle_L,FMA:49047,Left inferior rectus
+VH_F_superior_rectus_extraocular_muscle_L,FMA:49045,Left superior rectus
+VH_F_inferior_oblique_extraocular_muscle_L,FMA:49051,Left inferior oblique
+VH_F_lateral_rectus_extraocular_muscle_L,FMA:49055,Left lateral rectus
+VH_F_superior_oblique_extraocular_muscle_L,FMA:49053,Left superior oblique
+VH_F_medial_rectus_extraocular_muscle_R,FMA:49056,Right medial rectus
+VH_F_inferior_rectus_extraocular_muscle_R,FMA:49046,Right inferior rectus
+VH_F_superior_rectus_extraocular_muscle_R,FMA:49044,Right superior rectus
+VH_F_inferior_oblique_extraocular_muscle_R,FMA:49050,Right inferior oblique
+VH_F_lateral_rectus_extraocular_muscle_R,FMA:49054,Right lateral rectus
+VH_F_superior_oblique_extraocular_muscle_R,FMA:49052,Right superior oblique
+VH_F_rectus_femoris_L,FMA:38929,Left rectus femoris
+VH_F_tendon_of_quadriceps_femoris_L,FMA:46902,Tendon of left quadriceps femoris
+VH_F_rectus_femoris_R,FMA:38928,Right rectus femoris
+VH_F_tendon_of_quadriceps_femoris_R,FMA:46901,Tendon of right quadriceps femoris
+VH_F_reproductive_system,UBERON:0000474,female reproductive system
+VH_F_placenta,UBERON:0001987,placenta
+VH_F_chorionic_plate,UBERON:0004027,chorionic plate
+VH_F_amnion,UBERON:0000305,amnion
+VH_F_umbilical_cord,UBERON:0002331,umbilical cord
+VH_F_umbilical_artery_1,UBERON:0001310,umbilical artery
+VH_F_umbilical_artery_2,UBERON:0001310,umbilical artery
+VH_F_umbilical_vein,UBERON:0002066,umbilical vein
+VH_F_vagina,UBERON:0000996,vagina
+VH_F_fallopian_tube_R,UBERON:0001302,right uterine tube
+VH_F_ampulla_of_uterine_tube_R,FMA:18491,Ampulla of right uterine tube
+VH_F_isthmus_of_fallopian_tube_R,FMA:18493,Isthmus of right uterine tube
+VH_F_fibria_of_uterine_tube_R,FMA:18497,Fimbria of right uterine tube
+VH_F_uterine_tube_infundibulum_R,FMA:18489,Infundibulum of right uterine tube
+VH_F_fallopian_tube_L,UBERON:0001303,left uterine tube
+VH_F_uterine_tube_infundibulum_L,FMA:18490,Infundibulum of left uterine tube
+VH_F_fibria_of_uterine_tube_L,FMA:18498,Fimbria of left uterine tube
+VH_F_isthmus_of_fallopian_tube_L,FMA:18494,Isthmus of left uterine tube
+VH_F_ampulla_of_uterine_tube_L,FMA:18492,Ampulla of left uterine tube
+VH_F_uterovesical_pouch,FMA:14729,Uterovesical pouch
+VH_F_right_round_ligament_of_uterus,FMA:57789,Right round ligament of uterus
+VH_F_left_round_ligament_of_uterus,FMA:57790,Left round ligament of uterus
+VH_F_right_uterosacral_ligament,FMA:19119,Right uterosacral ligament
+VH_F_left_uterosacral_ligament,FMA:19120,Left uterosacral ligament
+VH_F_cardinal_ligament_of_uterus,FMA:77064,Cardinal ligament
+VH_F_right_cardinal_ligament_of_uterus,FMA:77064,Cardinal ligament
+VH_F_left_cardinal_ligament_of_uterus,FMA:77064,Cardinal ligament
+VH_F_suspensory_ligament_of_ovary_R,FMA:19823,Suspensory ligament of right ovary
+VH_F_suspensory_ligament_of_ovary_L,FMA:19824,Suspensory ligament of left ovary
+VH_F_ovarian_ligament_L,FMA:55424,Left ovarian ligament
+VH_F_ovarian_ligament_R,FMA:55423,Right ovarian ligament
+VH_F_broad_ligament,UBERON:0012332,broad ligament of uterus
+VH_F_mesosalpinx_L,FMA:19810,Left mesosalpinx
+VH_F_mesosalpinx_R,FMA:19809,Right mesosalpinx
+VH_F_mesovarium_R,FMA:19817,Right mesovarium
+VH_F_mesovarium_L,FMA:19818,Left mesovarium
+VH_F_left_ovary,FMA:7214,Left ovary
+VH_F_right_ovary,FMA:7213,Right ovary
+VH_F_uterus,UBERON:0000995,uterus
+VH_F_abdominal_ostium_of_uterine_tube,FMA:77049,Abdominal ostium of uterine tube
+VH_F_body_of_uterus,UBERON:0009853,body of uterus
+VH_F_fundus_of_uterus,FMA:17561,Fundus of uterus
+VH_F_lower_uterine_segment,FMA:17752,Lower uterine segment
+VH_F_posterior_wall_of_uterus,FMA:224878,Posterior wall of uterus
+VH_F_anterior_wall_of_uterus,FMA:224876,Anterior wall of uterus
+VH_F_cervix,UBERON:0000002,uterine cervix
+VH_F_internal_cervical_os,UBERON:0013759,internal cervical os
+VH_F_external_cervical_os,UBERON:0013760,external cervical os
+VH_F_digestive_system,UBERON:0001007,digestive system
+VH_F_omentum,UBERON:0003688,omentum
+VH_F_epiploic_appendage_of_transverse_colon,FMA:15046,epiploic appendage of transverse colon
+VH_F_mouth,UBERON:0000165,Mouth
+VH_F_major_salivary_gland,UBERON:0001829,Major salivary gland
+VH_F_submandibular_gland,UBERON:0001736,Submandibular gland
+VH_F_submandibular_gland_L,FMA:59803,Left submandibular gland
+VH_F_submandibular_gland_R,FMA:59802,Right submandibular gland
+VH_F_parotid_gland,UBERON:0001831,Parotid gland
+VH_F_parotid_gland_R,FMA:59797,Right parotid gland
+VH_F_parotid_gland_L,FMA:59798,Left parotid gland
+VH_F_sublingual_gland,UBERON:0001832,Sublingual gland
+VH_F_sublingual_gland_R,FMA:59804,Right sublingual gland
+VH_F_sublingual_gland_L,FMA:59805,Left sublingual gland
+VH_F_buccal_mucosa,UBERON:0006956,Buccal mucosa
+VH_F_frenulum_of_lip,UBERON:0016910,Frenulum of lip
+VH_F_frenulum_of_upper_lip,UBERON:0016912,Frenulum of upper lip
+VH_F_frenulum_of_lower_lip,UBERON:0016913,Frenulum of lower lip
+VH_F_mouth_floor,UBERON:0003679,Mouth floor
+VH_F_gingiva,UBERON:0001828,Gingiva
+VH_F_ginviva_of_upper_jaw,UBERON:0011601,Gingiva of upper jaw
+VH_F_gingiva_of_lower_jaw,UBERON:0011602,Gingiva of lower jaw
+VH_F_tongue,UBERON:0001723,Tongue
+VH_F_posterior_part_of_tongue,UBERON:0010033,Posterior part of tongue
+VH_F_dorsal_tongue,UBERON:0007371,Superior surface of tongue
+VH_F_ventral_tongue,UBERON:0007373,Inferior surface of tongue
+VH_F_fungiform_papillae,UBERON:0002448,Fungiform papilla
+VH_F_circumvallate_papillae,UBERON:0000396,Vallate papilla
+VH_F_secondary_palate,UBERON:0001716,Secondary palate
+VH_F_hard_palate,UBERON:0003216,Hard palate
+VH_F_soft_palate,UBERON:0001733,Soft palate
+VH_F_mucosa_of_soft_palate,UBERON:0005024,Mucosa of soft palate
+VH_F_tooth_row,UBERON:0009678,Tooth row
+VH_F_set_of_lower_jaw_teeth,UBERON:0009679,Lower teeth
+VH_F_set_of_upper_jaw_teeth,UBERON:0009680,Upper teeth
+VH_F_liver,UBERON:0002107,liver
+VH_F_gastric_impression_of_liver,FMA:14487,gastric impression of liver
+VH_F_suprarenal_impression_of_liver,FMA:14489,Suprarenal impression of liver
+VH_F_renal_impression_of_liver,FMA:14488,renal impression of liver
+VH_F_duodenal_impression_of_liver,FMA:14485,duodenal impression of liver
+VH_F_esophageal_impression_of_liver,FMA:14486,esophageal impression of liver
+VH_F_porta_hepatis,FMA:15758,porta hepatis
+VH_F_colic_impression_of_liver,FMA:14484,colic impression of liver
+VH_F_capsule_of_the_liver,UBERON:0016479,capsule of the liver
+VH_F_bare_area_of_liver,UBERON:0001149,bare area of liver
+VH_F_diaphragmatic_surface_of_liver,FMA:15729,diaphragmatic surface of liver
+VH_F_left_lobe_of_liver,UBERON:0001115,left lobe of liver
+VH_F_liver_left_lateral_lobe,UBERON:0006727,liver left lateral lobe
+VH_F_liver_left_medial_lobe,UBERON:0006728,liver left medial lobe
+VH_F_quadrate_lobe,UBERON:0001116,quadrate lobe of liver
+VH_F_right_lobe_of_liver,UBERON:0001114,right lobe of liver
+VH_F_caudate_lobe,UBERON:0001117,caudate lobe of liver
+VH_F_coronary_ligament_of_liver,UBERON:0013138,coronary ligament of liver
+VH_F_falciform_ligament,UBERON:0001247,falciform ligament
+VH_F_triangular_ligament_of_liver,UBERON:0035444,triangular ligament of liver
+VH_F_ligamentum_venosum,UBERON:0006587,ligamentum venosum
+VH_F_round_ligament_of_liver,UBERON:0006588,round ligament of liver
+VH_F_hepataduodenal_ligament,UBERON:0012472,hepatoduodenal ligament
+VH_F_pancreas,UBERON:0001264,Pancreas
+VH_F_tail_of_pancreas,UBERON:0001151,tail of pancreas
+VH_F_body_of_pancreas,UBERON:0001150,body of pancreas
+VH_F_ucinate_process1,UBERON:0010373,uncinate process of pancreas
+VH_F_head_of_pancreas,UBERON:0001069,head of pancreas
+VH_F_neck_of_pancreas,FMA:14517,Neck of pancreas
+VH_F_biliary_tree,UBERON:0001173,biliary tree
+VH_F_right_hepatic_duct,UBERON:0001176,right hepatic duct
+VH_F_left_hepatic_duct,UBERON:0001177,left hepatic duct
+VH_F_common_hepatic_duct,UBERON:0001175,common hepatic duct
+VH_F_hepatopancreatic_ampulla,UBERON:0004913,hepatopancreatic ampulla
+VH_F_dorsal_pancreatic_duct,UBERON:0005429,dorsal pancreatic duct
+VH_F_common_bile_duct,UBERON:0001174,common bile duct
+VH_F_ventral_pancreatic_duct,UBERON:0001064,Ventral pancreatic duct
+VH_F_cystic_duct,UBERON:0001152,cystic duct
+VH_F_small_intestine,UBERON:0002108,small intestine
+VH_F_duodenum,UBERON:0002114,duodenum
+VH_F_duodenum_superior,FMA:7206,superior part of duodenum
+VH_F_duodenal_ampulla,UBERON:0013644,duodenal ampulla
+VH_F_duodenum_descending,FMA:14928,descending part of duodenum
+VH_F_sphincter_of_heptopancreatic_ampulla,FMA:15077,Sphincter of hepatopancreatic ampulla
+VH_F_duodenum_ascending,FMA:14930,ascending part of duodenum
+VH_F_duodenum_horizontal,FMA:14929,horizontal part of duodenum
+VH_F_jejenum,UBERON:0002115,jejunum
+VH_F_ileum,UBERON:0002116,ileum
+VH_F_ileum_terminal,FMA:14966,distal part of ileum
+VH_F_palatine_tonsil,UBERON:0002373,Palatine tonsils
+VH_F_palatine_tonsil_L,FMA:54974,Left palatine tonsil
+VH_F_palatine_tonsil_R,FMA:54973,Right palatine tonsil
+VH_F_colon,UBERON:0000059,large intestine
+VH_F_hepatic_flexure_of_colon,UBERON:0022277,hepatic flexure of colon
+VH_F_transverse_colon,UBERON:0001157,transverse colon
+VH_F_ascending_colon,UBERON:0001156,ascending colon
+VH_F_vermiform_appendix,UBERON:0001154,vermiform appendix
+VH_F_descending_colon,UBERON:0001158,descending colon
+VH_F_ileocecal_valve,UBERON:0000569,ileocecal valve
+VH_F_caecum,UBERON:0001153,caecum
+VH_F_rectum,UBERON:0001052,rectum
+VH_F_sigmoid_colon,UBERON:0001159,sigmoid colon
+VH_F_splenic_flexure_of_colon,UBERON:0022276,splenic flexure of colon
+VH_F_gallbladder,UBERON:0002110,gallbladder
+VH_F_urinary_system,UBERON:0001008,renal system
+VH_F_kidney,UBERON:0002113,kidney
+VH_F_left_kidney,UBERON:0004538,left kidney
+VH_F_kidney_capsule_L,UBERON:0002015,kidney capsule
+VH_F_hilum_of_kidney_L,UBERON:0008716,hilum of kidney
+VH_F_renal_medulla_L,UBERON:0000362,renal medulla
+VH_F_renal_papilla_L,UBERON:0001228,renal papilla
+VH_F_renal_papilla_L_a,UBERON:0001228,renal papilla
+VH_F_renal_papilla_L_b,UBERON:0001228,renal papilla
+VH_F_renal_papilla_L_c,UBERON:0001228,renal papilla
+VH_F_renal_papilla_L_d,UBERON:0001228,renal papilla
+VH_F_renal_papilla_L_e,UBERON:0001228,renal papilla
+VH_F_renal_papilla_L_f,UBERON:0001228,renal papilla
+VH_F_renal_papilla_L_g,UBERON:0001228,renal papilla
+VH_F_renal_papilla_L_h,UBERON:0001228,renal papilla
+VH_F_renal_papilla_L_i,UBERON:0001228,renal papilla
+VH_F_renal_papilla_L_j,UBERON:0001228,renal papilla
+VH_F_renal_papilla_L_k,UBERON:0001228,renal papilla
+VH_F_renal_pyramid_L,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_L_a,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_L_b,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_L_c,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_L_d,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_L_e,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_L_f,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_L_g,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_L_h,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_L_i,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_L_j,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_L_k,UBERON:0004200,renal pyramid
+VH_F_cortex_of_kidney_L,UBERON:0001225,cortex of kidney
+VH_F_renal_column_L,UBERON:0001284,renal column
+VH_F_outer_cortex_of_kidney_L,UBERON:0002189,outer cortex of kidney
+VH_F_right_kidney,UBERON:0004539,right kidney
+VH_F_kidney_capsule_R,UBERON:0002015,kidney capsule
+VH_F_hilum_of_kidney_R,UBERON:0008716,hilum of kidney
+VH_F_cortex_of_kidney_R,UBERON:0001225,cortex of kidney
+VH_F_outer_cortex_of_kidney_R,UBERON:0002189,outer cortex of kidney
+VH_F_renal_column_R,UBERON:0001284,renal column
+VH_F_renal_medulla_R,UBERON:0000362,renal medulla
+VH_F_renal_papilla_R,UBERON:0001228,renal papilla
+VH_F_renal_papilla_R_a,UBERON:0001228,renal papilla
+VH_F_renal_papilla_R_b,UBERON:0001228,renal papilla
+VH_F_renal_papilla_R_c,UBERON:0001228,renal papilla
+VH_F_renal_papilla_R_d,UBERON:0001228,renal papilla
+VH_F_renal_papilla_R_e,UBERON:0001228,renal papilla
+VH_F_renal_papilla_R_f,UBERON:0001228,renal papilla
+VH_F_renal_papilla_R_g,UBERON:0001228,renal papilla
+VH_F_renal_papilla_R_h,UBERON:0001228,renal papilla
+VH_F_renal_papilla_R_i,UBERON:0001228,renal papilla
+VH_F_renal_papilla_R_j,UBERON:0001228,renal papilla
+VH_F_renal_pyramid_R,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_R_a,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_R_b,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_R_c,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_R_d,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_R_e,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_R_f,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_R_g,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_R_h,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_R_i,UBERON:0004200,renal pyramid
+VH_F_renal_pyramid_R_j,UBERON:0004200,renal pyramid
+VH_F_renal_calyx_R,UBERON:0006517,kidney calyx
+VH_F_minor_calyx_R,UBERON:0001227,minor calyx
+VH_F_minor_calyx_R_a,UBERON:0001227,minor calyx
+VH_F_minor_calyx_R_b,UBERON:0001227,minor calyx
+VH_F_minor_calyx_R_c,UBERON:0001227,minor calyx
+VH_F_minor_calyx_R_d,UBERON:0001227,minor calyx
+VH_F_minor_calyx_R_e,UBERON:0001227,minor calyx
+VH_F_minor_calyx_R_f,UBERON:0001227,minor calyx
+VH_F_minor_calyx_R_g,UBERON:0001227,minor calyx
+VH_F_minor_calyx_R_h,UBERON:0001227,minor calyx
+VH_F_minor_calyx_R_i,UBERON:0001227,minor calyx
+VH_F_minor_calyx_R_j,UBERON:0001227,minor calyx
+VH_F_major_calyx_R,UBERON:0001226,major calyx
+VH_F_major_calyx_R_a,UBERON:0001226,major calyx
+VH_F_major_calyx_R_b,UBERON:0001226,major calyx
+VH_F_major_calyx_R_c,UBERON:0001226,major calyx
+VH_F_renal_pelvis_R,UBERON:0001224,renal pelvis
+VH_F_right_ureter,UBERON:0001222,right ureter
+VH_F_kidney_calyx_L,UBERON:0006517,kidney calyx
+VH_F_minor_calyx_L,UBERON:0001227,minor calyx
+VH_F_minor_calyx_L_a,UBERON:0001227,minor calyx
+VH_F_minor_calyx_L_b,UBERON:0001227,minor calyx
+VH_F_minor_calyx_L_c,UBERON:0001227,minor calyx
+VH_F_minor_calyx_L_d,UBERON:0001227,minor calyx
+VH_F_minor_calyx_L_e,UBERON:0001227,minor calyx
+VH_F_minor_calyx_L_f,UBERON:0001227,minor calyx
+VH_F_minor_calyx_L_g,UBERON:0001227,minor calyx
+VH_F_minor_calyx_L_h,UBERON:0001227,minor calyx
+VH_F_minor_calyx_L_i,UBERON:0001227,minor calyx
+VH_F_minor_calyx_L_j,UBERON:0001227,minor calyx
+VH_F_major_calyx_L,UBERON:0001226,major calyx
+VH_F_major_calyx_L_a,UBERON:0001226,major calyx
+VH_F_major_calyx_L_b,UBERON:0001226,major calyx
+VH_F_major_calyx_L_c,UBERON:0001226,major calyx
+VH_F_major_calyx_L_d,UBERON:0001226,major calyx
+VH_F_renal_pelvis_L,UBERON:0001224,renal pelvis
+VH_F_left_ureter,UBERON:0001223,left ureter
+VH_F_urinary_bladder,UBERON:0001255,urinary bladder
+VH_F_fundus_of_urinary_bladder_dome,UBERON:0006082,fundus of urinary bladder
+VH_F_urinary_bladder_neck_smooth_muscle,UBERON:0004230,urinary bladder neck smooth muscle
+VH_F_fundus_of_urinary_bladder_base,UBERON:0006082,fundus of urinary bladder
+VH_F_trigone_of_urinary_bladder,UBERON:0001257,trigone of urinary bladder
+VH_F_ureteral_orifice_R,FMA:15939,Right ureteral orifice
+VH_F_ureteral_orifice_L,FMA:15940,Left ureteral orifice
+VH_F_circulatory_system,UBERON:0001009,circulatory system
+VH_F_heart,UBERON:0000948,heart
+VH_F_interventricular_septum,UBERON:0002094,interventricular septum
+VH_F_left_cardiac_atrium,UBERON:0002079,left cardiac atrium
+VH_F_left_ventricle,UBERON:0002084,heart left ventricle
+VH_F_right_cardiac_atrium,UBERON:0002078,right cardiac atrium
+VH_F_right_ventricle,UBERON:0002080,heart right ventricle
+VH_F_papillary_muscle_of_heart,UBERON:0002494,papillary muscle of heart
+VH_F_papillary_muscle_of_heart_ant,FMA:7264,Anterior papillary muscle of left ventricle
+VH_F_papillary_muscle_of_heart_antlat,FMA:7265,Anterolateral head of lateral papillary muscle of left ventricle
+VH_F_papillary_muscle_of_heart_med,FMA:7262,Septal papillary muscle of right ventricle
+VH_F_papillary_muscle_of_heart_pos,FMA:7261,Posterior papillary muscle of right ventricle
+VH_F_papillary_muscle_of_heart_posmed,FMA:7267,Posteromedial head of posterior papillary muscle of left ventricle
+VH_F_valve,UBERON:0003978,valve
+VH_F_aortic_valve,UBERON:0002137,aortic valve
+VH_F_pulmonary_valve,UBERON:0002146,pulmonary valve
+VH_F_mitral_valve,UBERON:0002135,mitral valve
+VH_F_tricuspid_valve,UBERON:0002134,tricuspid valve
+VH_F_blood_vasculature,UBERON:0004537,blood vasculature
+VH_F_left_uterine_artery,FMA:18831,Left uterine artery
+VH_F_right_uterine_artery,FMA:18830,Right uterine artery
+VH_F_left_uterine_vein,FMA:18898,Left uterine vein
+VH_F_right_uterine_vein,FMA:18897,Right uterine vein
+VH_F_blood_vasculature_of_eye,UBERON:0002203,Blood vasculature of eye
+VH_F_ophthalmic_vein_L,UBERON:0011191,ophthalmic vein
+VH_F_superior_ophthalmic_vein_L,FMA:51249,Left superior ophthalmic vein
+VH_F_inferior_ophthalmic_vein_L,FMA:51251,Left inferior ophthalmic vein
+VH_F_central_retinal_vein_L,FMA:51885,Left central retinal vein
+VH_F_ophthalmic_vein_R,UBERON:0011191,ophthalmic vein
+VH_F_superior_ophthalmic_vein_R,FMA:51248,Right superior ophthalmic vein
+VH_F_inferior_ophthalmic_vein_R,FMA:51250,Right inferior ophthalmic vein
+VH_F_central_retinal_vein_R,FMA:51884,Right central retinal vein
+VH_F_long_posterior_ciliary_artery_L,FMA:49958,Left long posterior ciliary artery
+VH_F_opthalmic_artery_L,UBERON:0001619,ophthalmic artery
+VH_F_central_retinal_artery_L,FMA:49881,Left central retinal artery
+VH_F_long_posterior_ciliary_artery_R,FMA:49957,Right long posterior ciliary artery
+VH_F_opthalmic_artery_R,UBERON:0001619,ophthalmic artery
+VH_F_central_retinal_artery_R,FMA:49880,Right central retinal artery
+VH_F_renal_artery,UBERON:0001184,renal artery
+VH_F_right_renal_artery,UBERON:0001185,right renal artery
+VH_F_left_renal_artery,UBERON:0001186,left renal artery
+VH_F_renal_vein,UBERON:0001140,renal vein
+VH_F_left_renal_vein,UBERON:0001142,left renal vein
+VH_F_right_renal_vein,UBERON:0001141,right renal vein
+VH_F_superior_mesenteric_vein,UBERON:0001138,superior mesenteric vein
+VH_F_superior_rectal_vein,UBERON:0035040,superior rectal artery
+VH_F_common_iliac_vein,UBERON:0001139,common iliac vein
+VH_F_left_common_iliac_vein,FMA:21388,Left common iliac vein
+VH_F_right_common_iliac_vein,FMA:21387,Right common iliac vein
+VH_F_left_colic_vein,FMA:15394,Left colic vein
+VH_F_right_colic_vein,FMA:15407,Right colic vein
+VH_F_ileocolic_vein,UBERON:0001219,ileocolic vein
+VH_F_middle_colic_vein,UBERON:0001218,middle colic vein
+VH_F_inferior_rectal_vein,FMA:21242,Inferior rectal vein
+VH_F_inferior_rectal_vein_L,FMA:21242,Inferior rectal vein
+VH_F_inferior_rectal_vein_R,FMA:21242,Inferior rectal vein
+VH_F_internal_iliac_vein,UBERON:0001317,internal iliac vein
+VH_F_internal_iliac_vein_L,UBERON:0001317,internal iliac vein
+VH_F_internal_iliac_vein_R,UBERON:0001317,internal iliac vein
+VH_F_internal_pudendal_vein,UBERON:0018252,internal pudendal vein
+VH_F_internal_pudendal_vein_L,UBERON:0018252,internal pudendal vein
+VH_F_internal_pudendal_vein_R,UBERON:0018252,internal pudendal vein
+VH_F_middle_rectal_vein,FMA:18893,Middle rectal vein
+VH_F_middle_rectal_vein_L,FMA:18895,Left middle rectal vein
+VH_F_middle_rectal_vein_R,FMA:18894,Right middle rectal vein
+VH_F_sigmoid_vein,FMA:15395,sigmoid vein
+VH_F_sigmoid_vein_a,FMA:15395,sigmoid vein
+VH_F_sigmoid_vein_c,FMA:15395,sigmoid vein
+VH_F_median_sacral_vein,UBERON:0006687,median sacral vein
+VH_F_sigmoid_vein_b,FMA:15395,sigmoid vein
+VH_F_inferior_pancreaticoduodenal_vein,FMA:0329299,Inferior pancreaticoduodenal vein
+VH_F_inferior_mesenteric_vein,UBERON:0001182,superior mesenteric artery
+VH_F_left_colic_artery,FMA:14826,Left colic artery
+VH_F_right_colic_artery,FMA:14811,Right colic artery
+VH_F_ileocolic_artery,UBERON:0035548,ileocolic artery
+VH_F_middle_colic_artery,UBERON:0001196,middle colic artery
+VH_F_celiac_trunk,FMA:14812,Celiac trunk
+VH_F_superior_rectal_artery,UBERON:0035040,superior rectal artery
+VH_F_superior_mesenteric_artery,UBERON:0001182,superior mesenteric artery
+VH_F_inferior_mesenteric_artery,UBERON:0001183,inferior mesenteric artery
+VH_F_marginal_artery_of_Drummond,FMA:14824,marginal colic artery
+VH_F_sigmoid_artery,UBERON:0035180,sigmoid artery
+VH_F_sigmoid_artery_c,UBERON:0035180,sigmoid artery
+VH_F_sigmoid_artery_b,UBERON:0035180,sigmoid artery
+VH_F_sigmoid_artery_a,UBERON:0035180,sigmoid artery
+VH_F_splenic_artery,UBERON:0001194,splenic artery
+VH_F_splenic_vein,UBERON:0003713,splenic vein
+VH_F_cystic_artery,UBERON:0039222,cystic artery
+VH_F_cystic_vein,UBERON:0035392,cystic vein
+VH_F_proper_hepatic_artery,FMA:14772,Hepatic artery proper
+VH_F_right_hepatic_artery,FMA:14778,Right hepatic artery
+VH_F_common_hepatic_artery,UBERON:0005436,common hepatic artery
+VH_F_left_hepatic_artery,FMA:14779,Left hepatic artery
+VH_F_hepatic_portal_vein,UBERON:0001639,hepatic portal vein
+VH_F_middle_hepatic_vein,FMA:14340,Middle hepatic vein
+VH_F_left_hepatic_vein,FMA:14339,Left hepatic vein
+VH_F_right_hepatic_vein,FMA:14338,Right hepatic vein
+VH_F_pulmonary_vein,UBERON:0002016,pulmonary vein
+VH_F_pulmonary_vein_L_sup,FMA:49916,left superior pulmonary vein
+VH_F_pulmonary_vein_R_inf,FMA:49913,left inferior pulmonary vein
+VH_F_pulmonary_vein_R_sup,FMA:49914,right superior pulmonary vein
+VH_F_pulmonary_vein_L_inf,FMA:49911,right inferior pulmonary vein
+VH_F_cardiac_vein,UBERON:0004148,cardiac vein
+VH_F_coronary_sinus,UBERON:0005438,coronary sinus
+VH_F_great_cardiac_vein,UBERON:0006958,great vein of heart
+VH_F_middle_cardiac_vein,UBERON:0009687,middle cardiac vein
+VH_F_oblique_vein_of_left_atrium,FMA:4715,Oblique vein of left atrium
+VH_F_left_marginal_vein,FMA:4708,left marginal vein
+VH_F_posterior_vein_of_left_ventricle,FMA:4712,Posterior vein of left ventricle
+VH_F_anterior_cardiac_vein,FMA:76767,Anterior cardiac vein
+VH_F_small_cardiac_vein,UBERON:0035374,small cardiac vein
+VH_F_vena_cava,UBERON:0004087,vena cava
+VH_F_superior_vena_cava,FMA:4720,superior vena cava
+VH_F_inferior_vena_cava,FMA:10951,inferior vena cava
+VH_F_inferior_vena_cava_a,FMA:10951,inferior vena cava
+VH_F_inferior_vena_cava_b,FMA:10951,inferior vena cava
+VH_F_left_anterior_descending_artery,FMA:8636,Anterior descending branch of left pulmonary artery
+VH_F_left_circumflex_artery,UBERON:0035422,circumflex branch of left coronary artery
+VH_F_diagonal_branch_of_left_anterior_descending_artery,FMA:3860,Diagonal branch of anterior descending branch of left coronary artery
+VH_F_left_coronary_artery,UBERON:0001626,left coronary artery
+VH_F_left_marginal_branch,FMA:3902,Left marginal artery
+VH_F_left_posterior_descending_branch_of_circumflex_branch_of_left_coronary_artery,FMA:322904,left posterior descending branch of circumflex branch of left coronary artery
+VH_F_posterior_left_ventricular_branch,FMA:13905,Posterior ventricular branch of circumflex coronary artery
+VH_F_right_coronary_artery,UBERON:0001625,right coronary artery
+VH_F_right_marginal_artery,FMA:3818,marginal branch of right coronary artery
+VH_F_pulmonary_artery,UBERON:0002012,pulmonary artery
+VH_F_pulmonary_artery_L,UBERON:0001652,left pulmonary artery
+VH_F_pulmonary_trunk,UBERON:0002333,pulmonary trunk
+VH_F_pulmonary_artery_R,UBERON:0001651,right pulmonary artery
+VH_F_aorta,UBERON:0000947,aorta
+VH_F_aortic_arch,UBERON:0001508,arch of aorta
+VH_F_ascending_aorta,UBERON:0001496,ascending aorta
+VH_F_descending_aorta,UBERON:0001514,descending aorta
+VH_F_descending_aorta_a,UBERON:0001514,descending aorta
+VH_F_descending_aorta_b,UBERON:0001514,descending aorta
+VH_F_left_common_carotid_artery,UBERON:0001536,left common carotid artery plus branches
+VH_F_left_common_carotid_artery_a,UBERON:0001536,left common carotid artery plus branches
+VH_F_left_common_carotid_artery_b,UBERON:0001536,left common carotid artery plus branches
+VH_F_left_subclavian_artery,UBERON:0001584,left subclavian artery
+VH_F_left_subclavian_artery_a,UBERON:0001584,left subclavian artery
+VH_F_left_subclavian_artery_b,UBERON:0001584,left subclavian artery
+VH_F_brachiocephalic_artery_b,UBERON:0001529,brachiocephalic artery
+VH_F_brachiocephalic_artery_a,UBERON:0001529,brachiocephalic artery
+VH_F_respiratory_system,UBERON:0001004,respiratory system
+VH_F_lungs,UBERON:0002048,lung
+VH_F_left_lungs_L,UBERON:0002168,left lung
+VH_F_hilum_L,UBERON:0004887,left lung hilus
+VH_F_L_lung_upper_lobe,UBERON:0008952,Upper Lobe of Left Lung
+VH_F_hilum_upper_L,UBERON:0004887,left lung hilus
+VH_F_lingula_superior_bronchopulmonary_segment,FMA:7374,Superior lingular bronchopulmonary segment
+VH_F_left_anterior_bronchopulmonary_segment,FMA:7373,Left Anterior Bronchopulmonary Segment
+VH_F_left_apical_bronchopulmonary_segment,FMA:7385,Left apical bronchopulmonary segment
+VH_F_left_posterior_bronchopulmonary_segment,FMA:7386,Left posterior bronchopulmonary segment
+VH_F_lingula_inferior_bronchopulmonary_segment,FMA:7375,Inferior lingular bronchopulmonary segment
+VH_F_L_lung_lower_lobe,UBERON:0008953,Lower Lobe of Left Lung
+VH_F_left_superior_bronchopulmonary_segment,FMA:7376,Left superior bronchopulmonary segment
+VH_F_left_posterior_basal_bronchopulmonary_segment,FMA:7380,Left posterior basal bronchopulmonary segment
+VH_F_left_anterior_basal_bronchopulmonary_segment,FMA:7378,left anterior basal bronchopulmonary segment
+VH_F_left_lateral_basal_bronchopulmonary_segment,FMA:7379,left Lateral Basal Bronchopulmonary Segment
+VH_F_left_medial_basal_bronchopulmonary_segment,FMA:7377,Left Medial Basal Bronchopulmonary Segment
+VH_F_hilum_lower_L,UBERON:0004887,left lung hilus
+VH_F_lungs_R,UBERON:0002167,right lung
+VH_F_hilum_R,UBERON:0004888,right lung hilus
+VH_F_R_lung_lower_lobe,UBERON:0002171,Lower Lobe of Right Lung
+VH_F_right_medial_basal_bronchopulmonary_segment,FMA:7365,Right Medial Basal Bronchopulmonary Segment
+VH_F_right_posterior_basal_bronchopulmonary_segment,FMA:7362,Right Posterior Basal Bronchopulmonary Segment
+VH_F_right_anterior_basal_bronchopulmonary_segment,FMA:7364,Right anterior basal bronchopulmonary segment
+VH_F_right_lateral_basal_bronchopulmonary_segment,FMA:7363,Right Lateral Basal Bronchopulmonary Segment
+VH_F_right_superior_bronchopulmonary_segment,FMA:7366,Right Superior Bronchopulmonary Segment
+VH_F_hilum_lower_R,UBERON:0004888,right lung hilus
+VH_F_R_lung_middle_lobe,UBERON:0002174,Middle Lobe of Right Lung
+VH_F_right_medial_bronchopulmonary_segment,FMA:7360,Right Medial Bronchopulmonary Segment
+VH_F_right_lateral_bronchopulmonary_segmennt,FMA:7361,Right Lateral Bronchopulmonary Segment
+VH_F_hilum_middle_R,UBERON:0004888,right lung hilus
+VH_F_R_lung_upper_lobe,UBERON:0002170,Upper Lobe of Right Lung
+VH_F_right_anterior_bronchopulmonary_segm,FMA:7359,Right Anterior Bronchopulmonary Segment
+VH_F_right_apical_bronchopulmonary_segment,FMA:7338,Right Apical Bronchopulmonary Segment
+VH_F_right_posterior_bronchopulmonary_segment,FMA:7339,Right Posterior Bronchopulmonary Segment
+VH_F_hilum_upper_R,UBERON:0004888,right lung hilus
+VH_F_larynx,UBERON:0001737,larynx
+VH_F_laryngeal_cartilage,UBERON:0001739,laryngeal cartilage
+VH_F_arytenoid_cartilage,UBERON:0001740,arytenoid cartilage
+VH_F_arytenoid_cartilage_R,FMA:55113,Right arytenoid cartilage
+VH_F_arytenoid_cartilage_L,FMA:55114,Left arytenoid cartilage
+VH_F_epiglotic_cartilage,UBERON:0001742,epiglottic cartilage
+VH_F_cricoid_cartilage,UBERON:0002375,cricoid cartilage
+VH_F_thyroid_cartilage,UBERON:0001738,thyroid cartilage
+VH_F_corniculate_cartilage,UBERON:0001741,corniculate cartilage
+VH_F_corniculate_cartilage_L,FMA:55116,Left corniculate cartilage
+VH_F_corniculate_cartilage_R,FMA:55115,Right corniculate cartilage
+VH_F_tracheobronchial_tree,UBERON:0007196,tracheobronchial tree
+VH_F_trachea_of_respiratory_system,UBERON:0003126,trachea of respiratory system
+VH_F_trachea,UBERON:0003126,trachea
+VH_F_tracheal_cartilage,UBERON:0003604,trachea cartilage
+VH_F_carina,UBERON:0006679,carina of trachea
+VH_F_bronchi,UBERON:0002185,bronchus
+VH_F_main_bronchi,UBERON:0002182,main bronchus
+VH_F_right_main_bronchus,UBERON:0002177,Right Main Bronchus
+VH_F_cartilage_of_main_bronchus_R,FMA:13143,Cartilage of right main bronchus
+VH_F_left_main_bronchus,UBERON:0002178,Left Main Bronchus
+VH_F_cartilage_of_main_bronchus_L,FMA:13144,Cartilage of left main bronchus
+VH_F_cartilage_of_lobar_bronchus_L,FMA:62659,Cartilage of lobar bronchus
+VH_F_cartilage_of_tertiary_bronchus_L,FMA:62662,Cartilage of segmental bronchus
+VH_F_lobar_bronchi_L,UBERON:0003405,lobar bronchus of left lung
+VH_F_left_superior_lobar_bronchus,UBERON:0012065,lobar bronchus of left lung upper lobe
+VH_F_left_inferior_lobar_bronchus,UBERON:0012066,lobar bronchus of left lung lower lobe
+VH_F_tertiary_bronchi_L,UBERON:0002184,Segmental bronchus
+VH_F_left_anterior_basal_bronchus,FMA:7506,Left anterior basal segmental bronchus
+VH_F_left_lingula_superior_bronchus,FMA:7430,Superior lingular bronchus
+VH_F_left_apical_bronchus,FMA:7426,Left apical segmental bronchus
+VH_F_left_posterior_basal_bronchus,FMA:7508,Left posterior basal segmental bronchus
+VH_F_left_medial_basal_bronchus,FMA:7505,Left medial basal segmental bronchus
+VH_F_left_superior_bronchus,FMA:7504,Left superior segmental bronchus
+VH_F_left_anterior_bronchus,FMA:7428,Left anterior segmental bronchus
+VH_F_left_posterior_bronchus,FMA:7427,Left posterior segmental bronchus
+VH_F_left_lateral_basal_bronchus,FMA:7507,Left lateral basal segmental bronchus
+VH_F_left_lingula_inferior_bronchi,FMA:7431,Inferior lingular bronchus
+VH_F_cartilage_of_lobar_bronchus_R,FMA:62659,Cartilage of lobar bronchus
+VH_F_cartilage_of_tertiary_bronchus_R,FMA:62662,Cartilage of segmental bronchus
+VH_F_lobar_bronchus_R,UBERON:0003404,lobar bronchus of right lung
+VH_F_right_middle_lobar_bronchus,FMA:7401,Middle lobar bronchus
+VH_F_right_superior_lobar_bronchus,FMA:7397,Right superior lobar bronchus
+VH_F_right_inferior_lobar_bronchus,FMA:7404,Right inferior lobar bronchus
+VH_F_tertiary_bronchi_R,UBERON:0002184,Segmental bronchus
+VH_F_right_anterior_bronchus,FMA:7400,Right anterior segmental bronchus
+VH_F_right_lateral_basal_bronchus,FMA:7419,Right lateral basal segmental bronchus
+VH_F_right_lateral_bronchus,FMA:7402,Lateral segmental bronchus
+VH_F_right_medial_bronchus,FMA:7403,Medial segmental bronchus
+VH_F_right_medial_basal_bronchus,FMA:7417,Right medial basal segmental bronchus
+VH_F_right_posterior_basal_bronchus,FMA:7420,Right posterior basal segmental bronchus
+VH_F_right_posterior_bronchus,FMA:7399,Right posterior segmental bronchus
+VH_F_right_superior_bronchus,FMA:7416,Right superior segmental bronchus
+VH_F_right_apical_bronchus,FMA:7398,Right apical segmental bronchus
+VH_F_right_anterior_basal_bronchus,FMA:7418,Right anterior basal segmental bronchus
+VH_F_lymphatic_system,UBERON:0002465,lymphoid system
+VH_F_spleen,UBERON:0002106,spleen
+VH_F_gastric_surface_of_spleen,FMA:15837,gastric surface of spleen
+VH_F_diaphragmatic_surface_of_spleen,FMA:15828,diaphragmatic surface of spleen
+VH_F_colic_surface_of_spleen,FMA:15838,colic surface of spleen
+VH_F_hilum_of_spleen,UBERON:0001248,hilum of spleen
+VH_F_renal_surface_of_spleen,FMA:15839,renal surface of spleen
+VH_F_thymus,UBERON:0002370,thymus
+VH_F_thymus_lobe_L,UBERON:0005457,left thymus lobe
+VH_F_thymus_lobe_R,UBERON:0005469,right thymus lobe
+Yao_lymph_node,UBERON:0002509,mesenteric lymph node
+Yao_afferent_lymphatic_vessel,UBERON:0010396,afferent lymphatic vessel
+Yao_capsule_of_lymph_node,UBERON:0002194,capsule of lymph node
+Yao_follicles,UBERON:0010748,lymph node follicle
+Yao_efferent_lymph_node,UBERON:0010397,efferent lymphatic vessel
+Yao_medulla_of_lymph_node,UBERON:0002007,medulla of lymph node
+Yao_paracortex,UBERON:0010417,lymph node T cell domain
+Yao_blood_vasculature,UBERON:0004536,Lymph vasculature
+VH_F_skeletal_system,UBERON:0001434,skeletal system
+VH_F_sternum,UBERON:0000975,sternum
+VH_F_manubrium,UBERON:2001553,manubrium
+VH_F_pelvis,UBERON:0001270,bony pelvis
+VH_F_sacrum,UBERON:0003690,fused sacrum
+VH_F_coccyx,UBERON:0001350,coccyx
+VH_F_ilium,UBERON:0001273,ilium
+VH_F_ilium_compact_bone,UBERON:0001439,compact bone tissue
+VH_F_ilium_compact_bone_R,UBERON:0001439,compact bone tissue
+VH_F_ilium_compact_bone_L,UBERON:0001439,compact bone tissue
+VH_F_ilium_spongy_bone,UBERON:0002483,trabecular bone tissue
+VH_F_ilium_spongy_bone_L,UBERON:0002483,trabecular bone tissue
+VH_F_ilium_spongy_bone_R,UBERON:0002483,trabecular bone tissue
+VH_F_vertebral_column,UBERON:0002412,vertebra
+VH_F_vertebra,,
+VH_F_thoracic_vertebra_1,UBERON:0004626,thoracic vertebra 1
+VH_F_thoracic_vertebra_2,UBERON:0004627,thoracic vertebra 2
+VH_F_thoracic_vertebra_3,UBERON:0004628,thoracic vertebra 3
+VH_F_thoracic_vertebra_4,UBERON:0004629,thoracic vertebra 4
+VH_F_thoracic_vertebra_5,UBERON:0004630,thoracic vertebra 5
+VH_F_thoracic_vertebra_6,UBERON:0004631,thoracic vertebra 6
+VH_F_thoracic_vertebra_7,UBERON:0004632,thoracic vertebra 7
+VH_F_thoracic_vertebra_8,UBERON:0011050,thoracic vertebra 8
+VH_F_thoracic_vertebra_9,UBERON:0004633,thoracic vertebra 9
+VH_F_thoracic_vertebra_10,UBERON:0004634,thoracic vertebra 10
+VH_F_thoracic_vertebra_11,UBERON:0004635,thoracic vertebra 11
+VH_F_thoracic_vertebra_12,UBERON:0004636,thoracic vertebra 12
+VH_F_cervical_vertebra_1,UBERON:0001092,vertebral bone 1
+VH_F_cervical_vertebra_2,UBERON:0001093,vertebral bone 2
+VH_F_cervical_vertebra_3,UBERON:0004612,mammalian cervical vertebra 3
+VH_F_cervical_vertebra_4,UBERON:0004613,mammalian cervical vertebra 4
+VH_F_cervical_vertebra_5,UBERON:0004614,mammalian cervical vertebra 5
+VH_F_cervical_vertebra_6,UBERON:0004615,mammalian cervical vertebra 6
+VH_F_cervical_vertebra_7,UBERON:0004616,mammalian cervical vertebra 7
+VH_F_lumbar_vertebra_5,UBERON:0004621,lumbar vertebra 5
+VH_F_lumbar_vertebra_4,UBERON:0004620,lumbar vertebra 4
+VH_F_lumbar_vertebra_3,UBERON:0004619,lumbar vertebra 3
+VH_F_lumbar_vertebra_2,UBERON:0004618,lumbar vertebra 2
+VH_F_lumbar_vertebra_1,UBERON:0004617,lumbar vertebra 1
+VH_F_intervertebral_joint,UBERON:0001468,intervertebral joint
+VH_F_intervertebral_disk,UBERON:0001066,intervertebral disk
+VH_F_intervertebral_disk_of_cervical_vertebra,UBERON:0007252,intervertebral disk of cervical vertebra
+VH_F_intervertebral_disk_of_axis,UBERON:0007265,intervertebral disk of axis
+VH_F_intervertebral_disk_of_third_cervical_vertebra,UBERON:0007260,intervertebral disk of third cervical vertebra
+VH_F_intervertebral_disk_of_fourth_cervical_vertebra,UBERON:0007261,intervertebral disk of fourth cervical vertebra
+VH_F_intervertebral_disk_of_fifth_cervical_vertebra,UBERON:0007262,intervertebral disk of fifth cervical vertebra
+VH_F_intervertebral_disk_of_sixth_cervical_vertebra,UBERON:0007263,intervertebral disk of sixth cervical vertebra
+VH_F_intervertebral_disk_of_seventh_cervical_vertebra,UBERON:0007264,intervertebral disk of seventh cervical vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_cervical_vertebra,FMA:13554,nucleus pulposus of intervertebral disk of cervical vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_axis,FMA:24926,nucleus pulposus of intervertebral disk of axis
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_third_cervical_vertebra,FMA:24927,nucleus pulposus of intervertebral disk of third cervical vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_fourth_cervical_vertebra,FMA:24928,nucleus pulposus of intervertebral disk of fourth cervical vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_fifth_cervical_vertebra,FMA:24929,nucleus pulposus of intervertebral disk of fifth cervical vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_sixth_cervical_vertebra,FMA:24930,nucleus pulposus of intervertebral disk of sixth cervical vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_seventh_cervical_vertebra,FMA:24931,nucleus pulposus of intervertebral disk of seventh cervical vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_thoracic_vertebra,FMA:10456,nucleus pulposus of intervertebral disk of thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_first_thoracic_vertebra,FMA:10459,nucleus pulposus of intervertebral disk of first thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_second_thoracic_vertebra,FMA:13497,nucleus pulposus of intervertebral disk of second thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_third_thoracic_vertebra,FMA:13510,nucleus pulposus of intervertebral disk of third thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_fourth_thoracic_vertebra,FMA:13511,nucleus pulposus of intervertebral disk of fourth thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_fifth_thoracic_vertebra,FMA:13512,nucleus pulposus of intervertebral disk of fifth thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_sixth_thoracic_vertebra,FMA:13513,nucleus pulposus of intervertebral disk of sixth thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_seventh_thoracic_vertebra,FMA:13514,nucleus pulposus of intervertebral disk of seventh thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_eighth_thoracic_vertebra,FMA:13515,nucleus pulposus of intervertebral disk of eighth thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_ninth_thoracic_vertebra,FMA:13516,nucleus pulposus of intervertebral disk of ninth thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_tenth_thoracic_vertebra,FMA:13517,nucleus pulposus of intervertebral disk of tenth thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_eleventh_thoracic_vertebra,FMA:13518,nucleus pulposus of intervertebral disk of eleventh thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_twelfth_thoracic_vertebra,FMA:13519,nucleus pulposus of intervertebral disk of twelfth thoracic vertebra
+VH_F_intervertebral_disk_of_thoracic_vertebra,UBERON:0007254,intervertebral disk of thoracic vertebra
+VH_F_intervertebral_disk_of_first_thoracic_vertebra,FMA:10458,intervertebral disk of first thoracic vertebra
+VH_F_intervertebral_disk_of_second_thoracic_vertebra,FMA:13495,intervertebral disk of second thoracic vertebra
+VH_F_intervertebral_disk_of_third_thoracic_vertebra,FMA:13500,intervertebral disk of third thoracic vertebra
+VH_F_intervertebral_disk_of_fourth_thoracic_vertebra,FMA:13501,intervertebral disk of fourth thoracic vertebra
+VH_F_intervertebral_disk_of_fifth_thoracic_vertebra,FMA:13502,intervertebral disk of fifth thoracic vertebra
+VH_F_intervertebral_disk_of_sixth_thoracic_vertebra,FMA:13503,intervertebral disk of sixth thoracic vertebra
+VH_F_intervertebral_disk_of_seventh_thoracic_vertebra,FMA:13504,intervertebral disk of seventh thoracic vertebra
+VH_F_intervertebral_disk_of_eighth_thoracic_vertebra,FMA:13505,intervertebral disk of eighth thoracic vertebra
+VH_F_intervertebral_disk_of_ninth_thoracic_vertebra,FMA:13506,intervertebral disk of ninth thoracic vertebra
+VH_F_intervertebral_disk_of_tenth_thoracic_vertebra,FMA:13507,intervertebral disk of tenth thoracic vertebra
+VH_F_intervertebral_disk_of_eleventh_thoracic_vertebra,FMA:13508,intervertebral disk of eleventh thoracic vertebra
+VH_F_intervertebral_disk_of_twelfth_thoracic_vertebra,FMA:13509,intervertebral disk of twelfth thoracic vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_lumbar_vertebra,FMA:16062,nucleus pulposus of intervertebral disk of lumbar vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_first_lumbar_vertebra,FMA:16063,nucleus pulposus of intervertebral disk of first lumbar vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_second_lumbar_vertebra,FMA:16064,nucleus pulposus of intervertebral disk of second lumbar vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_third_lumbar_vertebra,FMA:16065,nucleus pulposus of intervertebral disk of third lumbar vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_fourth_lumbar_vertebra,FMA:16066,nucleus pulposus of intervertebral disk of fourth lumbar vertebra
+VH_F_nucleus_pulposus_of_intervertebral_disk_of_fifth_lumbar_vertebra,FMA:16067,nucleus pulposus of intervertebral disk of fifth lumbar vertebra
+VH_F_intervertebral_disk_of_lumbar_vertebra,UBERON:0007255,intervertebral disk of lumbar vertebra
+VH_F_intervertebral_disk_of_first_lumbar_vertebra,FMA:16033,intervertebral disk of first lumbar vertebra
+VH_F_intervertebral_disk_of_second_lumbar_vertebra,FMA:16034,intervertebral disk of second lumbar vertebra
+VH_F_intervertebral_disk_of_third_lumbar_vertebra,FMA:16035,intervertebral disk of third lumbar vertebra
+VH_F_intervertebral_disk_of_fourth_lumbar_vertebra,FMA:16036,intervertebral disk of fourth lumbar vertebra
+VH_F_intervertebral_disk_of_fifth_lumbar_vertebra,FMA:16037,intervertebral disk of fifth lumbar vertebra
+VH_F_intervertebral_disk_of_sixth_lumbar_vertebra,UBERON:0007255,intervertebral disk of sixth lumbar vertebra
+VH_F_right_tibial_collateral_ligament,FMA:44601,Right tibial collateral ligament
+VH_F_anterior_cruciate_ligament_of_knee_R,FMA:44615,Right anterior cruciate ligament
+VH_F_posterior_cruciate_ligament_of_knee_R,FMA:44618,Right posterior cruciate ligament
+VH_F_anterolateral_ligament_of_knee_R,UBERON:0014899,anterolateral ligament of knee
+VH_F_fibular_collateral_ligament_R,FMA:44609,Right fibular collateral ligament
+VH_F_patellar_ligament_R,FMA:44585,Right patellar ligament
+VH_F_knee_R,FMA:24977,Right knee
+VH_F_meniscus_R,FMA:64019,Articular disk of knee joint
+VH_F_knee_joint_R,FMA:35176,Right knee joint
+VH_F_femur_R,FMA:24474,Right femur
+VH_F_trochlear_groove_R,FMA:43746,Patellar surface of right femur
+VH_F_articular_cartilage_of_knee_R,FMA:33189,Articular cartilage of distal epiphysis of right femur
+VH_F_medial_condyle_of_right_femur_sup,FMA:32862,Medial condyle of right femur
+VH_F_lateral_condyle_of_femur_sup_R,FMA:32860,Lateral condyle of right femur
+VH_F_medial_condyle_of_right_femur_inf,FMA:32862,Medial condyle of right femur
+VH_F_lateral_condyle_of_femur_inf_R,FMA:32860,Lateral condyle of right femur
+VH_F_lateral_condyle_of_femur_frontal_R,FMA:32860,Lateral condyle of right femur
+VH_F_distal_most_point_of_medial_condyle_R,UBERON:7500033,distal-most point of medial condyle of femur
+VH_F_intercondylar_fossa_R,FMA:43749,Intercondylar fossa of right femur
+VH_F_tibia_R,FMA:24477,Right tibia
+VH_F_fibula_R,FMA:24480,Right fibula
+VH_F_patella_R,FMA:24486,Right patella
+VH_F_anterolateral_ligament_of_knee_L,UBERON:0014899,anterolateral ligament of knee
+VH_F_fibular_collateral_ligament_L,FMA:44610,Left fibular collateral ligament
+VH_F_patellar_ligament_L,FMA:44586,Left patellar ligament
+VH_F_left_tibial_collateral_ligament,FMA:44602,Left tibial collateral ligament
+VH_F_anterior_cruciate_ligament_of_knee_L,FMA:44616,Left anterior cruciate ligament
+VH_F_posterior_cruciate_ligament_of_knee_L,FMA:44619,Left posterior cruciate ligament
+VH_F_knee_L,FMA:24978,Left knee
+VH_F_meniscus_L,FMA:64019,Articular disk of knee joint
+VH_F_knee_joint_L,FMA:35177,Left knee joint
+VH_F_femur_L,FMA:24475,Left femur
+VH_F_intercondylar_fossa_L,FMA:43750,Intercondylar fossa of left femur
+VH_F_trochlear_groove_L,FMA:43747,Patellar surface of left femur
+VH_F_articular_cartilage_of_knee_L,FMA:33190,Articular cartilage of distal epiphysis of left femur
+VH_F_medial_condyle_of_left_femur_inf,FMA:32863,Medial condyle of left femur
+VH_F_lateral_condyle_of_femur_inf_L,FMA:32861,Lateral condyle of left femur
+VH_F_lateral_condyle_of_femur_frontal_L,FMA:32861,Lateral condyle of left femur
+VH_F_distal_most_point_of_medial_condyle_L,UBERON:7500033,distal-most point of medial condyle of femur
+VH_F_lateral_condyle_of_femur_sup_L,FMA:32861,Lateral condyle of left femur
+VH_F_medial_condyle_of_left_femur_sup,FMA:32863,Medial condyle of left femur
+VH_F_patella_L,FMA:24487,Left patella
+VH_F_tibia_L,FMA:24478,Left tibia
+VH_F_fibula_L,FMA:24481,Left fibula

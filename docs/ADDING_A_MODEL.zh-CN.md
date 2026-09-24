@@ -2,7 +2,7 @@
 
 [English](ADDING_A_MODEL.md) · [架构说明](ARCHITECTURE.md)
 
-项目采用 **Vue 3 + 原生 Three.js**。太阳系是第一个已实现主题；人体结构暂未接入。
+项目采用 **Vue 3 + 原生 Three.js**。太阳系与人体已作为独立主题接入；[人体模块说明](../src/modules/human-anatomy/README.md)提供完整接入实例及数据范围说明。
 新增主题通过代码贡献完成，不需要重做首页，也不需要修改太阳系渲染器。
 
 ## 1. 创建并运行模板
@@ -143,7 +143,7 @@ Vite 会处理模块相对的 `new URL(..., import.meta.url)` 和 `?url` 导入�
 必要时在 `THIRD_PARTY.md` 加入资产许可。项目代码的 MIT 许可不会覆盖第三方模型的许可。
 尽量保留原始依据、获取步骤和校验值，便于其他贡献者核查。
 
-以后接入人体结构时，明确具体结构范围、样本／模型的适用范围、简化和缺失；不能把通用模型
+接入人体结构时，明确具体结构范围、样本／模型的适用范围、简化和缺失；不能把通用模型
 说成某个真实个体的准确解剖，也不能默认为诊断工具。等模型、许可、资料说明准备好后再注册。
 
 通过 `@/i18n/index.js` 获取共享的 `locale`，默认英语。
@@ -152,16 +152,19 @@ Vite 会处理模块相对的 `new URL(..., import.meta.url)` 和 `?url` 导入�
 
 ## 6. 验证与提交 PR
 
+新增主题只需验证自己的数据、渲染与交互，以及共享外壳的接入流程，**不依赖运行或修改其他主题的测试**。
+下面以人体模块为例；贡献其他主题时，使用该主题自己的测试脚本：
+
 ```sh
-npm test
+npm run test:anatomy:data
 npx playwright install chromium
+npm run test:anatomy
 npm run test:shell
-npm run test:browser
-npm run test:earth
-npm run test:imagery
 npm run build
-npm run test:production
+npm run test:anatomy:production
 ```
+
+全仓库回归由 CI 另外执行。只有改动共享行为时，才按影响范围补测关联模块。
 
 Windows 可设置 `BROWSER_CHANNEL=msedge` 使用已安装的 Edge。
 `test:shell` 会临时生成并注入一个模板模块，验证不依赖天文数据的第二个模型可以运行；

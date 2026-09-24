@@ -53,12 +53,12 @@ unmount. Browser tests actually unmount and remount the Vue application.
   module. Visiting the library, guide or another subject does not load it.
   The Vue application and Three.js drivers are compiled with Vite.
 
-For a future anatomy subject, first choose appropriately licensed assets and
-sources. Then add its independent view/driver and register a real module. Its
-units, camera ranges, categories, descriptions and validation should belong to
-that module; do not reuse astronomical kilometre assumptions or solar body
-fields. Extract a shared component only when two implemented subjects need it.
-No anatomy assets, medical claims or anatomy routes are implemented now.
+`src/modules/human-anatomy/` follows this contract with local BodyParts3D GLBs,
+metre units, its own camera, layer controls and evidence panels. Native Three.js
+starts on mount and cancels downloads/disposes GPU objects on unmount. Traditional
+meridian diagrams are separate from source anatomy. Neural coverage is partial;
+see its README. It does not import solar data or reuse astronomical body fields.
+Extract a shared component only when implemented subjects actually need it.
 
 ## Internationalization and evidence
 

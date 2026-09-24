@@ -1,0 +1,40 @@
+{
+  "source": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.10/assets/3d-vh-f-united.glb",
+  "doi": "https://doi.org/10.48539/HBM637.DWBM.744",
+  "license": "CC-BY-4.0",
+  "sha256": "95f0c3d2f918582608692ca1139e8bdb18c147a16470e9ee9af8b276bd77c422",
+  "translationMetres": [
+    0,
+    0.8,
+    0.12
+  ],
+  "simplifier": "meshoptimizer 1.2.0",
+  "maximumSimplifierErrorMetres": 0.0005,
+  "outputs": {
+    "skeleton": {
+      "bytes": 7637284,
+      "sha256": "8e4bfda2fd061726562c6d692569c4dc74f7107e577688c5160707ab98330d2d",
+      "parts": 89
+    },
+    "arteries": {
+      "bytes": 2365332,
+      "sha256": "366b4964bc6a9af64a12f8cd8b7ea790b5d5b6fc75472de362226ac4232eb3f0",
+      "parts": 53
+    },
+    "veins": {
+      "bytes": 2629444,
+      "sha256": "340eaf0f5167e605588878de8cac948fbb9f9f8bb8b5b719f281039ecec81758",
+      "parts": 57
+    },
+    "nerves": {
+      "bytes": 11184532,
+      "sha256": "f2248397fd57941c8ce2d814af4a93caa1f2fa0d6e33f31a1ae11810a46fb09d",
+      "parts": 316
+    },
+    "surface": {
+      "bytes": 292812,
+      "sha256": "e159c63e9e096be795739c79bb8e08c66ec0fdb40ed2777e54aa5bd71ba66197",
+      "parts": 1
+    }
+  }
+}

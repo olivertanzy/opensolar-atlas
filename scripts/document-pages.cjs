@@ -3,11 +3,12 @@ const path=require('node:path');
 const MarkdownIt=require('markdown-it');
 
 const documentSources=['README.md','README.zh-CN.md','CONTRIBUTING.md','THIRD_PARTY.md','docs/DATA.md','docs/ARCHITECTURE.md','docs/OPEN_SOURCE.md','docs/EARTH.md','docs/ADDING_A_MODEL.md','docs/ADDING_A_MODEL.zh-CN.md'];
+documentSources.push('src/modules/human-anatomy/README.md');
 
 function renderDocument(source,name){
  const md=new MarkdownIt({html:false,linkify:false});
  const escape=md.utils.escapeHtml,zh=name.includes('zh-CN'),lang=zh?'zh-CN':'en';
- const base=name.startsWith('docs/')?'../':'./';
+ const depth=name.split('/').length-1,base=depth?'../'.repeat(depth):'./';
  const tokens=md.parse(source,{}),headings=[];let title='OpenSolar Atlas',section=0;
  for(let i=0;i<tokens.length;i++){
   if(tokens[i].type==='heading_open'){

@@ -3,8 +3,9 @@
 [简体中文](ADDING_A_MODEL.zh-CN.md) · [Architecture](ARCHITECTURE.md)
 
 OpenSolar Atlas is a Vue 3 application with native Three.js subject modules.
-The solar system is the first implemented subject. Anatomy is a future extension,
-not an included asset or a medical product. You can contribute a new subject
+The solar system and human anatomy are independent subjects. The
+[anatomy module](../src/modules/human-anatomy/README.md) is a worked contribution
+with explicit coverage limits, not a medical product. You can contribute a new subject
 without changing the home page, application navigation or solar-system renderer.
 
 ## 1. Create and run a module
@@ -160,7 +161,7 @@ the asset license in `THIRD_PARTY.md` where applicable; the repository's MIT
 license does not override a third party's asset license. Retain raw evidence or
 retrieval instructions and checksums when practical.
 
-For a future anatomy contribution, document the specific anatomical structures,
+For an anatomy contribution, document the specific anatomical structures,
 sample/model scope, simplifications and source limitations. Do not imply that a
 generic model is an individual person's anatomy or a diagnostic instrument.
 Add the model only after its assets, reuse rights and descriptions are ready.
@@ -172,16 +173,22 @@ unreviewed scientific names in their source language and label them as such.
 
 ## 6. Verify and submit
 
+New subjects test their own data, renderer and interactions, plus shared-shell
+integration. They do **not** depend on running or changing another subject's tests.
+For example, the human module uses these independent commands (replace its test
+scripts with your own when contributing a different subject):
+
 ```sh
-npm test
+npm run test:anatomy:data
 npx playwright install chromium
+npm run test:anatomy
 npm run test:shell
-npm run test:browser
-npm run test:earth
-npm run test:imagery
 npm run build
-npm run test:production
+npm run test:anatomy:production
 ```
+
+The repository CI separately runs the full regression suite across all subjects.
+Only changes to shared behavior require expanding local checks to affected modules.
 
 On Windows, `BROWSER_CHANNEL=msedge` selects installed Edge. `test:shell`
 generates and injects the starter in a temporary test server: it verifies a

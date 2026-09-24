@@ -1,8 +1,10 @@
 # OpenSolar Atlas / 开放 3D 模型库
 
+**[在线预览：atlas.fancivision.com](https://atlas.fancivision.com/)**
+
 基于 Vue 3 + 原生 Three.js 的开放 3D 模型库，太阳系是第一个已接入主题。框架提供模型库、贡献指南、统一工作台和手机侧栏，不同主题独立管理模型、单位、相机和资料。使用 Node.js 20 或更新版本，执行 `npm ci`、`npm run dev`，打开终端显示的本地地址。生产预览执行 `npm run build`、`npm run preview`；部署时上传 `dist/`。Vue 模块需要 HTTP 服务，不再支持双击源码 `index.html`。
 
-新增 3D 结构请看[中文接入指南](docs/ADDING_A_MODEL.zh-CN.md)或[English guide](docs/ADDING_A_MODEL.md)。执行 `npm run create:model -- my-structure` 可生成能直接运行的 Vue + Three.js 模板，注册后模型库自动显示入口。人体模型尚未提供，模板使用明确标注的一米立方体演示接入。
+新增 3D 结构请看[中文接入指南](docs/ADDING_A_MODEL.zh-CN.md)或[English guide](docs/ADDING_A_MODEL.md)。执行 `npm run create:model -- my-structure` 可生成能直接运行的 Vue + Three.js 模板，注册后模型库自动显示入口。人体模块已按此流程接入：骨骼、动静脉、局部神经结构及单独的传统经络示意。可切换男性 BodyParts3D 与女性 HRA 独立样本，支持头部剖开观察。女性骨架覆盖不完整，神经另含脊髓分段；两种样本均不含四肢周围神经。经络不是实测定位，暂未配准至女性样本。见[人体来源与范围](src/modules/human-anatomy/README.md)，访问 `?model=human-anatomy` 体验。
 
 首页进入模型库，`?model=solar-system` 打开太阳系，`?view=guide` 打开贡献指南；原有 `?body=...` 链接仍兼容。打开模型库或其他模型不加载太阳系大型数据。
 

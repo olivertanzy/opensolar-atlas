@@ -8,18 +8,22 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node scripts/check-data.cjs && node --test scripts/atlas.test.js scripts/earth.test.js scripts/earth-imagery.test.js scripts/documents.test.js",
+    "test": "node scripts/check-data.cjs && node --test scripts/atlas.test.js scripts/earth.test.js scripts/earth-imagery.test.js scripts/documents.test.js scripts/anatomy.test.js scripts/anatomy-rendering.test.js",
     "test:browser": "node scripts/verify.cjs",
     "build": "node scripts/build-site.cjs",
     "test:production": "node scripts/verify-production.cjs",
     "test:earth": "node scripts/verify-earth.cjs",
     "test:imagery": "node scripts/verify-imagery.cjs",
     "create:model": "node scripts/create-model.cjs",
-    "test:shell": "node scripts/verify-shell.cjs"
+    "test:shell": "node scripts/verify-shell.cjs",
+    "test:anatomy": "node scripts/verify-anatomy.cjs",
+    "test:anatomy:data": "node --test scripts/anatomy.test.js scripts/anatomy-rendering.test.js",
+    "test:anatomy:production": "node scripts/verify-anatomy.cjs --production"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "5.2.4",
     "markdown-it": "15.0.2",
+    "meshoptimizer": "1.2.0",
     "playwright": "1.58.2",
     "vite": "6.4.3"
   },

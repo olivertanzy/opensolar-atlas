@@ -1,0 +1,192 @@
+{
+  "$schema": "https://cdn.humanatlas.io/digital-objects/schema/ref-organ-metadata/latest/assets/schema.json",
+  "@context": "https://cdn.humanatlas.io/digital-objects/schema/ref-organ-metadata/latest/assets/schema.context.jsonld",
+  "@type": "Container",
+  "id": "https://lod.humanatlas.io/ref-organ/united-female/v1.10",
+  "title": "united-female (v1.10) graph data",
+  "description": "The graph representation of the 3D Reference Organ Set for United, Female dataset.",
+  "version": "v1.10",
+  "creators": [
+    {
+      "id": "https://github.com/hubmapconsortium/hra-do-processor",
+      "label": "HRA Digital Object Processor",
+      "conforms_to": "SoftwareApplication",
+      "name": "HRA Digital Object Processor",
+      "version": "0.10.0",
+      "target_product": {
+        "code_repository": "https://github.com/hubmapconsortium/hra-do-processor",
+        "see_also": "https://github.com/hubmapconsortium/hra-do-processor/commit/cd8d578a4c9da7c0539008bc2742971b4a545121"
+      },
+      "type_of": [
+        "schema:SoftwareApplication"
+      ]
+    }
+  ],
+  "creation_date": "2026-06-09",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "distributions": [
+    {
+      "id": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#json",
+      "label": "Graph data distribution united-female (v1.10) in JSON format",
+      "title": "Graph data distribution united-female (v1.10) in JSON format",
+      "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.10/graph.json",
+      "accessUrl": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#json",
+      "mediaType": "application/json"
+    },
+    {
+      "id": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#turtle",
+      "label": "Graph data distribution united-female (v1.10) in Turtle format",
+      "title": "Graph data distribution united-female (v1.10) in Turtle format",
+      "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.10/graph.ttl",
+      "accessUrl": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#turtle",
+      "mediaType": "text/turtle"
+    },
+    {
+      "id": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#jsonld",
+      "label": "Graph data distribution united-female (v1.10) in JSON-LD format",
+      "title": "Graph data distribution united-female (v1.10) in JSON-LD format",
+      "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.10/graph.jsonld",
+      "accessUrl": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#jsonld",
+      "mediaType": "application/ld+json"
+    },
+    {
+      "id": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#rdfxml",
+      "label": "Graph data distribution united-female (v1.10) in RDF/XML format",
+      "title": "Graph data distribution united-female (v1.10) in RDF/XML format",
+      "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.10/graph.xml",
+      "accessUrl": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#rdfxml",
+      "mediaType": "application/rdf+xml"
+    },
+    {
+      "id": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#ntriples",
+      "label": "Graph data distribution united-female (v1.10) in N-Triples format",
+      "title": "Graph data distribution united-female (v1.10) in N-Triples format",
+      "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.10/graph.nt",
+      "accessUrl": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#ntriples",
+      "mediaType": "application/n-triples"
+    },
+    {
+      "id": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#nquads",
+      "label": "Graph data distribution united-female (v1.10) in N-Quads format",
+      "title": "Graph data distribution united-female (v1.10) in N-Quads format",
+      "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.10/graph.nq",
+      "accessUrl": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#nquads",
+      "mediaType": "application/n-quads"
+    }
+  ],
+  "label": "united-female (v1.10) graph data",
+  "name": "united-female",
+  "type": "ref-organ",
+  "publisher": "HuBMAP",
+  "see_also": "https://purl.humanatlas.io/ref-organ/united-female/v1.10",
+  "was_derived_from": {
+    "id": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#raw-data",
+    "label": "3D Reference Organ Set for United, Female",
+    "title": "3D Reference Organ Set for United, Female",
+    "description": "This reference organ, Female-united set (https://humanatlas.io/3d-reference-library) was created using data from the\nVisible Human Dataset, provided by the National Library of Medicine (Spitzer and Whitlock 2002).\n\n**Bibliography:**\n\n* Spitzer, Victor M., and David G. Whitlock. 2002. “The Visible Human Dataset: The Anatomical Platform for Human Simulation.” *The Anatomical Record* 253 (2): 49–57. https://doi.org/10.1002/(SICI)1097-0185(199804)253:2<49::AID-AR8>3.0.CO;2-9.",
+    "creators": [
+      {
+        "id": "https://orcid.org/0000-0003-4066-7531",
+        "label": "Kristen Browne",
+        "conforms_to": "Person",
+        "fullName": "Kristen Browne",
+        "firstName": "Kristen",
+        "lastName": "Browne",
+        "orcid": "0000-0003-4066-7531",
+        "type_of": [
+          "schema:Person"
+        ]
+      },
+      {
+        "id": "https://orcid.org/0000-0002-3333-5646",
+        "label": "Heidi Schlehlein",
+        "conforms_to": "Person",
+        "fullName": "Heidi Schlehlein",
+        "firstName": "Heidi",
+        "lastName": "Schlehlein",
+        "orcid": "0000-0002-3333-5646",
+        "type_of": [
+          "schema:Person"
+        ]
+      }
+    ],
+    "reviewers": [
+      {
+        "id": "https://orcid.org/0000-0002-6703-7647",
+        "label": "Bruce W. Herr II",
+        "conforms_to": "Person",
+        "fullName": "Bruce W. Herr II",
+        "firstName": "Bruce",
+        "lastName": "Herr",
+        "orcid": "0000-0002-6703-7647",
+        "type_of": [
+          "schema:Person"
+        ]
+      },
+      {
+        "id": "https://orcid.org/0000-0001-7655-4833",
+        "label": "Ellen M. Quardokus",
+        "conforms_to": "Person",
+        "fullName": "Ellen M. Quardokus",
+        "firstName": "Ellen",
+        "lastName": "Quardokus",
+        "orcid": "0000-0001-7655-4833",
+        "type_of": [
+          "schema:Person"
+        ]
+      }
+    ],
+    "creation_date": "2026-06-15",
+    "license": "Creative Commons Attribution 4.0 International ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))",
+    "publisher": "HuBMAP",
+    "references": [
+      "https://doi.org/10.1002/(SICI)1097-0185(199804)253:2<49::AID-AR8>3.0.CO;2-9"
+    ],
+    "citation": "Browne, Kristen, and Heidi Schlehlein. 2026. *3D Reference Organ Set for Female, v1.10*. https://doi.org/10.48539/HBM637.DWBM.744. Accessed on June 15, 2026.",
+    "citationOverall": "Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. 2026. HuBMAP CCF 3D Reference Object Library. https://humanatlas.io/3d-reference-library. Accessed on June 15, 2026.",
+    "funders": [
+      {
+        "funder": "National Institutes of Health",
+        "awardNumber": "OT2OD033756"
+      },
+      {
+        "funder": "National Institutes of Health",
+        "awardNumber": "OT2OD026671"
+      }
+    ],
+    "doi": "https://doi.org/10.48539/HBM637.DWBM.744",
+    "hubmapId": "HBM637.DWBM.744",
+    "project_leads": [
+      {
+        "id": "https://orcid.org/0000-0002-3321-6137",
+        "label": "Katy Börner",
+        "conforms_to": "Person",
+        "fullName": "Katy Börner",
+        "firstName": "Katy",
+        "lastName": "Börner",
+        "orcid": "0000-0002-3321-6137",
+        "type_of": [
+          "schema:Person"
+        ]
+      }
+    ],
+    "distributions": [
+      {
+        "id": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#3d-vh-f-united.glb",
+        "label": "Raw data distribution '3d-vh-f-united.glb' file",
+        "title": "Raw data distribution '3d-vh-f-united.glb' file",
+        "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.10/assets/3d-vh-f-united.glb",
+        "accessUrl": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#3d-vh-f-united.glb",
+        "mediaType": "model/gltf-binary"
+      },
+      {
+        "id": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#crosswalk.csv",
+        "label": "Raw data distribution 'crosswalk.csv' file",
+        "title": "Raw data distribution 'crosswalk.csv' file",
+        "downloadUrl": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.10/assets/crosswalk.csv",
+        "accessUrl": "https://lod.humanatlas.io/ref-organ/united-female/v1.10#crosswalk.csv",
+        "mediaType": "text/csv"
+      }
+    ]
+  }
+}

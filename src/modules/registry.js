@@ -1,8 +1,10 @@
 import solarSystem from './solar-system/module.js';
+import humanAnatomy from './human-anatomy/module.js';
 // MODULE_IMPORTS: import new module manifests here.
 // Only working, reviewed subjects are registered; templates are not catalogue entries.
 export const modelModules = Object.freeze({
  [solarSystem.id]:solarSystem,
+ [humanAnatomy.id]:humanAnatomy,
  // MODULE_ENTRIES: add [yourModule.id]:yourModule here.
 });
 export function resolveModule(id){return Object.hasOwn(modelModules,id)?modelModules[id]:null;}

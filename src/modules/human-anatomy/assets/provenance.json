@@ -1,0 +1,16 @@
+{
+  "provider": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International",
+  "version": "4.0 / 20130619 / 99% reduction",
+  "license": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "transformation": "(x, y, z) mm -> (x, z, -y) / 1000 m",
+  "inputs": {
+    "isa_BP3D_4.0_obj_99.zip": "40665852c49f218326590e204db91064a1ecfc3c6f8cbd7bbbcaac62c7cd409e"
+  },
+  "outputs": {
+    "arteries.glb": "51d69f27c58b23d800ab1dd705f5268fc4031855d573210cd7912a4c06936ec1",
+    "nerves.glb": "64675bdf1e14aead6e102feee50035d607e1aa4744635c699e29d6b8632e6954",
+    "skeleton.glb": "4ea4c3d075d559659566ed57f704da2f0fff21af237c4698497ffd6196804dc2",
+    "surface.glb": "e571129c7d1044ea5ea5c062ea4ee1fc5a32281b7afefb05732f943735184ca4",
+    "veins.glb": "d8f24e7956003323e0aeb092014b14c47f35e41e7c767234a2878055b0cbfa23"
+  }
+}

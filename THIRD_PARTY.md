@@ -1,5 +1,39 @@
 # Third-party attribution and reuse
 
+## Female anatomy / HRA–HuBMAP
+
+`src/modules/human-anatomy/assets/female/` derives from **Browne, Kristen, and
+Heidi Schlehlein. 2026. 3D Reference Organ Set for Female, v1.10.**
+[Dataset and citation](https://doi.org/10.48539/HBM637.DWBM.744), licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Official metadata and ontology crosswalk are preserved in the module's `sources/`.
+Changes: selected skeletal/vascular/neural/skin nodes extracted, hierarchy baked,
+translation in metres, exact coincident vertices welded, surfaces simplified,
+materials replaced and normals recomputed. Source and derivative hashes are in
+`assets/female/provenance.json`; the module README documents reproduction.
+No endorsement is implied. HRA organ registrations include the Allen brain
+reference; not all organs were measured from one individual, and not all atlas
+differences represent sex differences.
+
+## Human anatomy / BodyParts3D
+
+`src/modules/human-anatomy/assets/*.glb` and source-derived catalog data use
+**BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International**.
+The [provider's current license](https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html)
+was updated on 2025-02-27. Original 2013 OBJ comments retain the previous
+CC BY-SA 2.1 Japan notice; the provider's updated database license is recorded in
+the module's saved README evidence. Code remains MIT; third-party meshes remain
+CC BY 4.0. Converted from v4.0 / 20130619 / 99% reduced OBJ elements into indexed
+GLB, rotated from Z-up to Y-up, uniformly converted from mm to m, recolored for
+layer identification, with display normals recomputed. No tissue geometry is
+invented to fill missing structures.
+
+See [anatomy provenance and reproduction](src/modules/human-anatomy/README.md)
+for official download links, selection rules, checksums and partial neural
+coverage. The traditional meridian layer is a separate original approximate
+diagram under MIT, with source links and explicitly unmeasured coordinates.
+It is not WHO geometry or part of the DBCLS dataset. TARA data is not bundled.
+
 The MIT license applies to our original code/documentation, not to every file
 in this repository. No NASA, JPL, USGS, ESA or STScI endorsement is implied.
 The embedded image data in `data.js` retains the same attribution as its source.

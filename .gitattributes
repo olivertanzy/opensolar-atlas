@@ -10,3 +10,4 @@ data/*.html text eol=lf
 *.tif binary
 *.jpg binary
 *.png binary
+*.glb binary

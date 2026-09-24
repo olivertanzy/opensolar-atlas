@@ -28,7 +28,7 @@ export const shellRows={
  backLibrary:['Back to library','返回模型库','返回模型庫','ライブラリへ戻る','라이브러리로 돌아가기'],
  clearSearch:['Clear search','清空搜索','清空搜尋','検索をクリア','검색 지우기'],
  noModels:['No models match your search.','没有匹配的模型。','沒有符合的模型。','該当するモデルがありません。','일치하는 모델이 없습니다.'],
- frameworkNote:['Only implemented models appear here. Anatomy is a future contribution, not a model currently provided.','此处仅列出已接入模型，人体结构留待后续贡献，目前尚未提供。','此處僅列出已接入模型，人體結構留待後續貢獻，目前尚未提供。','実装済みモデルのみ表示しています。人体モデルは今後の追加対象で、現在は未提供です。','구현된 모델만 표시됩니다. 인체 모델은 향후 기여 대상이며 현재 제공되지 않습니다.'],
+ frameworkNote:['Each model includes its own sources, coverage and limitations. Choose a subject to explore.','每个模型均说明自己的来源、覆盖范围和局限。选择主题开始探索。','每個模型均說明自己的來源、涵蓋範圍與限制。選擇主題開始探索。','各モデルに出典・収録範囲・制限を明記しています。テーマを選んで探索できます。','각 모델은 출처, 범위, 한계를 명시합니다. 주제를 선택해 탐색하세요.'],
  shellLoading:['Opening model…','正在打开模型…','正在開啟模型…','モデルを開いています…','모델 여는 중…'],
  guideNav:['Contributor guide','贡献指南','貢獻指南','開発ガイド','기여 가이드'],
  architectureLabel:['Shared workspace · independent subjects','共用工作台 · 独立主题','共用工作台 · 獨立主題','共通の作業画面 · 独立した分野','공유 작업 공간 · 독립 주제'],

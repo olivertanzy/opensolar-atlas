@@ -21,8 +21,10 @@ jobs:
       - run: npm run test:browser
       - run: npm run test:earth
       - run: npm run test:shell
+      - run: npm run test:anatomy
       - run: npm run test:imagery
       - run: npm run build
+      - run: npm run test:anatomy:production
       - run: npm run test:production
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
