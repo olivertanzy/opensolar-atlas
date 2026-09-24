@@ -14,6 +14,7 @@ for(const b of bodies){
 }
 assert.equal(epochs.size,1,'one shared epoch');
 for(const a of JSON.parse(fs.readFileSync(path.join(root,'data/asset-manifest.json'),'utf8'))){
+ assert(!a.file.includes('\\'),'manifest paths must use portable slashes: '+a.file);
  const bytes=fs.readFileSync(path.join(root,a.file));assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),a.sha256,'asset checksum: '+a.file);assert(a.sourcePage,'source: '+a.file);
 }
 console.log(`Verified ${bodies.length} bodies, ${data.summary.moons} satellites, one epoch and asset checksums.`);

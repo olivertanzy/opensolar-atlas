@@ -20,7 +20,7 @@ def encode(ident,path,crop=None):
  image.thumbnail((4096,2048),Image.Resampling.LANCZOS)
  buf=io.BytesIO();image.save(buf,format='JPEG',quality=94)
  textures[ident]='data:image/jpeg;base64,'+base64.b64encode(buf.getvalue()).decode()
- manifest.append(dict(id=ident,file=str(path.relative_to(ROOT)),sha256=hashlib.sha256(path.read_bytes()).hexdigest(),originalSize=Image.open(path).size,usedSize=image.size,crop=crop))
+ manifest.append(dict(id=ident,file=path.relative_to(ROOT).as_posix(),sha256=hashlib.sha256(path.read_bytes()).hexdigest(),originalSize=Image.open(path).size,usedSize=image.size,crop=crop))
 for ident in texture_files:
  path=ROOT/'assets'/f'{ident}.jpg'
  if path.exists():encode(ident,path)
