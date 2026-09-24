@@ -10,6 +10,10 @@ Three.js r160: Copyright © 2010–2023 three.js authors, MIT. The full notice i
 included at `vendor/THREE-LICENSE.txt`. Python packages and Playwright are build
 or test dependencies; their packages retain their respective licenses.
 
+Vue 3: Copyright (c) 2018-present, Yuxi (Evan) You and Vue contributors, MIT.
+The full notice is included at `vendor/VUE-LICENSE.txt`. Vite and its Vue plugin
+are build dependencies and retain their package licenses.
+
 ## Solar System Scope illustrations
 
 Files: `assets/699-illustration.jpg`, `799-illustration.jpg`,
@@ -74,3 +78,38 @@ JPL SSD discovery/physical tables, Horizons vector responses, NAIF generic
 PCK/LSK kernels and IAU nominal solar radius. Source files preserve their original
 headers and notices. Our parsed catalogue is a transformation of these sources,
 not a claim of ownership over the measurements. See `docs/DATA.md`.
+
+## NASA GIBS detail imagery
+
+The optional online Earth layer uses NASA GIBS Blue Marble Shaded Relief and
+Bathymetry (August 2004), MODIS / NASA Earth Observatory. Tiles are rendered as
+supplied, without synthetic detail or changes to their colour data; geographic
+patch geometry follows the service's CRS84 matrix. The original low-resolution
+NASA map remains a local fallback. This is a composite, not current imagery.
+
+[Source metadata](https://gibs.earthdata.nasa.gov/layer-metadata/v1.0/BlueMarble_ShadedRelief_Bathymetry.json).
+One original tile is retained for tests, with source URL and checksum in
+`data/earth/imagery-source.json`. NASA image-use guidance cited above applies.
+
+## Natural Earth geographic data
+
+`data/earth/source/` contains GeoJSON from the Natural Earth public-domain map
+dataset, repository tag v5.1.2. Browser derivatives retain source names, place
+coordinates and boundary rings with a reduced property set. Per-file original
+URLs and hashes are recorded in `data/earth/manifest.json`.
+
+[Project](https://www.naturalearthdata.com/) ·
+[Public-domain terms](https://www.naturalearthdata.com/about/terms-of-use/) ·
+[Boundary policy](https://www.naturalearthdata.com/about/disputed-boundaries-policy/).
+
+This is independent cartographic data, not NASA data or an endorsement by a
+government. Short localized country labels additionally use the platform's
+ICU/CLDR region display names. See `docs/EARTH.md` for transformations and limits.
+
+## Background descriptions
+
+The five-language background summaries in `src/modules/solar-system/profiles.js`
+and `moon-profiles.js` paraphrase the NASA Science pages linked in each record.
+They are editorial summaries/translations, not NASA-authored translations.
+Discovery names, reference codes and physical measurements are transcribed from
+the linked JPL tables. Preserve these per-record links when reusing the content.

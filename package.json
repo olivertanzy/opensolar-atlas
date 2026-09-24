@@ -2,13 +2,32 @@
   "name": "opensolar-atlas",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "description": "A source-attributed, true-scale solar system atlas for the browser",
   "license": "MIT",
   "scripts": {
-    "test": "node scripts/check-data.cjs",
+    "dev": "vite",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node scripts/check-data.cjs && node --test scripts/atlas.test.js scripts/earth.test.js scripts/earth-imagery.test.js scripts/documents.test.js",
     "test:browser": "node scripts/verify.cjs",
-    "build": "node scripts/build-site.cjs"
+    "build": "node scripts/build-site.cjs",
+    "test:production": "node scripts/verify-production.cjs",
+    "test:earth": "node scripts/verify-earth.cjs",
+    "test:imagery": "node scripts/verify-imagery.cjs",
+    "create:model": "node scripts/create-model.cjs",
+    "test:shell": "node scripts/verify-shell.cjs"
   },
-  "devDependencies": { "playwright": "1.58.2" },
-  "engines": { "node": ">=20" }
+  "devDependencies": {
+    "@vitejs/plugin-vue": "5.2.4",
+    "markdown-it": "15.0.2",
+    "playwright": "1.58.2",
+    "vite": "6.4.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "three": "0.160.1",
+    "vue": "3.5.43"
+  }
 }

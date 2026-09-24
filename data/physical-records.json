@@ -1,0 +1,1424 @@
+{
+  "snapshot": "2026-09-24",
+  "sourceHashes": {
+    "planet-physical.html": "e49a487947295c389ba6e5833dd8fb04b63e826d39f70c123881882096e5e68b",
+    "sat-physical.html": "0c6323f469e48ac654f7d4dd263ed6c62ad14689218c5451a98da29d625aaf10"
+  },
+  "records": {
+    "199": {
+      "source": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+      "values": [
+        {
+          "key": "equatorialRadius",
+          "value": "2440.53 [D] ±0.04",
+          "unit": "km"
+        },
+        {
+          "key": "radius",
+          "value": "2439.4 [D] ±0.1",
+          "unit": "km"
+        },
+        {
+          "key": "mass",
+          "value": "0.330103 [F] ±0.000021",
+          "unit": "×10²⁴ kg"
+        },
+        {
+          "key": "density",
+          "value": "5.4289 [*] ±0.0007",
+          "unit": "g/cm³"
+        },
+        {
+          "key": "rotationPeriod",
+          "value": "58.6462 [C]",
+          "unit": "d"
+        },
+        {
+          "key": "orbitalPeriod",
+          "value": "0.2408467 [B]",
+          "unit": "y"
+        },
+        {
+          "key": "magnitude",
+          "value": "-0.60 [E] ±0.10",
+          "unit": "mag"
+        },
+        {
+          "key": "albedo",
+          "value": "0.106 [B]",
+          "unit": ""
+        },
+        {
+          "key": "gravity",
+          "value": "3.70 [*]",
+          "unit": "m/s²"
+        },
+        {
+          "key": "escapeSpeed",
+          "value": "4.25 [*]",
+          "unit": "km/s"
+        }
+      ]
+    },
+    "299": {
+      "source": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+      "values": [
+        {
+          "key": "equatorialRadius",
+          "value": "6051.8 [D] ±1.0",
+          "unit": "km"
+        },
+        {
+          "key": "radius",
+          "value": "6051.8 [D] ±1.0",
+          "unit": "km"
+        },
+        {
+          "key": "mass",
+          "value": "4.86731 [G] ±0.00023",
+          "unit": "×10²⁴ kg"
+        },
+        {
+          "key": "density",
+          "value": "5.243 [*] ±0.003",
+          "unit": "g/cm³"
+        },
+        {
+          "key": "rotationPeriod",
+          "value": "-243.018 [C]",
+          "unit": "d"
+        },
+        {
+          "key": "orbitalPeriod",
+          "value": "0.61519726 [B]",
+          "unit": "y"
+        },
+        {
+          "key": "magnitude",
+          "value": "-4.47 [E] ±0.07",
+          "unit": "mag"
+        },
+        {
+          "key": "albedo",
+          "value": "0.65 [B]",
+          "unit": ""
+        },
+        {
+          "key": "gravity",
+          "value": "8.87 [*]",
+          "unit": "m/s²"
+        },
+        {
+          "key": "escapeSpeed",
+          "value": "10.36 [*]",
+          "unit": "km/s"
+        }
+      ]
+    },
+    "399": {
+      "source": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+      "values": [
+        {
+          "key": "equatorialRadius",
+          "value": "6378.1366 [D] ±0.0001",
+          "unit": "km"
+        },
+        {
+          "key": "radius",
+          "value": "6371.0084 [D] ±0.0001",
+          "unit": "km"
+        },
+        {
+          "key": "mass",
+          "value": "5.97217 [H] ±0.00028",
+          "unit": "×10²⁴ kg"
+        },
+        {
+          "key": "density",
+          "value": "5.5134 [*] ±0.0003",
+          "unit": "g/cm³"
+        },
+        {
+          "key": "rotationPeriod",
+          "value": "0.99726968 [B]",
+          "unit": "d"
+        },
+        {
+          "key": "orbitalPeriod",
+          "value": "1.0000174 [B]",
+          "unit": "y"
+        },
+        {
+          "key": "magnitude",
+          "value": "-3.86 [B]",
+          "unit": "mag"
+        },
+        {
+          "key": "albedo",
+          "value": "0.367 [B]",
+          "unit": ""
+        },
+        {
+          "key": "gravity",
+          "value": "9.80 [*]",
+          "unit": "m/s²"
+        },
+        {
+          "key": "escapeSpeed",
+          "value": "11.19 [*]",
+          "unit": "km/s"
+        }
+      ]
+    },
+    "499": {
+      "source": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+      "values": [
+        {
+          "key": "equatorialRadius",
+          "value": "3396.19 [D] ±0.1",
+          "unit": "km"
+        },
+        {
+          "key": "radius",
+          "value": "3389.50 [D] ±0.2",
+          "unit": "km"
+        },
+        {
+          "key": "mass",
+          "value": "0.641691 [I] ±0.000030",
+          "unit": "×10²⁴ kg"
+        },
+        {
+          "key": "density",
+          "value": "3.9340 [*] ±0.0007",
+          "unit": "g/cm³"
+        },
+        {
+          "key": "rotationPeriod",
+          "value": "1.02595676 [C]",
+          "unit": "d"
+        },
+        {
+          "key": "orbitalPeriod",
+          "value": "1.8808476 [B]",
+          "unit": "y"
+        },
+        {
+          "key": "magnitude",
+          "value": "-1.52 [B]",
+          "unit": "mag"
+        },
+        {
+          "key": "albedo",
+          "value": "0.150 [B]",
+          "unit": ""
+        },
+        {
+          "key": "gravity",
+          "value": "3.71 [*]",
+          "unit": "m/s²"
+        },
+        {
+          "key": "escapeSpeed",
+          "value": "5.03 [*]",
+          "unit": "km/s"
+        }
+      ]
+    },
+    "599": {
+      "source": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+      "values": [
+        {
+          "key": "equatorialRadius",
+          "value": "71492 [D] ±4",
+          "unit": "km"
+        },
+        {
+          "key": "radius",
+          "value": "69911 [D] ±6",
+          "unit": "km"
+        },
+        {
+          "key": "mass",
+          "value": "1898.125 [J] ±0.088",
+          "unit": "×10²⁴ kg"
+        },
+        {
+          "key": "density",
+          "value": "1.3262 [*] ±0.0003",
+          "unit": "g/cm³"
+        },
+        {
+          "key": "rotationPeriod",
+          "value": "0.41354 [C]",
+          "unit": "d"
+        },
+        {
+          "key": "orbitalPeriod",
+          "value": "11.862615 [B]",
+          "unit": "y"
+        },
+        {
+          "key": "magnitude",
+          "value": "-9.40 [B]",
+          "unit": "mag"
+        },
+        {
+          "key": "albedo",
+          "value": "0.52 [B]",
+          "unit": ""
+        },
+        {
+          "key": "gravity",
+          "value": "24.79 [*]",
+          "unit": "m/s²"
+        },
+        {
+          "key": "escapeSpeed",
+          "value": "60.20 [*]",
+          "unit": "km/s"
+        }
+      ]
+    },
+    "699": {
+      "source": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+      "values": [
+        {
+          "key": "equatorialRadius",
+          "value": "60268 [D] ±4",
+          "unit": "km"
+        },
+        {
+          "key": "radius",
+          "value": "58232 [D] ±6",
+          "unit": "km"
+        },
+        {
+          "key": "mass",
+          "value": "568.317 [K] ±0.026",
+          "unit": "×10²⁴ kg"
+        },
+        {
+          "key": "density",
+          "value": "0.6871 [*] ±0.0002",
+          "unit": "g/cm³"
+        },
+        {
+          "key": "rotationPeriod",
+          "value": "0.44401 [C]",
+          "unit": "d"
+        },
+        {
+          "key": "orbitalPeriod",
+          "value": "29.447498 [B]",
+          "unit": "y"
+        },
+        {
+          "key": "magnitude",
+          "value": "-8.88 [B]",
+          "unit": "mag"
+        },
+        {
+          "key": "albedo",
+          "value": "0.47 [B]",
+          "unit": ""
+        },
+        {
+          "key": "gravity",
+          "value": "10.44 [*]",
+          "unit": "m/s²"
+        },
+        {
+          "key": "escapeSpeed",
+          "value": "36.09 [*]",
+          "unit": "km/s"
+        }
+      ]
+    },
+    "799": {
+      "source": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+      "values": [
+        {
+          "key": "equatorialRadius",
+          "value": "25559 [D] ±4",
+          "unit": "km"
+        },
+        {
+          "key": "radius",
+          "value": "25362 [D] ±7",
+          "unit": "km"
+        },
+        {
+          "key": "mass",
+          "value": "86.8099 [L] ±0.0040",
+          "unit": "×10²⁴ kg"
+        },
+        {
+          "key": "density",
+          "value": "1.270 [*] ±0.001",
+          "unit": "g/cm³"
+        },
+        {
+          "key": "rotationPeriod",
+          "value": "-0.71833 [C]",
+          "unit": "d"
+        },
+        {
+          "key": "orbitalPeriod",
+          "value": "84.016846 [B]",
+          "unit": "y"
+        },
+        {
+          "key": "magnitude",
+          "value": "-7.19 [B]",
+          "unit": "mag"
+        },
+        {
+          "key": "albedo",
+          "value": "0.51 [B]",
+          "unit": ""
+        },
+        {
+          "key": "gravity",
+          "value": "8.87 [*]",
+          "unit": "m/s²"
+        },
+        {
+          "key": "escapeSpeed",
+          "value": "21.38 [*]",
+          "unit": "km/s"
+        }
+      ]
+    },
+    "899": {
+      "source": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+      "values": [
+        {
+          "key": "equatorialRadius",
+          "value": "24764 [D] ±15",
+          "unit": "km"
+        },
+        {
+          "key": "radius",
+          "value": "24622 [D] ±19",
+          "unit": "km"
+        },
+        {
+          "key": "mass",
+          "value": "102.4092 [M] ±0.0048",
+          "unit": "×10²⁴ kg"
+        },
+        {
+          "key": "density",
+          "value": "1.638 [*] ±0.004",
+          "unit": "g/cm³"
+        },
+        {
+          "key": "rotationPeriod",
+          "value": "0.67125 [C]",
+          "unit": "d"
+        },
+        {
+          "key": "orbitalPeriod",
+          "value": "164.79132 [B]",
+          "unit": "y"
+        },
+        {
+          "key": "magnitude",
+          "value": "-6.87 [B]",
+          "unit": "mag"
+        },
+        {
+          "key": "albedo",
+          "value": "0.41 [B]",
+          "unit": ""
+        },
+        {
+          "key": "gravity",
+          "value": "11.15 [*]",
+          "unit": "m/s²"
+        },
+        {
+          "key": "escapeSpeed",
+          "value": "23.56 [*]",
+          "unit": "km/s"
+        }
+      ]
+    },
+    "999": {
+      "source": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+      "values": [
+        {
+          "key": "equatorialRadius",
+          "value": "1188.3 [D] ±1.6",
+          "unit": "km"
+        },
+        {
+          "key": "radius",
+          "value": "1188.3 [D] ±1.6",
+          "unit": "km"
+        },
+        {
+          "key": "mass",
+          "value": "13024.6 [N] ±6.0",
+          "unit": "×10¹⁸ kg"
+        },
+        {
+          "key": "density",
+          "value": "1.853 [N] ±0.004",
+          "unit": "g/cm³"
+        },
+        {
+          "key": "rotationPeriod",
+          "value": "-6.3872 [C]",
+          "unit": "d"
+        },
+        {
+          "key": "orbitalPeriod",
+          "value": "247.92065 [B]",
+          "unit": "y"
+        },
+        {
+          "key": "magnitude",
+          "value": "-1.0 [Q]",
+          "unit": "mag"
+        },
+        {
+          "key": "albedo",
+          "value": "0.3 [B]",
+          "unit": ""
+        },
+        {
+          "key": "gravity",
+          "value": "0.62 [*]",
+          "unit": "m/s²"
+        },
+        {
+          "key": "escapeSpeed",
+          "value": "1.21 [*]",
+          "unit": "km/s"
+        }
+      ]
+    },
+    "301": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "4902.800 ± 0.001 [DE440]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "1737.4 ± 0.1 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "3.344 ± 0.001 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "401": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.0007087 ± 0.0000006 [MAR097]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "11.08 ± 0.04 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.872 ± 0.076 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "402": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.0000962 ± 0.0000028 [MAR097]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "6.2 ± 0.24 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.471 ± 0.166 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "501": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "5959.91547 ± 0.00135 [JUP365]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "1821.49 ± 0.50 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "3.5276 ± 0.0029 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "502": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "3202.71210 ± 0.00181 [JUP365]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "1560.80 ± 0.30 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "3.0130 ± 0.0017 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "503": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "9887.83275 ± 0.00247 [JUP365]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "2631.20 ± 1.70 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.9416 ± 0.0038 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "504": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "7179.28340 ± 0.00324 [JUP365]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "2410.30 ± 1.50 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.8340 ± 0.0034 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "505": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.16456 ± 0.00867 [JUP365]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "83.50 ± 3.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.0111 ± 0.1213 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "514": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.03015 ± 0.01250 [JUP365]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "49.30 ± 4.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.9000 ± 0.4327 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "515": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.00014 ± 0.00020 [JUP365]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "8.20 ± 4.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.9018 ± 1.8507 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "516": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.00250 ± 0.00160 [JUP365]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "21.50 ± 4.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.9002 ± 0.7642 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "506": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.15155 ± 0.05763 [JUP344]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "85.00 ± 10.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.8827 ± 0.4580 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "601": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "2.50349 ± 0.00014 [SAT441]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "198.20 ± 0.40 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.1501 ± 0.0070 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "602": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "7.21037 ± 0.00009 [SAT441]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "252.10 ± 0.20 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.6097 ± 0.0038 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "603": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "41.21353 ± 0.00031 [SAT441]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "531.10 ± 0.60 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.9840 ± 0.0033 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "604": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "73.11607 ± 0.00005 [SAT441]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "561.40 ± 0.40 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.4781 ± 0.0032 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "605": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "153.94175 ± 0.00041 [SAT441]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "763.50 ± 0.60 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.2372 ± 0.0029 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "606": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "8978.13710 ± 0.00025 [SAT441]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "2574.76 ± 0.02 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.8814 ± 0.0001 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "607": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.37049 ± 0.00005 [SAT441]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "135.00 ± 4.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.5386 ± 0.0479 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "608": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "120.51511 ± 0.00242 [SAT441]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "734.30 ± 2.80 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.0887 ± 0.0125 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "609": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.55479 ± 0.00108 [SAT441]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "106.50 ± 0.70 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.6428 ± 0.0326 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "610": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.12662 ± 0.00007 [SAT415]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "89.2 ± 0.8 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.6381 ± 0.0172 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "611": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.03514 ± 0.00002 [SAT415]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "58.2 ± 1.2 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.6375 ± 0.0394 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "612": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.00048 ± 0.00002 [SAT441]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "18.00 ± 0.40 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.2918 ± 0.0217 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "615": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.00037 ± 0.00001 [SAT415]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "15.1 ± 0.8 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.3850 ± 0.0613 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "616": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.01071 ± 0.00001 [SAT415]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "43.1 ± 1.2 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.4784 ± 0.0400 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "617": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.00926 ± 0.00002 [SAT415]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "40.6 ± 1.5 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.4948 ± 0.0549 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "618": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.00028 ± 0.00014 [SAT415]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "14.0 ± 1.2 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.3650 ± 0.2052 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "701": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "83.5 ± 1.4 [URA111]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "578.9 ± 0.6 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.539 ± 0.026 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "702": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "85.1 ± 1.9 [URA111]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "584.7 ± 2.8 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.523 ± 0.041 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "703": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "226.9 ± 4.1 [URA111]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "788.9 ± 1.8 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.653 ± 0.032 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "704": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "205.3 ± 5.8 [URA111]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "761.4 ± 2.6 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.664 ± 0.050 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "705": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "4.3 ± 0.2 [URA111]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "235.8 ± 0.7 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.178 ± 0.053 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "801": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "1428.49546 ± 0.61603 [NEP097]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "1352.60 ± 2.40 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "2.0649 ± 0.0110 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "802": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.00000 ± 0.00000 [NEP101]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "170.00 ± 25.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "n/a ± n/a [n/a]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "803": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.00853 ± 0.00480 [NEP097]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "29.00 ± 6.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.2511 ± 1.0478 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "804": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.02359 ± 0.00522 [NEP097]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "40.00 ± 8.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.3184 ± 0.8432 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "805": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.11673 ± 0.25263 [NEP097]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "74.00 ± 10.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.0304 ± 2.2689 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "806": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.18990 ± 0.76278 [NEP097]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "79.00 ± 12.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.3777 ± 5.5695 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "807": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.25484 ± 3.12230 [NEP097]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "96.00 ± 7.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.0303 ± 12.626 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "808": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "2.58342 ± 2.42070 [NEP097]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "208.00 ± 8.00 [1]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.0269 ± 0.9695 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "901": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "106.1 ± 0.3 [PLU060]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "606.0 ± 0.5 [2]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.853 ± 0.004 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "902": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.0015 ± 0.0005 [PLU060]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "18.0 ± 1.0 [3]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "0.88 ± 0.31 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "903": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "0.0020 ± 0.0003 [PLU060]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "18.5 ± 1.0 [3]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "1.21 ± 0.19 [*]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "904": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "<0.0002 ± n/a [PLU060]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "6.0 ± 1.0 [3]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "n/a ± n/a [n/a]",
+          "unit": "g/cm³"
+        }
+      ]
+    },
+    "905": {
+      "source": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+      "values": [
+        {
+          "key": "gm",
+          "value": "<0.0003 ± n/a [PLU060]",
+          "unit": "km³/s²"
+        },
+        {
+          "key": "radius",
+          "value": "5.2 ± 1.0 [3]",
+          "unit": "km"
+        },
+        {
+          "key": "density",
+          "value": "n/a ± n/a [n/a]",
+          "unit": "g/cm³"
+        }
+      ]
+    }
+  }
+}

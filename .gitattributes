@@ -3,6 +3,8 @@
 *.cjs text eol=lf
 *.py text eol=lf
 *.json text eol=lf
+*.geojson text eol=lf
+data/*.html text eol=lf
 *.md text eol=lf
 *.yml text eol=lf
 *.tif binary

@@ -19,7 +19,11 @@ jobs:
       - run: npm test
       - run: npx playwright install --with-deps chromium
       - run: npm run test:browser
+      - run: npm run test:earth
+      - run: npm run test:shell
+      - run: npm run test:imagery
       - run: npm run build
+      - run: npm run test:production
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:

@@ -1,5 +1,9 @@
 # Data pipeline and limitations
 
+For the separately versioned country/city overlay, see [Earth geography](EARTH.md).
+Its map release, coordinates and cartographic boundary policy are independent of
+the solar system's frozen ephemeris epoch.
+
 The repository includes a frozen snapshot retrieved on 2026-09-24. It covers
 JPL's planetary/Pluto satellite discovery table plus Earth's Moon. It is not a
 catalogue of every small-body satellite in the solar system.
@@ -14,6 +18,8 @@ python -m venv .venv
 pip install -r requirements.txt
 python scripts/prepare.py
 python scripts/build_data.py
+python scripts/build-discovery.py
+python scripts/build-physical.py
 npm test
 ```
 
@@ -22,6 +28,25 @@ maps identifiers using the retained major-body listing. `build_data.py` reads
 the raw Horizons responses, PCK/LSK kernels and local source assets, converts
 imagery for browser use and emits `data.js`, `data/model.json` and a checksummed
 asset manifest. The JSON and browser payload contain identical data.
+
+`build-discovery.py` parses the retained discovery HTML into 460 individually
+matched satellite records. `build-physical.py` parses the retained planet and
+satellite physical HTML into 55 records. Both use Python's standard library and
+retain source-file SHA-256 values. Physical entries preserve table precision,
+uncertainty, reference codes and units; Pluto's mass column uses 10^18 kg while
+the planet table uses 10^24 kg. Signed rotation periods retain their meaning.
+
+The 32 editorial background summaries in `src/modules/solar-system/profiles.js`
+and `moon-profiles.js` link to NASA Science pages and carry a review date. They
+are translated into five languages, not represented as official translations.
+Other objects receive their own catalogue facts and an explicit statement that
+a dedicated background article has not yet been curated. Lack of a curated
+paragraph does not imply no scientific literature exists. Data sources and
+original catalogue names are never replaced by guessed descriptions.
+
+Discovery dates and physical reference parameters are not all measured at the
+scene's frozen epoch. Coordinates and derived speed/distance explicitly refer
+to that epoch; imagery and background text may describe different observations.
 
 ## Refreshing data is a reviewed operation
 

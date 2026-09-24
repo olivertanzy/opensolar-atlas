@@ -3,11 +3,17 @@ const fs=require('fs');
 const path=require('path');
 (async()=>{
  const root=path.resolve(__dirname,'..');const output=path.join(root,'test-results');fs.mkdirSync(output,{recursive:true});
+ const {createServer}=await import('vite');
+ const server=await createServer({root,server:{host:'127.0.0.1',port:0}});await server.listen();
+ const base='http://127.0.0.1:'+server.httpServer.address().port;
  const browser=await chromium.launch({...(process.env.BROWSER_CHANNEL?{channel:process.env.BROWSER_CHANNEL}:{}),headless:true,args:['--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+ try{
  const page=await browser.newPage({viewport:{width:1440,height:980}}),errors=[];
  page.on('pageerror',e=>errors.push(e.message));
- page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});
- await page.goto('file:///'+root.replace(/\\/g,'/')+'/index.html');
+ page.on('console',m=>{if(m.type()==='error')errors.push(m.text()+' '+m.location().url)});
+ page.on('response',response=>{if(response.status()>=400)errors.push(`${response.status()} ${response.url()}`);});
+ await page.addInitScript(()=>localStorage.setItem('opensolar.imagery','off'));
+ await page.goto(base+'/?model=solar-system');
  await page.waitForFunction(()=>window.SOLAR_TEST?.meshes.size>0);
  await page.waitForTimeout(1800);
  for(const id of ['10','199','699','799','899']){
@@ -43,6 +49,19 @@ const path=require('path');
   for(const m of t.meshes.values())assert(m.position.toArray().every((v,i)=>Math.abs(v-(m.userData.body.positionKm[i]-t.origin[i]))<1e-6),'distance scaling');
   return {summary:t.data.summary,fail,meshCount:t.meshes.size};
  });
+ report.defaultEnglish=await page.locator('html').getAttribute('lang')==='en';
+ report.languages=[];
+ for(const [code,caption] of [['en','Earth'],['zh-CN','地球'],['zh-TW','地球'],['ja','地球'],['ko','지구']]){
+  await page.selectOption('#language',code);await page.evaluate(()=>SOLAR_TEST.selectBody('399'));
+  await page.waitForFunction(caption=>document.querySelector('#bodyDetails h1').textContent===caption,caption);
+  report.languages.push({code,lang:await page.locator('html').getAttribute('lang'),description:await page.locator('.profile-description').textContent()});
+  await page.screenshot({path:path.join(output,'locale-'+code+'.png')});
+ }
+ await page.reload();await page.waitForFunction(()=>window.SOLAR_TEST?.meshes.size>0);
+ report.languageRemembered=await page.locator('#language').inputValue()==='ko';
+ await page.goto(base+'/?lang=ja&body=699');await page.waitForFunction(()=>window.SOLAR_TEST?.meshes.size>0);
+ report.deepLink=await page.locator('html').getAttribute('lang')==='ja'&&await page.evaluate(()=>SOLAR_TEST.selected==='699');
+ await page.selectOption('#language','en');
  await page.waitForTimeout(500);
  const initialDistance=await page.evaluate(()=>SOLAR_TEST.distance);
  await page.click('#zoomIn');
@@ -65,6 +84,7 @@ const path=require('path');
  await page.fill('#search','S/2009 S 1');
  report.searchRows=await page.locator('#bodyList button').count();
  await page.evaluate(()=>SOLAR_TEST.selectBody(SOLAR_TEST.data.bodies.find(b=>!b.positionKm&&!b.id).key));
+ await page.waitForFunction(()=>document.querySelector('#sceneMessage').textContent.includes('No position'));
  report.missingNotice=await page.locator('#sceneMessage').textContent();
  await page.click('#methodButton');
  report.dialog=await page.locator('#method').evaluate(e=>e.open);
@@ -76,9 +96,20 @@ const path=require('path');
  await page.screenshot({path:path.join(output,'preview-mobile.png')});
  await page.click('#detailsButton');
  report.mobileDetails=await page.locator('#details').evaluate(e=>e.classList.contains('open'));
+ report.mobileLocales=[];
+ for(const code of ['en','zh-CN','zh-TW','ja','ko']){
+  await page.selectOption('#language',code);
+  await page.screenshot({path:path.join(output,'mobile-'+code+'.png')});
+  report.mobileLocales.push({code,overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)});
+ }
+ report.dispose=await page.evaluate(()=>{const old=SOLAR_TEST;ATLAS_TEST.unmount();return old.disposed&&old.meshes.size===0&&!window.SOLAR_TEST&&document.querySelectorAll('#scene canvas').length===0;});
+ await page.evaluate(()=>ATLAS_TEST.mount());await page.waitForFunction(()=>window.SOLAR_TEST?.meshes.size>0);
+ report.remount=await page.locator('#scene canvas').count()===1;
  report.errors=errors;
- if(report.moonRows!==461||report.searchRows!==1||report.mobileOverflow||errors.length||!report.dialog||!report.mobileDetails||!report.zoomCloser||!report.expanded||!report.unlit||!report.solidPlaceholder)report.fail.push('UI verification failed');
+ if(!report.defaultEnglish||!report.languageRemembered||!report.deepLink||!report.dispose||!report.remount||report.mobileLocales.some(row=>row.overflow)||report.languages.some(row=>row.code!==row.lang||!row.description))report.fail.push('Locale / lifecycle verification failed');
+ if(report.moonRows!==461||report.searchRows!==1||!report.missingNotice.includes('No position')||report.mobileOverflow||errors.length||!report.dialog||!report.mobileDetails||!report.zoomCloser||!report.expanded||!report.unlit||!report.solidPlaceholder)report.fail.push('UI verification failed');
  fs.writeFileSync(path.join(output,'verification.json'),JSON.stringify(report,null,2));
  console.log(JSON.stringify(report,null,2));
- await browser.close();if(report.fail.length)process.exit(1);
+ if(report.fail.length)process.exitCode=1;
+ }finally{await browser.close();await server.close();}
 })();

@@ -20,3 +20,6 @@ preview-*.png
 scripts/probe.py
 
 .venv/
+
+# Local continuation notes contain machine-specific paths and application context.
+/docs/HANDOFF.md

@@ -1,0 +1,55 @@
+{
+  "provider": "NASA GIBS / MODIS / NASA Earth Observatory",
+  "layer": "BlueMarble_ShadedRelief_Bathymetry",
+  "observation": "August 2004 composite",
+  "checked": "2026-09-24",
+  "source": "https://gibs.earthdata.nasa.gov/layer-metadata/v1.0/BlueMarble_ShadedRelief_Bathymetry.json",
+  "capabilities": "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/1.0.0/WMTSCapabilities.xml",
+  "template": "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/BlueMarble_ShadedRelief_Bathymetry/default/500m/{level}/{row}/{column}.jpeg",
+  "matrix": {
+    "id": "500m",
+    "crs": "CRS84 / geographic longitude-latitude",
+    "origin": [
+      -180,
+      90
+    ],
+    "tilePixels": 512,
+    "rootSpanDegrees": 288,
+    "levels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "widths": [
+      2,
+      3,
+      5,
+      10,
+      20,
+      40,
+      80,
+      160
+    ],
+    "heights": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20,
+      40,
+      80
+    ]
+  },
+  "sample": {
+    "file": "data/earth/source/gibs-sample-7-20-118.jpeg",
+    "url": "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/BlueMarble_ShadedRelief_Bathymetry/default/500m/7/20/118.jpeg",
+    "sha256": "3505c3954761d8164859bd4f183e14ea13200bdea558836f4107d00d1f92c406"
+  },
+  "limitations": "Composite, not current weather or street imagery; nominal source limit approximately 500 m. Baked-in topographic shading is not a terrain mesh."
+}
