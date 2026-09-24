@@ -4,6 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { meridians,acupoints } from './meridians.js';
 import { batchLayer } from './batch-layer.js';
 import { fetchLayer } from './load-layer.js';
+import { applyInteractionMode,isSectionedLayer } from './interaction.js';
 const colors={skeleton:'#ded6bf',arteries:'#e85d69',veins:'#4c9add',nerves:'#ecc56f',surface:'#78a9ad'};
 function release(root){const geometries=new Set(),materials=new Set();root?.traverse(o=>{if(o.geometry)geometries.add(o.geometry);for(const m of [o.material].flat())if(m)materials.add(m);});geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());}
 
@@ -15,17 +16,17 @@ export function createScene(host,{sample,onSelect=()=>{},onState=()=>{},onFailur
  const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2(),plane=new THREE.Plane(new THREE.Vector3(-1,0,0),0);
  const highlight=new THREE.Mesh(new THREE.BufferGeometry(),new THREE.MeshLambertMaterial({color:'#b5f5d2',side:THREE.DoubleSide,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1}));highlight.visible=false;scene.add(highlight);
  function invalidate(){if(!disposed&&!lost&&!document.hidden&&!frame)frame=requestAnimationFrame(render);}
- function render(){frame=0;if(disposed||lost||document.hidden)return;controls.update();renderer.render(scene,camera);const d=renderer.domElement.dataset;d.frames=String(++frames);d.drawCalls=String(renderer.info.render.calls);d.geometries=String(renderer.info.memory.geometries);}
+ function render(){frame=0;if(disposed||lost||document.hidden)return;controls.update();renderer.render(scene,camera);const d=renderer.domElement.dataset;d.frames=String(++frames);d.drawCalls=String(renderer.info.render.calls);d.geometries=String(renderer.info.memory.geometries);d.target=controls.target.toArray().join(',');d.camera=camera.position.toArray().join(',');}
  function update(){
   if(!renderer||disposed)return;
   for(const [key,group] of groups){
    const state=settings.get(key)||{visible:false,opacity:1};group.visible=state.visible;
    const batch=batches.get(key);if(batch)batch.showOnly(isolated&&key!=='surface'?selected:null);
-   group.traverse(object=>{if(!object.isMesh)return;if(!batch)object.visible=!isolated||object.userData.partId===selected;const m=object.material;m.opacity=state.opacity;m.transparent=state.opacity<1;m.depthWrite=state.opacity===1;m.clippingPlanes=cut?[plane]:[];});
+   group.traverse(object=>{if(!object.isMesh)return;if(!batch)object.visible=!isolated||object.userData.partId===selected;const m=object.material;m.opacity=state.opacity;m.transparent=state.opacity<1;m.depthWrite=state.opacity===1;m.clippingPlanes=cut&&isSectionedLayer(key)?[plane]:[];});
   }
   highlight.visible=false;
-  for(const [key,batch] of batches){const part=batch.parts.get(selected);if(part&&groups.get(key).visible){const g=highlight.geometry;g.setAttribute('position',batch.mesh.geometry.attributes.position);g.setAttribute('normal',batch.mesh.geometry.attributes.normal);g.setIndex(batch.mesh.geometry.index);g.setDrawRange(part.start,part.count);highlight.geometry=g;highlight.frustumCulled=false;highlight.material.clippingPlanes=cut?[plane]:[];highlight.visible=true;break;}}
-  const d=renderer.domElement.dataset;d.visibleLayers=[...groups.keys()].filter(k=>groups.get(k).visible).join(',');d.selected=selected||'';d.cutaway=String(cut);invalidate();
+  for(const [key,batch] of batches){const part=batch.parts.get(selected);if(part&&groups.get(key).visible){const g=highlight.geometry;g.setAttribute('position',batch.mesh.geometry.attributes.position);g.setAttribute('normal',batch.mesh.geometry.attributes.normal);g.setIndex(batch.mesh.geometry.index);g.setDrawRange(part.start,part.count);highlight.geometry=g;highlight.frustumCulled=false;highlight.material.clippingPlanes=cut&&isSectionedLayer(key)?[plane]:[];highlight.visible=true;break;}}
+  const d=renderer.domElement.dataset;d.visibleLayers=[...groups.keys()].filter(k=>groups.get(k).visible).join(',');d.selected=selected||'';d.cutaway=String(cut);d.clippedLayers=cut?[...groups.keys()].filter(k=>groups.get(k).visible&&isSectionedLayer(k)).join(','):'';invalidate();
  }
  function createMeridians(){
   const group=new THREE.Group();
@@ -68,7 +69,7 @@ export function createScene(host,{sample,onSelect=()=>{},onState=()=>{},onFailur
   if(!down||down.moved||event.button!==0){down=null;return;}down=null;
   const rect=renderer.domElement.getBoundingClientRect();pointer.set((event.clientX-rect.left)/rect.width*2-1,-(event.clientY-rect.top)/rect.height*2+1);raycaster.setFromCamera(pointer,camera);
   const pickable=[];for(const [key,group] of groups)if(group.visible&&key!=='surface'){const batch=batches.get(key);if(batch){for(const p of batch.pickMeshes)if(!isolated||p.userData.partId===selected)pickable.push(p);}else group.traverse(m=>{if(m.isMesh&&m.visible)pickable.push(m);});}
-  const hit=raycaster.intersectObjects(pickable,false).find(h=>!cut||plane.distanceToPoint(h.point)>=0);if(hit)onSelect(hit.object.userData.partId);
+  const hit=raycaster.intersectObjects(pickable,false).find(h=>!cut||!isSectionedLayer(h.object.userData.partId.split(':')[0])||plane.distanceToPoint(h.point)>=0);if(hit)onSelect(hit.object.userData.partId);
  }
  const pointerDown=e=>{down=e.isPrimary?{x:e.clientX,y:e.clientY,moved:false}:null;};
  const pointerMove=e=>{if(down&&Math.hypot(e.clientX-down.x,e.clientY-down.y)>5)down.moved=true;};
@@ -78,10 +79,10 @@ export function createScene(host,{sample,onSelect=()=>{},onState=()=>{},onFailur
  try{
   renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio,1.25));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.localClippingEnabled=true;host.append(renderer.domElement);
   scene.add(new THREE.HemisphereLight('#effaff','#4c657a',1.8));const light=new THREE.DirectionalLight('#fff0d8',2);light.position.set(-2,3,4);scene.add(light);const rim=new THREE.DirectionalLight('#76cde0',1);rim.position.set(2,2,-3);scene.add(rim);
-  controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=false;controls.minDistance=.025;controls.maxDistance=8;controls.zoomSpeed=.65;controls.panSpeed=.65;controls.addEventListener('change',invalidate);
+  controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=false;controls.minDistance=.025;controls.maxDistance=8;controls.zoomSpeed=.65;controls.panSpeed=1;applyInteractionMode(controls,'orbit');controls.zoomToCursor=true;controls.addEventListener('change',invalidate);
   const canvas=renderer.domElement;canvas.addEventListener('pointerdown',pointerDown);canvas.addEventListener('pointermove',pointerMove);canvas.addEventListener('pointerup',pick);canvas.addEventListener('pointercancel',cancel);canvas.addEventListener('webglcontextlost',contextLost);document.addEventListener('visibilitychange',visibility);
   function resize(){const width=Math.max(1,host.clientWidth),height=Math.max(1,host.clientHeight);renderer.setSize(width,height);camera.aspect=width/height;camera.updateProjectionMatrix();invalidate();}
   observer=new ResizeObserver(resize);observer.observe(host);resize();reset();
-  return {reset,setLayer,select,focus,head,dispose,retry:key=>{failures.delete(key);ensureLayer(key);},isolate:value=>{isolated=value;update();},section:(active,offset=0)=>{cut=active;plane.constant=offset;update();}};
+  return {reset,setLayer,select,focus,head,dispose,interaction:mode=>{applyInteractionMode(controls,mode);renderer.domElement.style.cursor=mode==='pan'?'move':'grab';},retry:key=>{failures.delete(key);ensureLayer(key);},isolate:value=>{isolated=value;update();},section:(active,offset=0)=>{cut=active;plane.constant=offset;update();}};
  }catch(error){dispose();throw error;}
 }

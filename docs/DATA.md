@@ -77,3 +77,16 @@ have sourced main radii, while texture details/opacity are not calibrated.
 
 Primary source links are in the UI, manifest and README. Please report any
 scientific error as an issue with the supporting source.
+
+## Pluto surface (2017 New Horizons / USGS release)
+
+Pluto now uses the official global LORRI/MVIC grayscale mosaic on its reference
+ellipsoid, rather than a placeholder sphere. `data/pluto-source.json` records the
+source URL, projection, source and output hashes. The GeoTIFF is 24888×12444 at
+300 m/pixel, central longitude 180°E, longitude 0–360°, latitude −90–90°;
+USGS describes the latitude as planetographic. Runtime imagery is 4096×2048.
+`scripts/build-pluto.py` reproduces the reduction and an independent mask from
+GeoTIFF no-data value 0. Missing southern coverage stays neutral gray; it is not
+shadow or missing mesh. Resolution varies across the original mosaic. No color,
+missing terrain or topographic relief is invented. Default close-up looks toward
+180°E, 20°N to present the observed encounter hemisphere, without moving Pluto.

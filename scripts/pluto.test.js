@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import crypto from 'node:crypto';
+import { appearanceKeys } from '../src/modules/solar-system/presentation.js';
+const root=new URL('../',import.meta.url),context={window:{}};
+vm.runInNewContext(fs.readFileSync(new URL('data.js',root),'utf8'),context);
+test('Pluto has a georeferenced observed surface with separate exact-source no-data mask',()=>{
+ const data=context.window.SOLAR_DATA,body=data.bodies.find(b=>b.id==='999');
+ const source=JSON.parse(fs.readFileSync(new URL('data/pluto-source.json',root)));
+ assert.equal(body.texture,'999');assert(data.textures['999'].startsWith('data:image/jpeg;base64,'));
+ assert.equal(body.textureCenterEast,source.centerLongitudeEast);assert.equal(body.textureLatitude,'graphic');
+ assert.deepEqual(source.longitudeRange,[0,360]);assert.deepEqual(source.latitudeRange,[-90,90]);
+ assert.deepEqual(appearanceKeys(body),['plutoMap','plutoInfo']);
+ for(const [file,hash] of Object.entries(source.outputs))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(new URL('assets/'+file,root))).digest('hex'),hash);
+ const mask=Buffer.from(data.missingMasks['999'].split(',')[1],'base64');
+ assert.equal(mask.readUInt32BE(16),4096);assert.equal(mask.readUInt32BE(20),2048);
+ assert.equal(crypto.createHash('sha256').update(mask).digest('hex'),source.outputs['999-missing.png']);
+});

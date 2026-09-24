@@ -12,7 +12,7 @@ files.push('docs/DATA.md','docs/ARCHITECTURE.md','docs/OPEN_SOURCE.md','docs/sat
 files.push('data/earth/countries.json','data/earth/cities.json','data/earth/manifest.json');
 files.push('docs/EARTH.md');
 files.push('docs/ADDING_A_MODEL.md','docs/ADDING_A_MODEL.zh-CN.md','CONTRIBUTING.md');
-files.push('data/earth/imagery-source.json');
+files.push('data/earth/imagery-source.json','data/pluto-source.json');
 for(const name of files){const target=path.join(out,name);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(root,name),target);}
 writeDocumentPages(root,out);
 fs.cpSync(path.join(root,'data/horizons'),path.join(out,'data/horizons'),{recursive:true});

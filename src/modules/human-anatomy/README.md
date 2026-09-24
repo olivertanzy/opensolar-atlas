@@ -19,9 +19,10 @@ scene/GPU buffers. Male uses BodyParts3D below; female uses HRA. A male model is
 never stretched or reused to fill missing female structures. Coverage and pose
 differ, so differences between these atlases are not all sex differences.
 
-**See inside the head** saves the enabled layers, shows neural structures alone
-and opens a movable sagittal cutaway. Exit restores the layers. This clips existing
-surfaces without synthesizing tissue cross-sections or scan images.
+**See inside the head** saves the enabled layers, keeps them visible and enables
+neural structures. Its movable sagittal cutaway clips only skeleton and body
+outline, preserving vessels and nerves. Exit restores the previous layer choice.
+No tissue cross-sections, scan images or missing connections are synthesized.
 
 ### Female: HRA / HuBMAP v1.10
 
@@ -190,7 +191,23 @@ Full-repository regression remains a separate CI responsibility.
 男性神经源只有脑部与部分脑神经；女性 HRA 组合源另含脊髓分段，二者都缺少四肢周围神经。
 现在可切换独立男女样本，女性骨骼覆盖骨盆、脊柱、胸骨及部分下肢骨，缺少颅骨、肋骨、
 上肢骨等，不能视为完整骨架。两个图谱的差异并不全是性别差异。
-“查看头部内部”会隐藏遮挡图层，并允许调整剖开位置，退出后恢复原图层。
+“查看头部内部”只裁切骨骼与体表，保留已开启的血管并开启神经图层；内部结构不随剖面切断。退出后恢复原图层。
+工具栏新增旋转/平移切换，鼠标主键或单指可平移观察中心；右键和双指也可平移。头部定位会把旋转中心移到头部。
+女性各图层直接标注源数据缺项。这些缺项尚未补齐，不能用男性变形或随意连线替代。
 经络为有参考出处的人工近似示意，含 14 条概览路线与 4 个穴位示例，不能用于取穴。
 不要把它宣传为完整人体模型、实测经络坐标或医疗工具。未来贡献者可以在本目录
 更换经过许可核验的模型及数据，无需修改太阳系模块或主应用框架。
+
+### Interaction and coverage corrections (2026-09-25)
+
+Rotate/Move modes explicitly map mouse and touch controls. Head detail relocates
+the orbit target; screen-space panning moves camera and target together. Wheel
+zoom uses the cursor position. Cutaway preserves selected layers, enables neural
+structures and clips only bone/outline meshes, including their pick/highlight
+paths. It never cuts vascular/neural meshes or invents connections between source
+parts. Use Isolate selection for structures enclosed within brain surfaces.
+
+The female source node hierarchy was checked against the imported catalogue. It
+still has no complete skull/ribs/arms/peripheral nerve tree; obtaining a licensed,
+registered source for those structures remains an open data task. The UI labels
+this per layer rather than representing gaps as a download/render failure.

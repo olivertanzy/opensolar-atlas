@@ -1,4 +1,6 @@
 export const scienceRows = {
+ plutoMap:['New Horizons / USGS · 2017 mosaic','New Horizons / USGS · 2017 拼接图','New Horizons / USGS · 2017 拼接圖','New Horizons / USGS · 2017年モザイク','New Horizons / USGS · 2017 모자이크'],
+ plutoInfo:['2015 LORRI/MVIC observations, published in 2017. Official global cylindrical mosaic reduced to 4096×2048; grayscale with uneven detail. Gray areas have no observations. No invented terrain or height relief.','2015年 LORRI/MVIC 观测，2017年发布。官方全球圆柱投影地图缩至4096×2048，灰度、细节分布不均。灰色为未观测区域；不补造地形、不含高程起伏。','2015年 LORRI/MVIC 觀測，2017年發布。官方全球圓柱投影地圖縮至4096×2048，灰階、細節分布不均。灰色為未觀測區域；不補造地形、不含高程起伏。','2015年のLORRI/MVIC観測、2017年公開。公式円筒図を4096×2048に縮小。白黒で解像度は不均一。灰色は未観測域。地形の補描や起伏はありません。','2015년 LORRI/MVIC 관측, 2017년 공개. 공식 원통 지도를4096×2048로 축소. 회색조이며 해상도는 불균일합니다. 회색은 미관측 영역이며 지형이나 고도를 만들지 않습니다.'],
  sunMap: ['STEREO / SDO · EUV false colour','STEREO / SDO · 极紫外假彩色','STEREO / SDO · 極紫外假彩色','STEREO / SDO · 極端紫外線の疑似カラー','STEREO / SDO · 극자외선 의사 색상'],
  mercuryMap: ['MESSENGER · global greyscale mosaic','MESSENGER · 全球灰度拼接','MESSENGER · 全球灰階拼接','MESSENGER · 全球グレースケール合成','MESSENGER · 전 지구 회색조 모자이크'],
  venusMap: ['Magellan · radar surface','Magellan · 雷达地表','Magellan · 雷達地表','Magellan · レーダー地表','Magellan · 레이더 지표'],

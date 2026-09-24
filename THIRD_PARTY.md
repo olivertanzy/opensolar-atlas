@@ -1,5 +1,18 @@
 # Third-party attribution and reuse
 
+## Pluto global mosaic
+
+`assets/999-global-2017.jpg` and `assets/999-missing.png` derive from the
+[USGS 2017 New Horizons LORRI/MVIC global mosaic](https://astrogeology.usgs.gov/search/map/pluto_new_horizons_lorri_mvic_global_mosaic_300m),
+credited to NASA / Johns Hopkins University Applied Physics Laboratory /
+Southwest Research Institute / Lunar and Planetary Institute / USGS.
+See also [NASA's release](https://science.nasa.gov/photojournal/global-mosaics-of-pluto-and-charon/).
+Changes: grayscale downsampling and JPEG encoding; independent nearest-neighbour
+mask of the source no-data pixels. No inpainting. Source metadata and checksums
+are in `data/pluto-source.json`; reproduction is in `scripts/build-pluto.py`.
+This is a US government-distributed scientific image, not an asset relicensed
+under the project's MIT code license. Credit is retained; no endorsement implied.
+
 ## Female anatomy / HRA–HuBMAP
 
 `src/modules/human-anatomy/assets/female/` derives from **Browne, Kristen, and

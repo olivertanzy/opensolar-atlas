@@ -1,0 +1,36 @@
+{
+  "sourcePage": "https://astrogeology.usgs.gov/search/map/pluto_new_horizons_lorri_mvic_global_mosaic_300m",
+  "nasaPage": "https://science.nasa.gov/photojournal/global-mosaics-of-pluto-and-charon/",
+  "downloadUrl": "https://planetarymaps.usgs.gov/mosaic/Pluto_NewHorizons_Global_Mosaic_300m_Jul2017_8bit.tif",
+  "credit": "NASA / JHUAPL / SwRI / LPI / USGS",
+  "sourceSha256": "592b7fb0f88cafa0bedf9f33bb71e983952a250ee8577edf2abfe814b473356b",
+  "sourceSize": [
+    24888,
+    12444
+  ],
+  "usedSize": [
+    4096,
+    2048
+  ],
+  "sourceNoData": 0,
+  "projection": "Simple Cylindrical",
+  "latitudeType": "Planetographic",
+  "longitudeDirection": "Positive East",
+  "centerLongitudeEast": 180,
+  "longitudeRange": [
+    0,
+    360
+  ],
+  "latitudeRange": [
+    -90,
+    90
+  ],
+  "referenceRadiusKm": 1188.3,
+  "observation": "2015-07",
+  "release": "2017-07",
+  "processing": "Lanczos downsample, grayscale JPEG; nearest-neighbour source no-data mask. No inpainting, colorization or relief invented.",
+  "outputs": {
+    "999-global-2017.jpg": "2eba20498fd186bb2acdc95705b05a7b21b277c11a01b5bc2e2f0d9c4f1f71f9",
+    "999-missing.png": "f2484d9245ef33ac0da756b45d510d55892d8bed063e97ea890cd7ebeb5549f3"
+  }
+}

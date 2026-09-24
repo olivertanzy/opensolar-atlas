@@ -66,6 +66,15 @@ Optional `cover` is a decorative thumbnail URL, e.g.
 `new URL('./assets/cover.svg', import.meta.url).href`. Without it the card uses a
 generic geometric symbol. Keep preview artwork distinct from scientific evidence.
 
+**Shared visual contract:** use a transparent 640×360 (16:9) cover canvas with
+the existing ivory/mint/coral diagram palette. The library owns the background,
+category badge, padding, equal-width cards and action alignment. Do not bake a
+second background, title or source badge into the image. A new module must not
+override `.model-card`, `.model-grid` or the shell header. Both shipped subjects
+provide examples. Use the shared `--atlas-*` CSS tokens and workbench toolbar
+buttons; use `.workbench-segment` for a related mode switch and `aria-pressed`
+for the active mode. Test long titles/descriptions in all five languages.
+
 The template repeats example English metadata in all five fields deliberately.
 **Replace it with reviewed translations before opening a production contribution.**
 `moduleText(manifest, field, locale)` falls back to English. Do not claim NASA,

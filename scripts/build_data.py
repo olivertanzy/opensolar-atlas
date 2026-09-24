@@ -37,7 +37,8 @@ for ident in ['799','899']:encode(ident,ROOT/f'assets/{ident}-illustration.jpg')
 if (ROOT/'assets/606-original.jpg').exists():
  encode('606',ROOT/'assets/606-original.jpg',(36,40,776,410))
  sources['606']=dict(page='https://science.nasa.gov/resource/titan-global-map-june-2015/',url='https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/09/p/i/a/PIA19658-1.jpg?w=800&h=444&fit=clip&crop=faces%2Cfocalpoint')
-# 冥王星图纬度范围未经核验，不强行拉伸到整个球面。仅在来源面板展示二维原图。
+# 2017 USGS GeoTIFF has a verified global Simple Cylindrical projection.
+encode('999',ROOT/'assets/999-global-2017.jpg')
 pluto_image=None
 if (ROOT/'assets/999-original.jpg').exists():
  image=Image.open(ROOT/'assets/999-original.jpg');buf=io.BytesIO();image.save(buf,format='JPEG');pluto_image='data:image/jpeg;base64,'+base64.b64encode(buf.getvalue()).decode()
@@ -85,7 +86,7 @@ for ordinal,b in enumerate(catalog):
  if ident=='606':
   b['appearanceType']='Cassini ISS · 938nm近红外';b['appearance']='NASA PIA19658，2015版，观测截至2014-04；938nm近红外穿透部分霾层的地表反照率图，不是肉眼看到的橙色云层。灰色区域保留约3–5%的原始缺测区。';b['registration']='裁切图框[36,40,776,410]；标尺左360°W、右0°W，上90°N、下90°S。';b['observation']='2004–2014'
  if ident=='999':
-  b['referenceImage']=pluto_image;b['textureSource']='https://www.nasa.gov/image-article/pluto-global-perspective/';b['appearance']='已附 New Horizons 2015 灰度原图供对照；其发布预览并非2:1全纬度图，未核验完整投影，所以不将它拉伸伪装成准确的球面贴图。'
+  b['referenceImage']=pluto_image;b['textureSource']='https://astrogeology.usgs.gov/search/map/pluto_new_horizons_lorri_mvic_global_mosaic_300m';b['appearanceType']='New Horizons / USGS · 2017全球灰度拼接';b['textureLatitude']='graphic';b['textureCenterEast']=180;b['observation']='2015-07；2017-07发布';b['registration']='官方GeoTIFF简单圆柱投影，北朝上，正东经0°至360°，纬度−90°至90°，中央经线180°；球面参考半径1188.3 km。';b['appearance']='NASA New Horizons LORRI/MVIC 观测，USGS发布的2017年全球灰度拼接。原始24888×12444，网页4096×2048；空间分辨率不均。南极附近未观测区域以中性灰色标注，不补画；不是彩色照片或三维高程重建。'
  if ident=='10':b['appearanceType']='名义光球 · 无表面纹理';b['appearance']='使用 IAU 2015 名义太阳半径695700 km。白色球体仅表示光球边界，不绘制没有对应观测依据的黑子、耀斑或日冕。'
  if ident=='199':
   b['textureSource']='https://astrogeology.usgs.gov/search/map/mercury_messenger_mdis_global_mosaic_250m';b['textureCenterEast']=0;b['appearanceType']='MESSENGER · 全球灰度拼接';b['observation']='2013年5月版'
@@ -121,6 +122,7 @@ for ident in ['599','701','702','703','704','705','801']:
   if len(component)>512*256*.005:
    for cy,cx in component:mask[cy,cx]=255
  buf=io.BytesIO();Image.fromarray(mask).save(buf,format='PNG');payload['missingMasks'][ident]='data:image/png;base64,'+base64.b64encode(buf.getvalue()).decode()
+payload['missingMasks']['999']='data:image/png;base64,'+base64.b64encode((ROOT/'assets/999-missing.png').read_bytes()).decode()
 (D/'model.json').write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf8')
 (ROOT/'data.js').write_text('window.SOLAR_DATA='+json.dumps(payload,ensure_ascii=False,separators=(',',':'))+';',encoding='utf8')
 for asset in manifest:
@@ -135,5 +137,9 @@ for asset in manifest:
  if asset['file']=='assets/899-illustration.jpg':asset.update(author='Solar System Scope / INOVE',license='https://creativecommons.org/licenses/by/4.0/',downloadUrl='https://www.solarsystemscope.com/textures/download/2k_neptune.jpg')
  if asset['file']=='assets/10-original.tif':asset['downloadUrl']='https://svs.gsfc.nasa.gov/vis/a030000/a030300/a030362/euvi_aia304_2012_carrington.tif'
  if asset['file']=='assets/199-global-2013.jpg':asset['downloadUrl']='https://astrogeology.usgs.gov/ckan/dataset/279e5d50-ff2f-4250-bde3-bb510096079e/resource/2b5865c2-bd0d-4962-bdb0-c12f0502def1/download/mercury_messenger_mosaic_global_1024.jpg'
+pluto_source=json.loads((D/'pluto-source.json').read_text())
+for asset in manifest:
+ if asset['file']=='assets/999-global-2017.jpg':asset.update(downloadUrl=pluto_source['downloadUrl'],credit=pluto_source['credit'],processing=pluto_source['processing'])
+manifest.append(dict(id='999-mask',file='assets/999-missing.png',sha256=pluto_source['outputs']['999-missing.png'],sourcePage=pluto_source['sourcePage'],processing='Source GeoTIFF no-data=0, nearest-neighbour reduction.'))
 (D/'asset-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf8')
 print(json.dumps(summary,ensure_ascii=False))

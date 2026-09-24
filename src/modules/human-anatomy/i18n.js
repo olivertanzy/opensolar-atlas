@@ -1,5 +1,12 @@
 import { locale,locales } from '@/i18n/index.js';
 export const rows={
+ interaction:['Interaction','操作模式','操作模式','操作モード','조작 모드'],
+ orbit:['Rotate','旋转','旋轉','回転','회전'],
+ pan:['Move','平移','平移','移動','이동'],
+ orbitHint:['Drag to rotate · Select a part in the list to focus','拖动旋转 · 点击部件列表定位局部','拖曳旋轉 · 點擊部件清單定位局部','ドラッグで回転 · 部位一覧から選択して移動','드래그로 회전 · 부위 목록에서 선택해 확대'],
+ panHint:['Drag to move the view · Scroll / pinch to zoom at the pointer','拖动平移视野 · 滚轮 / 捏合缩放','拖曳平移視野 · 滾輪 / 捏合縮放','ドラッグで視点を移動 · スクロール／ピンチで拡大','드래그로 시점 이동 · 스크롤/핀치로 확대'],
+ femaleBones:['Partial source: pelvis, spine, sternum and selected leg bones. No skull, ribs or arm bones.','源数据局部覆盖：骨盆、脊柱、胸骨、部分腿骨；未收录颅骨、肋骨、上肢骨。','來源局部覆蓋：骨盆、脊柱、胸骨、部分腿骨；未收錄顱骨、肋骨、上肢骨。','骨盤・脊柱・胸骨・一部の下肢骨のみ。頭蓋骨・肋骨・上肢骨は未収録。','골반·척추·흉골·일부 다리뼈만 포함. 두개골·갈비뼈·팔뼈는 미포함.'],
+ femaleVessels:['Selected organ vessels only; this source does not supply a continuous whole-body network.','仅收录部分器官血管，源数据不是连续的全身血管网。','僅收錄部分器官血管，來源不是連續的全身血管網。','一部の臓器血管のみ。全身の連続した血管網ではありません。','일부 장기 혈관만 포함하며 연속적인 전신 혈관망은 아닙니다.'],
  sample:['Reference sample','参考样本','參考樣本','参照サンプル','참조 표본'],
  male:['Male · BodyParts3D','男性 · BodyParts3D','男性 · BodyParts3D','男性 · BodyParts3D','남성 · BodyParts3D'],
  female:['Female · HRA','女性 · HRA','女性 · HRA','女性 · HRA','여성 · HRA'],
@@ -9,7 +16,7 @@ export const rows={
  openSection:['See inside the head','查看头部内部','查看頭部內部','頭部の内部を見る','머리 내부 보기'],
  closeSection:['Exit cutaway','退出剖开观察','退出剖開觀察','切り欠き表示を終了','절개 보기 종료'],
  sectionPosition:['Cutaway position','剖开位置','剖開位置','切断位置','절개 위치'],
- sectionLimit:['Clips existing surfaces to reveal inner parts. No scan image or tissue cross-section is synthesized.','裁切已有表面以露出内部结构，不生成扫描图或组织切片。','裁切已有表面以露出內部結構，不生成掃描圖或組織切片。','既存の表面を切り取り内部を表示します。スキャン画像や組織断面は生成しません。','기존 표면을 잘라 내부를 드러냅니다. 스캔 영상이나 조직 단면을 생성하지 않습니다.'],
+ sectionLimit:['Only bone and body-outline layers are cut. Vessels and neural structures remain intact. Source gaps are not filled; use Isolate selection to inspect a nested part.','只剖开骨骼和体表遮挡层，血管、神经保持源模型完整。源数据缺口不补造；深层部件可使用“单独观察”。','只剖開骨骼和體表遮擋層，血管、神經保持來源模型完整。不補造缺口；深層部件可用「單獨觀察」。','骨格と体表のみ切断します。血管・神経は元のままです。欠損は補完しません。内部の部位は選択のみ表示で確認できます。','뼈와 체표만 절개합니다. 혈관·신경은 원본 그대로 유지하며 누락 부분은 만들지 않습니다. 내부 부위는 선택만 표시로 확인하세요.'],
  outdated:['The model URL is missing or returned a web page. Reload to obtain the current asset links.','模型地址已失效或返回了网页，请刷新以获取当前模型链接。','模型網址失效或回傳網頁，請重新整理以取得目前連結。','モデルが存在しないかHTMLが返されました。再読み込みしてください。','모델 주소가 없거나 웹 페이지를 반환했습니다. 새로고침하세요.'],
  reload:['Reload page','刷新页面','重新整理','再読み込み','새로고침'],
  layers:['Layers & parts','图层与部件','圖層與部件','レイヤーと部位','레이어 및 부위'],
