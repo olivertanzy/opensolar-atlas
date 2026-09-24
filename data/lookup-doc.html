@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Horizons Lookup API</title>
+    <meta name="description" content="Horizons Lookup APIVersion: 1.1 (2025 March)change logProcess a user-specified name, designation, SPK-ID, IAU number, MPC packed designation,or other histori...">
+  
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="canonical" href="https://ssd-api.jpl.nasa.gov/doc/horizons_lookup.html">
+
+    <script type="text/javascript" src="/js/vendor/modernizr.js"></script>
+    <script type="text/javascript" src="/js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/vendor/fastclick.js"></script>
+    <script type="text/javascript" src="/js/vendor/foundation.min.js"></script>
+
+    <link rel="stylesheet" href="/css/github-markdown.css">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  </head>
+
+  <body>
+
+
+
+
+
+    <!-- force this div to stay at the top of the page to ensure we can always see the menu -->
+    <div class="sticky">
+      <!-- alert when Javascript is disabled -->
+      <noscript>
+        <div data-alert class="alert-box alert">
+          <a href="#" class="close">&times;</a>This site requires JavaScript for most of its functionality.
+          See <a href="http://www.enable-javascript.com">these instructions</a> for enabling JavaScript in your web browser.
+        </div>
+      </noscript>
+      <!-- Top Nav-Bar (begin) -->
+      <nav class="top-bar" role="navigation" data-topbar>
+        <!-- here is the left-side site-logo-go-to-our-home-page button/label -->
+        <ul class="title-area">
+          <li class="name">
+          
+            <div class="logo-container">
+              <div class="nasa-logo">
+                <a id="logo_link_nasa" href="https://www.nasa.gov/">
+                  <img src="/images/transparent.gif" class="hidden-image" alt="NASA Home" />
+                </a>
+                <a id="logo_link_jpl" href="http://www.jpl.nasa.gov/">
+                  <img src="/images/transparent.gif" class="hidden-image" alt="JPL Home" />
+                </a>
+                <a id="logo_link_caltech" href="http://www.caltech.edu/">
+                  <img src="/images/transparent.gif" class="hidden-image" alt="Caltech Home" />
+                </a>
+              </div>
+            </div>
+          </li>
+          
+          <li class="toggle-topbar menu-icon"><a href="/"><span><img id="gear_logo" src="/images/logo_gears.png" alt="Home" /></span></a></li>
+        </ul>
+        <!-- start of main navigation buttons -->
+        <section class="top-bar-section">
+          <ul class="right">
+            <li><a href="/"><div id="api_logo"><img src="/images/api_logo.png" alt="Home" /></div></a></li>
+            <li class="divider"></li>
+            <li><a href="/about/">About</a></li>
+            <li class="divider"></li>
+            <li><a href="/doc/">Documents</a></li>
+          </ul>
+        </section>
+      </nav>
+      <!-- Top Nav-Bar (end) -->
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<!-- page content: begin -->
+
+
+<div class="markdown-body">
+<div class="row">
+  <div class="small-12 columns">
+
+
+
+
+
+
+<h1 id="horizons-lookup-api">Horizons Lookup API</h1>
+<p><strong>Version: 1.1</strong> (2025 March)<br /><a href="#change_log">change log</a></p>
+
+<p>Process a user-specified name, designation, SPK-ID, IAU number, MPC packed designation,
+or other historical alias, and return in a standardized format its primary synonyms
+and all aliases recognized by JPL’s <a href="https://ssd.jpl.nasa.gov/horizons/">Horizons system</a>
+as being linked to publicly available trajectory data.</p>
+
+<p>This API is intended for telescope schedulers and others who need to correlate one of the many object labels typically possible with Horizons output and other sources.</p>
+
+<p>For example, one might request an ephemeris for asteroid “1954 SO1” from Horizons.
+This API can be used to determine the object also has the (IAU) name “Thetis”,
+has historical alternate designations of “A916 YF”, “A913 CA”, a historical alternate SPK ID of “2000017”, an MPC 7-character packed designation of “I52H00A”, and that an SPK file request will come back from Horizons with the default name “20000017.bsp”, based on the current primary SPK ID.</p>
+
+<p><a id="request"></a></p>
+<h2>HTTP Request</h2>
+
+<p><span class="label">GET</span>
+<code>https://ssd.jpl.nasa.gov/api/horizons_lookup.api</code></p>
+
+<h3 id="example-queries">Example Queries</h3>
+
+<ul>
+  <li>Retrieve (In JSON format) all aliases for objects having the designation “2004 MN4”
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">https://ssd.jpl.nasa.gov/api/horizons_lookup.api?sstr=2004%20MN4</code></li>
+    </ul>
+  </li>
+  <li>Retrieve (in text format) all aliases for objects containing the string “Halley”:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">https://ssd.jpl.nasa.gov/api/horizons_lookup.api?sstr=Halley&amp;format=text</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="query-parameters">Query Parameters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Parameter</th>
+      <th style="text-align: center">Type</th>
+      <th style="text-align: center">Default</th>
+      <th style="text-align: center">Allowed values</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">sstr</td>
+      <td style="text-align: center">string</td>
+      <td style="text-align: center"><em>none</em></td>
+      <td style="text-align: center"><em>discussion below</em></td>
+      <td style="text-align: left">Search string containing object name, designation, SPK-ID, IAU number, or MPC packed-format designation</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">group</td>
+      <td style="text-align: center">string</td>
+      <td style="text-align: center"><em>none</em></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">ast</code>,<code class="language-plaintext highlighter-rouge">com</code>,<code class="language-plaintext highlighter-rouge">pln</code>,<code class="language-plaintext highlighter-rouge">sat</code>,<code class="language-plaintext highlighter-rouge">sct</code>,<code class="language-plaintext highlighter-rouge">mb</code>,<code class="language-plaintext highlighter-rouge">sb</code></td>
+      <td style="text-align: left">Object group limiter, optionally use none or one: <code class="language-plaintext highlighter-rouge">ast</code> to limit search to asteroids only, <code class="language-plaintext highlighter-rouge">com</code> for comets only, <code class="language-plaintext highlighter-rouge">pln</code> for planets and dynamical points only, <code class="language-plaintext highlighter-rouge">sct</code> for spacecraft only, <code class="language-plaintext highlighter-rouge">sat</code> for natural satellites only, <code class="language-plaintext highlighter-rouge">mb</code> for major body index only, <code class="language-plaintext highlighter-rouge">sb</code> small-body index only</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">format</td>
+      <td style="text-align: center">string</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">json</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">json</code>,<code class="language-plaintext highlighter-rouge">text</code></td>
+      <td style="text-align: left">Specify output format: <code class="language-plaintext highlighter-rouge">json</code> for JSON or <code class="language-plaintext highlighter-rouge">text</code> for plain-text (use <code class="language-plaintext highlighter-rouge">text</code> for backward compatibility with prior obsolete CGI implementation)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="usage-and-examples">Usage and examples</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">sstr</code> parameter can refer to a planet, asteroid, comet, natural satellite, or spacecraft.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type of specification</th>
+      <th style="text-align: left">Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">name</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">sstr=Juno</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">designation</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">sstr='1990 MU'</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SPK ID</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">sstr=20101955</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">IAU number</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">sstr=1</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">MPC packed designation</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">sstr=J89A00C</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The search is <strong>space sensitive</strong>. For example, <code class="language-plaintext highlighter-rouge">sstr='1990MU'</code> will not match.</p>
+
+<p>This API searches two indexes used by Horizons:</p>
+
+<ol>
+  <li>
+    <p>The “major body” (MB) index. This includes objects whose trajectories are precomputed for one reason or another, typically because they were created using separate off-line software: planets, dynamical points, natural satellites (of both planets and asteroids), spacecraft, and special case objects such as archival small-body solutions consistent with flight project activity. Horizons ephemerides for such ‘major bodies’ are derived from Cartesian vectors extracted by reading these pre-defined datafiles.</p>
+  </li>
+  <li>
+    <p>The small-body index (SB). These are asteroids &amp; comets having IAU designations whose latest initial conditions are stored in a database and numerically integrated to other times upon request. The Horizons results are derived from Cartesian vectors extracted from that dynamical integration of the latest trajectory solution.</p>
+  </li>
+</ol>
+
+<p>Names are not guaranteed to be unique across all categories of objects. For example, there is an asteroid named “Halley” and a comet named “Halley”, both in the small-body index. A search on <code class="language-plaintext highlighter-rouge">sstr=Juno</code> would currently return data for three objects: the Juno spacecraft, the Juno Centaur booster (both in the major-body index) and the asteroid “3 Juno” (in the small-body index).</p>
+
+<p>If the type of object is known, the optional <code class="language-plaintext highlighter-rouge">group</code> parameter provides seven limiters
+to restrict search results to a single type of object and improve the chances of a single unique match to the object of interest:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">ast</code>   (asteroids only; checks MB &amp; SB)</li>
+  <li><code class="language-plaintext highlighter-rouge">com</code>   (comets only; checks MB &amp; SB)</li>
+  <li><code class="language-plaintext highlighter-rouge">pln</code>   (planets only; checks MB only)</li>
+  <li><code class="language-plaintext highlighter-rouge">sat</code>   (natural satellites only; checks MB only)</li>
+  <li><code class="language-plaintext highlighter-rouge">sct</code>   (spacecraft only; checks MB only)</li>
+  <li><code class="language-plaintext highlighter-rouge">mb</code>		  (search major body (MB) index only)</li>
+  <li><code class="language-plaintext highlighter-rouge">sb</code>		  (search numerically integrated small-body (SB) index only)</li>
+</ul>
+
+<p>For example, if it is known that only an asteroid was of interest, <code class="language-plaintext highlighter-rouge">sstr=Juno&amp;group=ast</code> would return data only for asteroids and not list the spacecraft matches. Conversely, <code class="language-plaintext highlighter-rouge">sstr=Juno&amp;group=sct</code> would return only spacecraft entries, not the asteroid.</p>
+
+<p>Similarly, <code class="language-plaintext highlighter-rouge">sstr=Halley</code> would check both indexes and return data for the comet AND asteroid (and perhaps any future spacecraft trajectories using that name), whereas <code class="language-plaintext highlighter-rouge">sstr=Halley&amp;group=com</code> would return data only for small-body comet matches. <code class="language-plaintext highlighter-rouge">sstr=1P</code>, the comet’s designation, would also work to limit results to the small-body comet.</p>
+
+<p>Asteroidal systems, Patroclus as an example, can have three or more entries in the major body index: system barycenter, the primary body, and one or more satellites, their trajectories all stored in   datafiles covering predefined earliest-to-latest timespans. There is then typically an additional entry for the object from the small body index. This can be used within Horizons to instead numerically integrate the latest system barycenter solution over arbitrary timespans with additional types of output, such as statistical uncertainties.</p>
+
+<h3 id="allowable-characters-for-sstr">Allowable Characters for <code class="language-plaintext highlighter-rouge">sstr</code></h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">sstr</code> parameter may contain any combination of alphanumeric characters,
+space, <code class="language-plaintext highlighter-rouge">/</code>, <code class="language-plaintext highlighter-rouge">'</code>, <code class="language-plaintext highlighter-rouge">-</code>, <code class="language-plaintext highlighter-rouge">!</code>, <code class="language-plaintext highlighter-rouge">=</code>, <code class="language-plaintext highlighter-rouge">|</code> and <code class="language-plaintext highlighter-rouge">.</code>.</p>
+
+<p>If the <code class="language-plaintext highlighter-rouge">sstr</code> parameter contains any space or other URI-reserved characters, URL-encode such characters for reliable results to avoid parsing by the local operating system. Quoting may not be reliable. For example, to search for “1990 MU”, use <code class="language-plaintext highlighter-rouge">sstr=1990%20MU</code>.</p>
+
+<p>Symbols occuring in object names that typically require URL-encoding:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Reserved symbol</th>
+      <th style="text-align: left">URL encoding</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">(space)</td>
+      <td style="text-align: left">%20</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">/</td>
+      <td style="text-align: left">%2F</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">’</td>
+      <td style="text-align: left">%27</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">-</td>
+      <td style="text-align: left">%2D</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">!</td>
+      <td style="text-align: left">%21</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">=</td>
+      <td style="text-align: left">%3D</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">|</td>
+      <td style="text-align: left">%7C</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="data-output">Data Output</h2>
+
+<blockquote>
+  <p>Please <strong>always check</strong> the JSON payload “signature” object for the API “version”.
+  If the version does not match the version in this document (at the top),
+  there is no guarantee that the format has not changed.</p>
+  <p>Example "signature" object with "version" value "1.0":
+  <code>"signature":{"version":"1.0","source":"NASA/JPL ... API"}</code>
+  </p>
+</blockquote>
+
+<p>A successful query returns results in JSON-format (by default) or text-format if requested, as shown in the example below. A query that does no match any known object is considered successful but will return a result with the JSON “count” keyword set to zero (“0”).</p>
+
+<p>JSON-format results are provided in the JSON “result” array which contains one or more
+JSON-object for each matching Horizons body.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">JSON keyword</th>
+      <th style="text-align: left">text-format equivalent</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">“name”</td>
+      <td style="text-align: left">“Object name”</td>
+      <td style="text-align: left">Name of the matching object (for numbered asteroids, this will contain the IAU-number as well as the IAU-name, e.g., <code class="language-plaintext highlighter-rouge">3 Juno</code>)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">“type”</td>
+      <td style="text-align: left">“Type”</td>
+      <td style="text-align: left">Descriptive object category</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">“pdes”</td>
+      <td style="text-align: left">“Primary designation”</td>
+      <td style="text-align: left">Primary provisional designation (<code class="language-plaintext highlighter-rouge">null</code> if not known)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">“spkid”</td>
+      <td style="text-align: left">“Primary SPKID”</td>
+      <td style="text-align: left">Primary SPK ID</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">“alias”</td>
+      <td style="text-align: left">“Aliases”</td>
+      <td style="text-align: left">A list of alternate designations, SPK IDs, etc. (<code class="language-plaintext highlighter-rouge">[]</code> if none)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For plain-text format results, see examples below under the heading
+<a href="#text">Sample <code class="language-plaintext highlighter-rouge">text</code>-format Output</a>.</p>
+
+<h3 id="sample-json-format-output"><a name="json"></a>Sample <code class="language-plaintext highlighter-rouge">json</code>-format Output</h3>
+
+<p>Here is an example of output for a singular match:</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://ssd.jpl.nasa.gov/api/horizons_lookup.api?sstr=2004%20MN4</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "signature" : {
+    "source" : "NASA/JPL Horizons Lookup API",
+    "version" : "1.0"
+  },
+  "count" : 1,
+  "result" : [
+    {
+      "alias" : [ "3264226", "K04M04N" ],
+      "name" : "99942 Apophis",
+      "spkid" : "2099942",
+      "pdes" : "2004 MN4",
+      "type" : "asteroid (integrated barycenter)",
+    }
+  ]
+}
+</code></pre></div></div>
+
+<p>Here is an example of output for multiple matches:</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://ssd.jpl.nasa.gov/api/horizons_lookup.api?sstr=Juno</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "signature" : {
+    "source" : "NASA/JPL Horizons Lookup API",
+    "version" : "1.0"
+  },
+  "count" : 3,
+  "result" : [
+    {
+      "name" : "Juno (spacecraft)",
+      "pdes" : null,
+      "spkid" : "-61",
+      "type" : "spacecraft",
+      "alias" : []
+    },
+    {
+      "name" : "Juno Centaur Stage (spacecraft)",
+      "pdes" : null,
+      "spkid" : "-610",
+      "type" : "spacecraft",
+      "alias" : []
+    },
+    {
+      "name" : "3 Juno",
+      "pdes" : "A804 RA",
+      "spkid" : "20000003",  
+      "type" : "asteroid (integrated barycenter)",
+      "alias" : [ "I04R00A" ]
+    }
+  ]
+}
+</code></pre></div></div>
+
+<p>Here is an example of output for no matching objects:</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://ssd.jpl.nasa.gov/api/horizons_lookup.api?sstr=ZZZZ</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "signature" : {
+    "source" : "NASA/JPL Horizons Lookup API",
+    "version" : "1.0"
+  },
+  "count" : "0"
+}
+</code></pre></div></div>
+
+<h3 id="sample-text-format-output"><a name="text"></a>Sample <code class="language-plaintext highlighter-rouge">text</code>-format Output</h3>
+
+<blockquote>
+  <p>Note that records are delimited by a trailing blank line.</p>
+</blockquote>
+
+<p>Here is an example of output for a singular match (SB index):</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://ssd.jpl.nasa.gov/api/horizons_lookup.api?sstr=2004%20MN4&amp;format=text</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>API VERSION: 1.0
+API SOURCE: NASA/JPL Horizons Lookup API
+
+Object name        = 99942 Apophis
+Type               = asteroid (integrated barycenter)
+Primary SPKID      = 20099942
+Primary designation= 2004 MN4
+Aliases            = 3264226, 2099942, K04M04N
+
+</code></pre></div></div>
+
+<p>Here is an example of output for multiple matches (MB and SB indexes):</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://ssd.jpl.nasa.gov/api/horizons_lookup.api?sstr=Patroclus&amp;format=text</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>API VERSION: 1.0
+API SOURCE: NASA/JPL Horizons Lookup API
+
+Object name        = Patroclus (system barycenter)
+Type               = asteroid barycenter
+Primary SPKID      = 20000617
+Primary designation= 
+Aliases            = 
+
+Object name        = Patroclus (primary body)
+Type               = asteroidal system primary
+Primary SPKID      = 920000617
+Primary designation= 
+Aliases            = 
+
+Object name        = Menoetius
+Type               = asteroidal system satellite
+Primary SPKID      = 120000617
+Primary designation= Patroclus I
+Aliases            = 
+
+Object name        = 617 Patroclus
+Type               = asteroid (integrated barycenter)
+Primary SPKID      = 20000617
+Primary designation= A906 UL
+Aliases            = 1962 NB, 1941 XC, 2000617, J06U00L
+
+</code></pre></div></div>
+
+<p>Here is an example of output for no matching objects:</p>
+
+<p><code class="language-plaintext highlighter-rouge">https://ssd.jpl.nasa.gov/api/horizons_lookup.api?sstr=ZZZZ&amp;format=text</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>API VERSION: 1.0
+API SOURCE: NASA/JPL Horizons Lookup API
+
+NOTICE: no matches found
+</code></pre></div></div>
+
+<h2 id="http-response-codes">HTTP Response Codes</h2>
+
+<p>Successful matches return one or more entry listings. Error messages and equivalent integer codes are returned otherwise, as described below.</p>
+
+<p>It is possible to submit a search that produces no matching data. In such cases, a 200 error code
+is returned but the JSON “count” keyword has a value of “0”.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">HTTP Code</th>
+      <th style="text-align: center">Description</th>
+      <th>Typical Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">200</td>
+      <td style="text-align: center">OK</td>
+      <td>normal result</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">400</td>
+      <td style="text-align: center">Bad Request</td>
+      <td>request contained invalid keywords and/or content</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">405</td>
+      <td style="text-align: center">Method Not Allowed</td>
+      <td>the request used an incorrect HTTP method (see the <a href="#request">HTTP Request</a> section)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">500</td>
+      <td style="text-align: center">Internal Server Error</td>
+      <td>necessary databases are not available (server-side error)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">503</td>
+      <td style="text-align: center">Service Unavailable</td>
+      <td>the server is currently unable to handle the request due to a temporary overloading or maintenance of the server, which will likely be alleviated after some delay</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="change-log"><a name="change_log"></a>Change Log</h2>
+
+<h3 id="version-11-2025-march">Version 1.1 (2025 March)</h3>
+
+<ul>
+  <li>Expanded group specification options and added ‘type’ output</li>
+</ul>
+
+<h3 id="version-10-2021-september">Version 1.0 (2021 September)</h3>
+
+<ul>
+  <li>Initial release</li>
+</ul>
+
+
+  </div>
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <ul class="hide-for-small-only inline-list">
+      <li><a href="http://www.jpl.nasa.gov/copyrights.php">Privacy</a></li>
+      <li><a>|</a></li>
+      <li><a href="http://www.jpl.nasa.gov/imagepolicy">Image Policy</a></li>
+    </ul>
+    <ul class="show-for-small-only no-bullet">
+      <li><a href="http://www.jpl.nasa.gov/copyrights.php">Privacy</a></li>
+      <li><a href="http://www.jpl.nasa.gov/imagepolicy">Image Policy</a></li>
+    </ul>
+  </div>
+  <div class="footer-people">
+    <table id="footer-people-table" role="presentation">
+      <tr>
+        <td class="people-label text-right">Site Manager :</td>
+        <td class="text-left">Ryan Park</td>
+      </tr>
+      <tr>
+        <td class="people-label text-right">Webmaster :</td>
+        <td class="text-left">Alan Chamberlin</td>
+      </tr>
+      <tr>
+        <td class="people-label text-right">URS Clearance :</td>
+        <td class="text-left">CL#16-5242</td>
+      </tr>
+    </table>
+  </div>
+
+
+</footer>
+
+<script>
+var name = 'contact-ssd-api';
+var domain = 'jpl.nasa.gov';
+var maddr = name + String.fromCharCode(64) + domain;
+var html = '<tr><td class="people-label text-right">Contact :</td>';
+html += '<td class="text-left">' + maddr + '</td></tr>';
+$('#footer-people-table').append(html);
+</script>
+
+<!-- Initialize Foundation JS at the end of the BODY section -->
+<script>
+$(document).foundation({
+  accordion: {
+    multi_expand: true
+  }
+});
+//
+// Force external links to open in a new tab/window (A.Chamberlin)
+$(document).ready(function() {
+  $('a[href^="http"]').attr('target','_blank');
+});
+</script>
+
+  </body>
+</html>

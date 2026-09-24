@@ -1,0 +1,525 @@
+[
+  {
+    "id": "502",
+    "file": "assets\\502.jpg",
+    "sha256": "166057ff6deea19b2eeedf82fe0a6694837b6e7236fb19c734d56cb42e979e0f",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/jupiter.html"
+  },
+  {
+    "id": "503",
+    "file": "assets\\503.jpg",
+    "sha256": "4afad9cce0c224d506e649564ebf9186f116632cb8a777a6e8773e07d5c944a3",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/jupiter.html"
+  },
+  {
+    "id": "504",
+    "file": "assets\\504.jpg",
+    "sha256": "1cc2dca20f7ea1e6c501f0e344af549318e90060e973f2606075ffa03f12acb6",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/jupiter.html"
+  },
+  {
+    "id": "401",
+    "file": "assets\\401.jpg",
+    "sha256": "84eb21c08626a0558d1e88ccb666bd1e914606146423f9ebcf6c09953d7543af",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/mars.html"
+  },
+  {
+    "id": "402",
+    "file": "assets\\402.jpg",
+    "sha256": "e8902c5b34e634c5146e5d8d2bf352bb5f45181c715ed15644edb5f009826ed6",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/mars.html"
+  },
+  {
+    "id": "499",
+    "file": "assets\\499.jpg",
+    "sha256": "0f9a3faf586ac857623660504e63dd3e2b8358203d8d0c32c27c5fe1585548c6",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/mars.html"
+  },
+  {
+    "id": "299",
+    "file": "assets\\299.jpg",
+    "sha256": "abcb9c1e26f92686cd876504ef351587f74ea424594656734787f18f2e72cdbc",
+    "originalSize": [
+      720,
+      360
+    ],
+    "usedSize": [
+      720,
+      360
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/venus.html"
+  },
+  {
+    "id": "601",
+    "file": "assets\\601.jpg",
+    "sha256": "0f539e6cc67c0336a9a619e1e0855b6add8b90542a3aa676b9e961b59f388160",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/saturn.html"
+  },
+  {
+    "id": "602",
+    "file": "assets\\602.jpg",
+    "sha256": "652401ad5ea3f77d5f2ec3a19a0948b93bf874903668bab02cedd18759ddde7e",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/saturn.html"
+  },
+  {
+    "id": "603",
+    "file": "assets\\603.jpg",
+    "sha256": "c83a23c33f71dc7a1bb40ab9f3d1c4a644101f6c3e5a92f36bf2c438d5dec58f",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/saturn.html"
+  },
+  {
+    "id": "604",
+    "file": "assets\\604.jpg",
+    "sha256": "55bcabd04ab660ca1d2082739867128b6f0891d84fa18a872ea43ff4d77fa8f6",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/saturn.html"
+  },
+  {
+    "id": "605",
+    "file": "assets\\605.jpg",
+    "sha256": "e4b2cba5bea5dcc48ae674bdcbcc097fb14d75a8672d42af5126d1f991f95d36",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/saturn.html"
+  },
+  {
+    "id": "608",
+    "file": "assets\\608.jpg",
+    "sha256": "29cd7c31616cca46402a454c534d35c6f55ea94b537178645b9753e86197257b",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/saturn.html"
+  },
+  {
+    "id": "701",
+    "file": "assets\\701.jpg",
+    "sha256": "88e21bc6094ddd3821a58dd9552d5d8496ca7b3e69925ad5085cd561e8500c16",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/uranus.html"
+  },
+  {
+    "id": "702",
+    "file": "assets\\702.jpg",
+    "sha256": "fbca608955c27872c6276aa17c35b9ac7c81040614b1849b864e9ffd08e943f1",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/uranus.html"
+  },
+  {
+    "id": "703",
+    "file": "assets\\703.jpg",
+    "sha256": "cde4432380f44d2cda56c0059ae8ad44b7029bc930aefadf2cbac91379dd41e7",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/uranus.html"
+  },
+  {
+    "id": "704",
+    "file": "assets\\704.jpg",
+    "sha256": "ed29842e1b1fb96ee9626a62d4ee7bbf53756997ef33b1edda2dbead43383460",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/uranus.html"
+  },
+  {
+    "id": "705",
+    "file": "assets\\705.jpg",
+    "sha256": "de6fab3acb9a68bcbe59b3ac0c5b985b63c5b5bf6b75b142f4749cb6eadfca36",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/uranus.html"
+  },
+  {
+    "id": "801",
+    "file": "assets\\801.jpg",
+    "sha256": "45f107996448c2236ede95624bfb672b56f0db843f084ed61a197454050b3214",
+    "originalSize": [
+      1440,
+      720
+    ],
+    "usedSize": [
+      1440,
+      720
+    ],
+    "crop": null,
+    "sourcePage": "https://space.jpl.nasa.gov/tmaps/neptune.html"
+  },
+  {
+    "id": "599",
+    "file": "assets\\599-original.tif",
+    "sha256": "0a323aa71c8e66589d85d9099158c429f164565e6851729a37324af58cb1cebd",
+    "originalSize": [
+      3600,
+      1800
+    ],
+    "usedSize": [
+      3600,
+      1800
+    ],
+    "crop": null,
+    "sourcePage": "https://archive.stsci.edu/hlsp/opal/opal-jupiter-cycle-28",
+    "downloadUrl": "https://archive.stsci.edu/hlsps/opal/cycle28/jupiter/hlsp_opal_hst_wfc3-uvis_jupiter-2021a_f395n-f502n-f631n_v1_globalmap.tif"
+  },
+  {
+    "id": "699",
+    "file": "assets\\699-original.tif",
+    "sha256": "b209f4e4d777175615700e32cda3e99e477559b845ff8b31da58977eb20989af",
+    "originalSize": [
+      1800,
+      900
+    ],
+    "usedSize": [
+      1800,
+      900
+    ],
+    "crop": null,
+    "sourcePage": "https://archive.stsci.edu/hlsp/opal/opal-saturn-cycle-28",
+    "downloadUrl": "https://archive.stsci.edu/hlsps/opal/cycle28/saturn/hlsp_opal_hst_wfc3-uvis_saturn-2021a_f395n-f502n-f631n_v1_globalmap.tif"
+  },
+  {
+    "id": "799",
+    "file": "assets\\799-original.tif",
+    "sha256": "ebfa2f92e674a57b40c8c74aa43ac7db278041afdc55bd408c877c0129a8034f",
+    "originalSize": [
+      721,
+      361
+    ],
+    "usedSize": [
+      721,
+      361
+    ],
+    "crop": null,
+    "sourcePage": "https://archive.stsci.edu/hlsp/opal/opal-uranus-cycle-28",
+    "downloadUrl": "https://archive.stsci.edu/hlsps/opal/cycle28/uranus/hlsp_opal_hst_wfc3-uvis_uranus-2020a_f467m-f547m-f657n_v1_globalmap.tif"
+  },
+  {
+    "id": "899",
+    "file": "assets\\899-original.tif",
+    "sha256": "f81d6a0959fc6eb271e1cae03f0453d7046b1b6725130450f332f79f22990344",
+    "originalSize": [
+      721,
+      361
+    ],
+    "usedSize": [
+      721,
+      361
+    ],
+    "crop": null,
+    "sourcePage": "https://archive.stsci.edu/hlsp/opal/opal-neptune-cycle-28",
+    "downloadUrl": "https://archive.stsci.edu/hlsps/opal/cycle28/neptune/hlsp_opal_hst_wfc3-uvis_neptune-2021a_f467m-f547m-f657n_v1_globalmap.tif"
+  },
+  {
+    "id": "399",
+    "file": "assets\\399-original.png",
+    "sha256": "ae6214b078ed0864c96f74bcb10ae3021f6eb116f8059797efe0fa9ea8b89d35",
+    "originalSize": [
+      2048,
+      1024
+    ],
+    "usedSize": [
+      2048,
+      1024
+    ],
+    "crop": null,
+    "sourcePage": "https://svs.gsfc.nasa.gov/2915/",
+    "downloadUrl": "https://svs.gsfc.nasa.gov/vis/a000000/a002900/a002915/bluemarble-2048.png"
+  },
+  {
+    "id": "301",
+    "file": "assets\\301-original.jpg",
+    "sha256": "f7130a1822681fa7512d7dcfd40db8c10b9ba4f06777910348698260ed7a2170",
+    "originalSize": [
+      2048,
+      1024
+    ],
+    "usedSize": [
+      2048,
+      1024
+    ],
+    "crop": null,
+    "sourcePage": "https://svs.gsfc.nasa.gov/4720/",
+    "downloadUrl": "https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_2k.jpg"
+  },
+  {
+    "id": "199",
+    "file": "assets\\199-original.jpg",
+    "sha256": "43ef3b5bf184bfe58f39d243d34e83c49073b993a8bdd7483273afaa33ef1296",
+    "originalSize": [
+      1533,
+      767
+    ],
+    "usedSize": [
+      1533,
+      767
+    ],
+    "crop": null,
+    "sourcePage": "https://science.nasa.gov/photojournal/full-global-mercury-mosaic/",
+    "downloadUrl": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia12/pia12397/PIA12397.jpg"
+  },
+  {
+    "id": "501",
+    "file": "assets\\501-original.jpg",
+    "sha256": "d722a545c9290b33f3b57cb7ccb9e173b367a7a8fa4867e74a8e11538f274282",
+    "originalSize": [
+      1024,
+      512
+    ],
+    "usedSize": [
+      1024,
+      512
+    ],
+    "crop": null,
+    "sourcePage": "https://astrogeology.usgs.gov/search/map/io_galileo_ssi_global_color_merge_mosaic_1km",
+    "downloadUrl": "https://astrogeology.usgs.gov/ckan/dataset/0fc15885-24ee-4d9d-9666-11de0667c10c/resource/73d4c1f7-8c07-4b28-90ea-f47f7531c5ca/download/full.jpg"
+  },
+  {
+    "id": "199",
+    "file": "assets\\199-global-2013.jpg",
+    "sha256": "c9f5848c66ecc6c2a87f058ab4633506dcfc4b2f0ba6aa5ac258ba1c81468b22",
+    "originalSize": [
+      1024,
+      513
+    ],
+    "usedSize": [
+      1021,
+      513
+    ],
+    "crop": [
+      1,
+      0,
+      1022,
+      513
+    ],
+    "sourcePage": "https://astrogeology.usgs.gov/search/map/mercury_messenger_mdis_global_mosaic_250m"
+  },
+  {
+    "id": "10",
+    "file": "assets\\10-original.tif",
+    "sha256": "6235977f0fee5594786d8cde7bd4b0bb46db1f7755cf30cf625d0f1dc3e72ba5",
+    "originalSize": [
+      4104,
+      2304
+    ],
+    "usedSize": [
+      3648,
+      2048
+    ],
+    "crop": null,
+    "sourcePage": "https://svs.gsfc.nasa.gov/30362"
+  },
+  {
+    "id": "699",
+    "file": "assets\\699-illustration.jpg",
+    "sha256": "54a900ca9bf7ab62e70f862852759abdf342e6d6436a95a2fe9ebdb6bcd3bbac",
+    "originalSize": [
+      2048,
+      1024
+    ],
+    "usedSize": [
+      2048,
+      1024
+    ],
+    "crop": null,
+    "sourcePage": "https://www.solarsystemscope.com/textures/"
+  },
+  {
+    "id": "799",
+    "file": "assets\\799-illustration.jpg",
+    "sha256": "d15239d46f82d3ea13d2b260b5b29b2a382f42f2916dae0694d0387b1204a09d",
+    "originalSize": [
+      2048,
+      1024
+    ],
+    "usedSize": [
+      2048,
+      1024
+    ],
+    "crop": null,
+    "sourcePage": "https://www.solarsystemscope.com/textures/"
+  },
+  {
+    "id": "899",
+    "file": "assets\\899-illustration.jpg",
+    "sha256": "cb42ea82709741d28b0af44d8b283cbc6dbd0c521a7f0e1e1e010ade00977df6",
+    "originalSize": [
+      2048,
+      1024
+    ],
+    "usedSize": [
+      2048,
+      1024
+    ],
+    "crop": null,
+    "sourcePage": "https://www.solarsystemscope.com/textures/"
+  },
+  {
+    "id": "606",
+    "file": "assets\\606-original.jpg",
+    "sha256": "b0a81a0f4979c0468549827743fe22a71aaa21e13bc491b8848252780df18203",
+    "originalSize": [
+      800,
+      444
+    ],
+    "usedSize": [
+      740,
+      370
+    ],
+    "crop": [
+      36,
+      40,
+      776,
+      410
+    ],
+    "sourcePage": "https://science.nasa.gov/resource/titan-global-map-june-2015/",
+    "downloadUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/09/p/i/a/PIA19658-1.jpg?w=800&h=444&fit=clip&crop=faces%2Cfocalpoint"
+  },
+  {
+    "id": "saturn-ring",
+    "file": "assets/saturn-ring.png",
+    "sha256": "4b0644b2f3ef259fd0bfaedd9dc52f9e7d9738f65f50363e8c4dd19f650d7334",
+    "author": "Solar System Scope / INOVE",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "sourcePage": "https://www.solarsystemscope.com/textures/",
+    "downloadUrl": "https://www.solarsystemscope.com/textures/download/2k_saturn_ring_alpha.png"
+  }
+]

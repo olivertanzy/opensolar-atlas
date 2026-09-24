@@ -1,0 +1,1267 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta info -->
+		<meta charset="UTF-8">
+		<meta name="language" content="english">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta name="author" content="
+	
+		Ernie Wright
+	
+">
+		<meta
+			name="description"
+			content="These color and elevation maps are designed for use in 3D rendering software. They are created from data assembled by the Lunar Reconnaissance Orbiter camera and laser altimeter instrument teams."
+		>
+		<meta
+			name="keywords"
+			content="NASA, SVS, Scientific Visualization Studio, Scientific Visualization, Albedo, Elevation Map, HDTV, Hyperwall, Laser Altimeter, LOLA, LRO, LROC, Lunar Reconnaissance Orbiter, map, Mosaic"
+		>
+
+		<!-- Open graph protocol properties --> 
+		<meta property="og:title" content="NASA Scientific Visualization Studio | CGI Moon Kit">
+		<meta property="og:type" content="article">
+		<meta property="og:image" content="/vis/a000000/a004700/a004720/lroc_color_2k.jpg">
+		<meta property="og:description" content="These color and elevation maps are designed for use in 3D rendering software. They are created from data assembled by the Lunar Reconnaissance Orbiter camera and laser altimeter instrument teams.">
+		
+	<meta property="article:published_time" content="2019-09-06T10:00:00-04:00">
+	<meta property="article:modified_time" content="2026-01-09T15:33:13.976536-05:00">
+	
+	
+		<meta property="og:video" content="/vis/a000000/a004700/a004720/moon_mapping_720p30.mp4">
+	
+	
+	
+		<meta property="article:author" content="Ernie Wright">
+	
+	
+	
+		<meta property="article:tag" content="Albedo">
+	
+		<meta property="article:tag" content="Elevation Map">
+	
+		<meta property="article:tag" content="HDTV">
+	
+		<meta property="article:tag" content="Hyperwall">
+	
+		<meta property="article:tag" content="Laser Altimeter">
+	
+		<meta property="article:tag" content="LOLA">
+	
+		<meta property="article:tag" content="LRO">
+	
+		<meta property="article:tag" content="LROC">
+	
+		<meta property="article:tag" content="Lunar Reconnaissance Orbiter">
+	
+		<meta property="article:tag" content="map">
+	
+		<meta property="article:tag" content="Mosaic">
+	
+
+		
+		<meta property="og:url" content="https://svs.gsfc.nasa.gov/4720">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:site_name" content="NASA Scientific Visualization Studio">
+
+		<!-- json-ld properties -->
+		<script type="application/ld+json">
+			{"@context": "http://schema.org", "@type": "Article", "headline": "CGI Moon Kit", "url": "https://svs.gsfc.nasa.gov/4720", "thumbnailUrl": "/vis/a000000/a004700/a004720/lroc_color_2k.jpg", "datePublished": "2019-09-06T10:00:00-04:00", "articleSection": "Visualization", "creator": ["Ernie Wright"], "keywords": ["Albedo","Elevation Map","HDTV","Hyperwall","Laser Altimeter","LOLA","LRO","LROC","Lunar Reconnaissance Orbiter","map","Mosaic"]}
+		</script>
+
+		<!-- Icons -->
+		<link rel="icon" sizes="16x16" type="image/png" href="https://nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-16x16.png">
+		<link rel="icon" sizes="32x32" type="image/png" href="https://nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-32x32.png">
+		<link rel="icon" sizes="57x57" type="image/png" href="https://nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-57x57.png">
+		<link rel="icon" sizes="76x76" type="image/png" href="https://nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-76x76.png">
+		<link rel="icon" sizes="96x96" type="image/png" href="https://nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-96x96.png">
+		<link rel="icon" sizes="128x128" type="image/png" href="https://nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-128x128.png">
+		<link rel="icon" sizes="192x192" type="image/png" href="https://nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-192x192.png">
+		<link rel="icon" sizes="196x196" type="image/png" href="https://nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-196x196.png">
+		<link rel="icon" sizes="228x228" type="image/png" href="https://nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/favicon-228x228.png">
+
+		<!-- Tab title -->
+		<title>NASA SVS | CGI Moon Kit</title>
+
+		<!-- Resources -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+			onerror="document.write(`<script src='/static/svs/js/jquery-3.6.0.min.js'>\x3C/script>`)"
+		>
+		</script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-min.min.js"
+			onerror="document.write(`<script src='/static/svs/js/underscore-umd-min.js'>\x3C/script>`)"
+		>
+		</script>
+		
+	
+
+
+		<!-- Stylesheets -->
+		<link href="/static/svs/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/static/svs/css/bootstrap-icons.min.css" rel="stylesheet">
+		<link href="/static/svs/css/style.css" rel="stylesheet">
+		
+	<link href="/static/detailspage/css/detailspage.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<header>
+			<!-- Top navigation bar -->
+			<nav id="top-navbar" class="navbar navbar-expand-md navbar-dark position-fixed">
+				<div class="container-fluid">
+					<!-- NASA brand -->
+					<a class="navbar-brand p-0 m-0" href="https://www.nasa.gov/">
+						<img
+							src="/static/svs/images/nasa-meatball.svg"
+							alt="NASA Logo"
+							height="40px"
+						>
+					</a>
+
+					<span class="d-flex flex-nowrap overflow-hidden">
+						
+							<!-- SVS brand -->
+							<a class="navbar-brand py-0 px-2 m-0 svs-brand svs-brand-svs" href="/">Scientific Visualization Studio</a>
+						
+
+						
+							
+						
+					</span>
+
+					<!-- Toggle button for collapsed navbar links -->
+					<button
+						class="navbar-toggler ms-auto"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#navbar-offcanvas"
+						aria-controls="navbar-offcanvas"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Nav links + search box -->
+					<div class="offcanvas offcanvas-end text-bg-dark flex-shrink-0 flex-grow-1" id="navbar-offcanvas">
+						<div class="offcanvas-header position-absolute top-0 end-0">
+							<button type="button" class="btn-close btn-close-white p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav ms-auto justify-content-end">
+								<!-- Nav links -->
+								
+									
+										
+									
+									<li class="nav-item">
+										<a class="nav-link" href="/gallery/the-galleries/"><span class="bi bi-images" aria-hidden="true"></span> Galleries</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="/help/"><span class="bi bi-question-circle" aria-hidden="true"></span> Help</a>
+									</li>
+								
+								
+								
+								
+									<!-- Search box -->
+									<form id="navbar_search_form" class="ps-0 ps-md-2" role="search" action="/search" method="get">
+										<div class="input-group flex-nowrap w-100">
+	
+		
+		<input
+			type="text"
+			id="navbar_search_box"
+			class="form-control ckempty border border-end-0  text-light bg-dark border-light"
+			name="search"
+			value=""
+			placeholder="Search..."
+			aria-label="Search..."
+		>
+		<label
+			for="navbar_search_box"
+			class="visually-hidden"
+		>
+			Search
+		</label>
+		<button
+			id="navbar_search_box_clear"
+			type="reset"
+			class="btn btn-primary border-start-0 border border-end-0 pe-1 bg-dark border-light"
+			title="Clear search text"
+			aria-label="Clear search text"
+			
+			onclick="$('#navbar_search_box').val('')"
+			
+		>
+			<span
+				class="bi bi-backspace text-light"
+				aria-hidden="true"
+			> </span>
+		</button>
+		<button
+			id="navbar_search_box_submit"
+			type="submit"
+			title="Search!"
+			aria-label="Search!"
+			class="btn btn-primary border border-start-0 pe-3 bg-dark border-light"
+		>
+			<span
+				class="bi bi-search text-light"
+				aria-hidden="true"
+			> </span>
+		</button>
+	
+</div>
+
+									</form>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="flex-fill">
+			<div id="alerts" class="position-fixed w-100 p-2" style="z-index: 999">
+				
+					
+
+
+				
+				
+					
+				
+			</div>
+			<div id="main-container" class="position-relative vstack container-md py-2">
+				
+	<article class="mt-2">
+		<!-- Header (Title, release date, etc.) -->
+		<section class="position-relative">
+			<!-- Navigation line -->
+			<nav class="row mb-2">
+				<div class="w-100 d-flex">
+					
+						
+							<span class="bi bi-chevron-left text-muted opacity-50" aria-hidden="true"></span>
+						
+						<a
+							href="/4753"
+							class="me-auto link text-muted opacity-50 text-truncate"
+							style="max-width: 30vw"
+							aria-label="Previous page"
+						>
+							4753: GPM observes Hurricane Dorian lashing Florid...
+						</a>
+					
+					
+						<a
+							href="/13312"
+							class="ms-auto link text-muted opacity-50 text-truncate"
+							style="max-width: 30vw"
+							aria-label="Next page"
+						>
+							13312: Hubble Finds Water Vapor On Distant Exoplan...
+						</a>
+						
+						
+							<span class="bi bi-chevron-right text-muted opacity-50" aria-hidden="true"></span>
+						
+					
+					
+						<a
+							href="/5677"
+							class="link text-muted opacity-50 ms-3"
+							aria-label="Newest page"
+						><span class="bi bi-chevron-bar-right" aria-hidden="true"></span></a>
+					
+				</div>
+			</nav>
+
+			<!-- Alerts -->
+			
+			
+			
+
+			<!-- Title -->
+			<div class="row">
+				<h1 id="title" class="mb-0">CGI Moon Kit</h1>
+			</div>
+
+			<!-- Release date + ID + social media icons -->
+			<div class="row">
+				<div class="hstack flex-wrap align-items-center">
+					<ul class="list-unstyled vstack gap-1 mb-1 justify-content-center">
+						
+						
+							<li class="mb-0 fs-5"><b>Released</b> Friday, September 6, 2019</li>
+						
+						
+							<li class="mb-0 fs-5"><b>Last updated</b> Friday, January 9, 2026 at 3:33 PM EST</li>
+						
+					</ul>
+					<div>
+						<ul class="list-unstyled hstack gap-2 mb-1">
+							<li>
+								<span class="btn btn-secondary disabled">ID: 4720</span>
+							</li>
+							<li class="vr"></li>
+							
+
+							<li>
+								<a
+									href="/api/4720"
+									target="_blank"
+									class="btn btn-light btn-sm px-1"
+									title="View this page in our API"
+								> <span class="bi bi-file-earmark-code fs-4" aria-hidden="true"></span> </a>
+							</li>
+							<li class="vr"></li>
+							
+
+<li>
+	
+
+
+	<button
+		type="button"
+		class="svs-copy-link-to-this-page-button btn btn-light px-1 py-0 fs-4"
+		title="Copy a link to this page"
+		tabindex="0"
+		aria-label="Copy a link to this page"
+		data-copy-url="https://svs.gsfc.nasa.gov/4720"
+		data-bs-title="Copied!"
+		data-bs-trigger="manual"
+	><span class="bi bi-link-45deg" aria-hidden="true"></span></button>
+
+
+</li>
+<li>
+	<a
+		href="https://twitter.com/intent/tweet"
+		target="_blank"
+		class="btn btn-light btn-sm px-1"
+		title="Share this page on Twitter"
+	> <span class="bi bi-twitter fs-4" aria-hidden="true"></span> </a>
+</li>
+<li>
+	 <a
+	href="https://www.facebook.com/share.php?u=https%3A//svs.gsfc.nasa.gov/4720%3F"
+	target="_blank"
+	class="btn btn-light btn-sm px-1"
+	title="Share this page on Facebook"
+> <span class="bi bi-facebook fs-4" aria-hidden="true"></span> </a>
+</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main credits -->
+			<div class="row">
+				<div class="hstack flex-wrap gap-3">
+					
+
+
+	<ul class="hstack list-unstyled gap-1 mb-0 hide-last-vr flex-wrap">
+		
+			
+				<li>
+					<ul class="hstack list-unstyled gap-1 mb-0 flex-wrap">
+						
+							<li class="fw-bold">
+								Visualizations by:
+							</li>
+						
+						
+							
+								<li>
+									<a href="/search?people=Ernie%20Wright" class="link fw-bold">Ernie Wright</a>
+								</li>
+							
+						
+					</ul>
+				</li>
+				<li class="vr" aria-hidden="true">
+				</li>
+			
+		
+	</ul>
+
+ <a href="#section_credits" class="link" onclick="$('#section_credits')[0].scrollTo({behavior: 'smooth'})"><span class="bi bi-arrow-bar-down me-1" aria-hidden="true"></span>View full credits</a>
+				</div>
+			</div>
+			<hr>
+		</section>
+
+		
+		
+			<!-- Media groups -->
+			<div class="vstack gap-3">
+				
+					
+						
+
+<section id="media_group_322782" ><div class="px-0 px-md-3 px-lg-4 mb-0-last-p"><!-- Description --><p>These color and elevation maps are designed for use in 3D rendering software. They are created from data assembled by the Lunar Reconnaissance Orbiter camera and laser altimeter instrument teams.</p></div></section>
+
+					
+				
+					
+						
+
+<section id="media_group_379232" ><!-- Title --><div class="p-2 p-md-3 mb-0"><h2 class="fs-3 mb-0">Color</h2></div><div class="card bg-gray-300 position-relative rounded overflow-hidden p-0"><!-- Content --><div class="card-body p-0"><div class="d-flex justify-content-center position-relative bg-dark"><!-- Image --><picture><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_2k.jpg"
+						type="image/jpeg"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color.exr"
+						type="None"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_16bit_srgb.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_16bit_srgb_16k.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_16bit_srgb_4k.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_16bit_srgb_8k.tif"
+						type="image/tiff"
+					><img
+					class="img-fluid w-100"
+					style="min-height: 20vh; max-height: 65vh;"
+					src="/static/svs/images/no_preview_web_black.png"
+					title="The 2025 color map, available as a full-size float16 EXR file and as 16-bit TIFFs of various sizes. The EXR file is encoded in linear color with slightly more dynamic range, while the sRGB-encoded TIFFs are more broadly supported. The map is centered on 0° longitude."
+					alt="The 2025 color map, available as a full-size float16 EXR file and as 16-bit TIFFs of various sizes. The EXR file is encoded in linear color with slightly more dynamic range, while the sRGB-encoded TIFFs are more broadly supported. The map is centered on 0° longitude."
+					loading="lazy"
+					type="image/png"
+				></picture></div><div class="p-2 p-md-3 mb-0-last-p clearfix"><div class="hstack gap-2 flex-wrap flex-lg-nowrap float-end"><ul class="hstack list-unstyled ms-auto gap-2 flex-shrink-0 mb-0"><li><button
+		type="button"
+		class="svs-copy-link-to-this-page-button btn btn-light px-1 py-0 fs-4 bg-transparent border-0"
+		title="Copy a link to this media item"
+		tabindex="0"
+		aria-label="Copy a link to this media item"
+		data-copy-url="{ current_url }#media_group_379232"
+		data-bs-title="Copied!"
+		data-bs-trigger="manual"
+	><span class="bi bi-link-45deg" aria-hidden="true"></span></button></li></ul><div class="vr"></div><!-- Download Options --><div class="dropdown flex-shrink-0"><button
+		class="btn btn-sm btn-secondary dropdown-toggle text-wrap"
+		data-bs-toggle="dropdown"
+		aria-expanded="false"
+		data-bs-popper-config='{"strategy":"fixed"}'
+	><span class="bi bi-download me-1" aria-hidden="true"></span> Download
+	</button><ul id="media_group_379232_download" class="dropdown-menu dropdown-menu-dark"><li id="media_group_379232_images_download" class="dropdown-header"><h6 class="mb-0">Images</h6></li><li><a id="media_group_379232_download_images_0" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_2k.jpg" target="_blank">
+									lroc_color_2k.jpg (2048x1024) [447.2 KB]
+								</a></li><li><a id="media_group_379232_download_images_1" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color.exr" target="_blank">
+									lroc_color.exr [942.8 MB]
+								</a></li><li><a id="media_group_379232_download_images_2" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_16bit_srgb.tif" target="_blank">
+									lroc_color_16bit_srgb.tif [2.4 GB]
+								</a></li><li><a id="media_group_379232_download_images_3" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_16bit_srgb_16k.tif" target="_blank">
+									lroc_color_16bit_srgb_16k.tif (16384x8192) [909.4 MB]
+								</a></li><li><a id="media_group_379232_download_images_4" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_16bit_srgb_4k.tif" target="_blank">
+									lroc_color_16bit_srgb_4k.tif (4096x2048) [59.0 MB]
+								</a></li><li><a id="media_group_379232_download_images_5" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_16bit_srgb_8k.tif" target="_blank">
+									lroc_color_16bit_srgb_8k.tif (8192x4096) [232.0 MB]
+								</a></li><li><hr class="dropdown-divider"></li></ul></div></div><!-- Description --><p>The 2025 color map, available as a full-size float16 EXR file and as 16-bit TIFFs of various sizes. The EXR file is encoded in linear color with slightly more dynamic range, while the sRGB-encoded TIFFs are more broadly supported. The map is centered on 0° longitude.</p></div></div></div></section>
+
+					
+				
+					
+						
+
+<section id="media_group_322784" ><div class="px-0 px-md-3 px-lg-4 mb-0-last-p"><!-- Description --><p>Two versions of the color map are now available. The newer version (above) was produced in December of 2025 using commercial image processing software. It preserves more of the color and dynamic range of the source data and adds greater detail in the polar regions. The original version (below), produced in 2019, has been used successfully in a number of visualizations.</p><p>The color maps were adapted from the <a class="link" href="http://wms.lroc.asu.edu/lroc/view_rdr/WAC_HAPKE">Hapke Normalized WAC Mosaic</a>, a composite built by the camera team from over 100,000 WAC (Wide Angle Camera) images. The <a class="link" href="https://pds.lroc.asu.edu/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/DATA/MDR/WAC_HAPKE/WAC_HAPKE_README.TXT">readme file</a> provides a technical summary of how the mosaic was constructed along with references to more detailed publications. A less formal introduction to the process is in <a class="link" href="https://lroc.im-ldi.com/news/707">this LROC blog post</a> and in <a class="link" href="https://lroc.im-ldi.com/news/801">this one</a>.</p><p>Both color maps were assembled from three of the seven wavelength bands of the LROC color data, with the 643 nm band representing the red channel, 566 nm the green, and 415 nm the blue. Exposure and white balance were adjusted to more closely match human vision, and small data dropouts at high latitudes were inpainted.</p><p>The source data covers the lunar globe from 70°N to 70°S. Because the Moon's axial and orbital tilts are both small, many areas outside these latitudes remain shrouded in shadow, even after thousands of passes by LRO's camera, so they are left out of the LROC mosaic. For these color maps, the missing latitudes were filled in with a lower resolution monochromatic albedo map (<a class="link" href="http://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/cylindrical/float_img/ldam_10_float.lbl">LDAM</a>) from LRO's laser altimeter, which measures the brightness of the reflected laser. When rendered with realistic shadows, these parts of the map aren't particularly visible, and while they comprise more than 20% of the map's pixels, they represent only 6% of the Moon's surface.</p><p>These image is optimized for aesthetics, not science. Scientific applications should use <a class="link" href="http://wms.lroc.asu.edu/lroc/view_rdr/WAC_HAPKE">the source data</a>.</p></div></section>
+
+					
+				
+					
+						
+
+<section id="media_group_322783" ><div class="card bg-gray-300 position-relative rounded overflow-hidden p-0"><!-- Content --><div class="card-body p-0"><div class="d-flex justify-content-center position-relative bg-dark"><!-- Image --><picture><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_poles_1k.jpg"
+						type="image/jpeg"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_poles_1k_thm.png"
+						type="image/png"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_poles_2k.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_poles_8k.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_poles_4k.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_poles_hw5x3.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_poles_16k.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/lroc_color_poles.tif"
+						type="image/tiff"
+					><img
+					class="img-fluid w-100"
+					style="min-height: 20vh; max-height: 65vh;"
+					src="/static/svs/images/no_preview_web_black.png"
+					title="The 2019 color map, available as 24-bit RGB TIFFs of various sizes. The map is centered on 0° longitude."
+					alt="The 2019 color map, available as 24-bit RGB TIFFs of various sizes. The map is centered on 0° longitude."
+					loading="lazy"
+					type="image/png"
+				></picture></div><div class="p-2 p-md-3 mb-0-last-p clearfix"><div class="hstack gap-2 flex-wrap flex-lg-nowrap float-end"><ul class="hstack list-unstyled ms-auto gap-2 flex-shrink-0 mb-0"><li><button
+		type="button"
+		class="svs-copy-link-to-this-page-button btn btn-light px-1 py-0 fs-4 bg-transparent border-0"
+		title="Copy a link to this media item"
+		tabindex="0"
+		aria-label="Copy a link to this media item"
+		data-copy-url="{ current_url }#media_group_322783"
+		data-bs-title="Copied!"
+		data-bs-trigger="manual"
+	><span class="bi bi-link-45deg" aria-hidden="true"></span></button></li></ul><div class="vr"></div><!-- Download Options --><div class="dropdown flex-shrink-0"><button
+		class="btn btn-sm btn-secondary dropdown-toggle text-wrap"
+		data-bs-toggle="dropdown"
+		aria-expanded="false"
+		data-bs-popper-config='{"strategy":"fixed"}'
+	><span class="bi bi-download me-1" aria-hidden="true"></span> Download
+	</button><ul id="media_group_322783_download" class="dropdown-menu dropdown-menu-dark"><li id="media_group_322783_images_download" class="dropdown-header"><h6 class="mb-0">Images</h6></li><li><a id="media_group_322783_download_images_0" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_poles_1k.jpg" target="_blank">
+									lroc_color_poles_1k.jpg (1024x512) [135.8 KB]
+								</a></li><li><a id="media_group_322783_download_images_1" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_poles_1k_thm.png" target="_blank">
+									lroc_color_poles_1k_thm.png (80x40) [6.3 KB]
+								</a></li><li><a id="media_group_322783_download_images_2" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_poles_2k.tif" target="_blank">
+									lroc_color_poles_2k.tif (2048x1024) [3.2 MB]
+								</a></li><li><a id="media_group_322783_download_images_3" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_poles_8k.tif" target="_blank">
+									lroc_color_poles_8k.tif (8192x4096) [48.3 MB]
+								</a></li><li><a id="media_group_322783_download_images_4" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_poles_4k.tif" target="_blank">
+									lroc_color_poles_4k.tif (4096x2048) [12.5 MB]
+								</a></li><li><a id="media_group_322783_download_images_5" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_poles_hw5x3.tif" target="_blank">
+									lroc_color_poles_hw5x3.tif (9600x3240) [49.1 MB]
+								</a></li><li><a id="media_group_322783_download_images_6" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_poles_16k.tif" target="_blank">
+									lroc_color_poles_16k.tif (16384x8192) [178.3 MB]
+								</a></li><li><a id="media_group_322783_download_images_7" class="dropdown-item" href="/vis/a000000/a004700/a004720/lroc_color_poles.tif" target="_blank">
+									lroc_color_poles.tif (27360x13680) [494.1 MB]
+								</a></li><li><hr class="dropdown-divider"></li><li id="media_group_322783_hyperwall shows_download" class="dropdown-header"><h6 class="mb-0">Hyperwall shows</h6></li><li><a id="media_group_322783_download_hyperwall shows_0" class="dropdown-item" href="/vis/a000000/a004700/a004720/cgi-moon-kit-color.hwshow" target="_blank">
+									cgi-moon-kit-color.hwshow [188 bytes]
+								</a></li><li><hr class="dropdown-divider"></li></ul></div></div><!-- Description --><p>The 2019 color map, available as 24-bit RGB TIFFs of various sizes. The map is centered on 0° longitude.</p></div></div></div></section>
+
+					
+				
+					
+						
+
+<section id="media_group_322785" ><!-- Title --><div class="p-2 p-md-3 mb-0"><h2 class="fs-3 mb-0">Displacement</h2></div><div class="card bg-gray-300 position-relative rounded overflow-hidden p-0"><!-- Content --><div class="card-body p-0"><div class="d-flex justify-content-center position-relative bg-dark"><!-- Image --><picture><source
+						srcset="/vis/a000000/a004700/a004720/ldem_3_8bit.jpg"
+						type="image/jpeg"
+					><source
+						srcset="/vis/a000000/a004700/a004720/ldem_4.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/ldem_4_uint.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/ldem_16.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/ldem_16_uint.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/ldem_hw5x3.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/ldem_64_uint.tif"
+						type="image/tiff"
+					><source
+						srcset="/vis/a000000/a004700/a004720/ldem_64.tif"
+						type="image/tiff"
+					><img
+					class="img-fluid w-100"
+					style="min-height: 20vh; max-height: 65vh;"
+					src="/static/svs/images/no_preview_web_black.png"
+					title="The displacement map, at 64, 16, and 4 pixels per degree, centered on 0° longitude. Available as either floating-point TIFFs in kilometers, relative to a radius of 1737.4 km, or unsigned 16-bit TIFFs in half-meters, relative to a radius of 1727400 meters."
+					alt="The displacement map, at 64, 16, and 4 pixels per degree, centered on 0° longitude. Available as either floating-point TIFFs in kilometers, relative to a radius of 1737.4 km, or unsigned 16-bit TIFFs in half-meters, relative to a radius of 1727400 meters."
+					loading="lazy"
+					type="image/png"
+				></picture></div><div class="p-2 p-md-3 mb-0-last-p clearfix"><div class="hstack gap-2 flex-wrap flex-lg-nowrap float-end"><ul class="hstack list-unstyled ms-auto gap-2 flex-shrink-0 mb-0"><li><button
+		type="button"
+		class="svs-copy-link-to-this-page-button btn btn-light px-1 py-0 fs-4 bg-transparent border-0"
+		title="Copy a link to this media item"
+		tabindex="0"
+		aria-label="Copy a link to this media item"
+		data-copy-url="{ current_url }#media_group_322785"
+		data-bs-title="Copied!"
+		data-bs-trigger="manual"
+	><span class="bi bi-link-45deg" aria-hidden="true"></span></button></li></ul><div class="vr"></div><!-- Download Options --><div class="dropdown flex-shrink-0"><button
+		class="btn btn-sm btn-secondary dropdown-toggle text-wrap"
+		data-bs-toggle="dropdown"
+		aria-expanded="false"
+		data-bs-popper-config='{"strategy":"fixed"}'
+	><span class="bi bi-download me-1" aria-hidden="true"></span> Download
+	</button><ul id="media_group_322785_download" class="dropdown-menu dropdown-menu-dark"><li id="media_group_322785_images_download" class="dropdown-header"><h6 class="mb-0">Images</h6></li><li><a id="media_group_322785_download_images_0" class="dropdown-item" href="/vis/a000000/a004700/a004720/ldem_3_8bit.jpg" target="_blank">
+									ldem_3_8bit.jpg (1024x512) [108.9 KB]
+								</a></li><li><a id="media_group_322785_download_images_1" class="dropdown-item" href="/vis/a000000/a004700/a004720/ldem_4.tif" target="_blank">
+									ldem_4.tif (1440x720) [4.0 MB]
+								</a></li><li><a id="media_group_322785_download_images_2" class="dropdown-item" href="/vis/a000000/a004700/a004720/ldem_4_uint.tif" target="_blank">
+									ldem_4_uint.tif (1440x720) [2.0 MB]
+								</a></li><li><a id="media_group_322785_download_images_3" class="dropdown-item" href="/vis/a000000/a004700/a004720/ldem_16.tif" target="_blank">
+									ldem_16.tif (5760x2880) [63.3 MB]
+								</a></li><li><a id="media_group_322785_download_images_4" class="dropdown-item" href="/vis/a000000/a004700/a004720/ldem_16_uint.tif" target="_blank">
+									ldem_16_uint.tif (5760x2880) [31.7 MB]
+								</a></li><li><a id="media_group_322785_download_images_5" class="dropdown-item" href="/vis/a000000/a004700/a004720/ldem_hw5x3.tif" target="_blank">
+									ldem_hw5x3.tif (9600x3240) [16.4 MB]
+								</a></li><li><a id="media_group_322785_download_images_6" class="dropdown-item" href="/vis/a000000/a004700/a004720/ldem_64_uint.tif" target="_blank">
+									ldem_64_uint.tif (23040x11520) [506.3 MB]
+								</a></li><li><a id="media_group_322785_download_images_7" class="dropdown-item" href="/vis/a000000/a004700/a004720/ldem_64.tif" target="_blank">
+									ldem_64.tif (23040x11520) [1012.6 MB]
+								</a></li><li><hr class="dropdown-divider"></li><li id="media_group_322785_hyperwall shows_download" class="dropdown-header"><h6 class="mb-0">Hyperwall shows</h6></li><li><a id="media_group_322785_download_hyperwall shows_0" class="dropdown-item" href="/vis/a000000/a004700/a004720/cgi-moon-kit-dem.hwshow" target="_blank">
+									cgi-moon-kit-dem.hwshow [176 bytes]
+								</a></li><li><hr class="dropdown-divider"></li></ul></div></div><!-- Description --><p>The displacement map, at 64, 16, and 4 pixels per degree, centered on 0° longitude. Available as either floating-point TIFFs in kilometers, relative to a radius of 1737.4 km, or unsigned 16-bit TIFFs in half-meters, relative to a radius of 1727400 meters.</p></div></div></div></section>
+
+					
+				
+					
+						
+
+<section id="media_group_322786" ><div class="px-0 px-md-3 px-lg-4 mb-0-last-p"><!-- Description --><p>The displacement map (also known as a height map or elevation map) was taken directly from the latest (as of spring 2019) gridded data products of the Lunar Orbiter Laser Altimeter instrument team. <a class="link" href="http://pds-geosciences.wustl.edu/missions/lro/lola.htm">LOLA data is archived</a> on the Geosciences Node of the Planetary Data System. A small subset of the LOLA data stored there, the global cylindrical projections at 4, 16, and 64 pixels per degree, has been reformatted here as uncompressed TIFF files, in vertical units of either floating-point kilometers or 16-bit unsigned integer half-meters.</p><p>The reference surface for all LRO data is a sphere of radius 1737.4 km. LOLA's gridded elevation data is published as signed 16-bit integers in units of half-meters relative to this radius. For the floating-point TIFFs, the source data was divided by 2000. For the unsigned 16-bit TIFFs, the source data was offset by +20,000 (10 km) so that all of the values are positive. This latter format is provided for software that doesn't work well with either floating-point or signed integer files.</p></div></section>
+
+					
+				
+					
+						
+
+<section id="media_group_322787" ><!-- Title --><div class="p-2 p-md-3 mb-0"><h2 class="fs-3 mb-0">How These Maps Are Used</h2></div><div class="card bg-gray-300 position-relative rounded overflow-hidden p-0"><!-- Content --><div class="card-body p-0"><div class="d-flex justify-content-center position-relative bg-dark"><!-- Video player --><video
+				controls
+				poster="/vis/a000000/a004700/a004720/plane2sphere.0220_print.jpg"
+				preload="metadata"
+				class="img-fluid w-100"
+				style="min-height: 20vh; max-height: 65vh;"
+			><source
+						src="/vis/a000000/a004700/a004720/moon_mapping_1080p30.mp4"
+						type="video/mp4"
+					><source
+						src="/vis/a000000/a004700/a004720/moon_mapping_720p30.mp4"
+						type="video/mp4"
+					><source
+						src="/vis/a000000/a004700/a004720/moon_mapping_720p30.webm"
+						type="video/webm"
+					><source
+						src="/vis/a000000/a004700/a004720/moon_mapping_360p30.mp4"
+						type="video/mp4"
+					><p class="text-white">
+					This animation illustrates how color and displacement maps are used in 3D animation software to paint and model an object like the Moon.
+				</p></video></div><div class="p-2 p-md-3 mb-0-last-p clearfix"><div class="hstack gap-2 flex-wrap flex-lg-nowrap float-end"><ul class="hstack list-unstyled ms-auto gap-2 flex-shrink-0 mb-0"><li><button
+		type="button"
+		class="svs-copy-link-to-this-page-button btn btn-light px-1 py-0 fs-4 bg-transparent border-0"
+		title="Copy a link to this media item"
+		tabindex="0"
+		aria-label="Copy a link to this media item"
+		data-copy-url="{ current_url }#media_group_322787"
+		data-bs-title="Copied!"
+		data-bs-trigger="manual"
+	><span class="bi bi-link-45deg" aria-hidden="true"></span></button></li></ul><div class="vr"></div><!-- Download Options --><div class="dropdown flex-shrink-0"><button
+		class="btn btn-sm btn-secondary dropdown-toggle text-wrap"
+		data-bs-toggle="dropdown"
+		aria-expanded="false"
+		data-bs-popper-config='{"strategy":"fixed"}'
+	><span class="bi bi-download me-1" aria-hidden="true"></span> Download
+	</button><ul id="media_group_322787_download" class="dropdown-menu dropdown-menu-dark"><li id="media_group_322787_movies_download" class="dropdown-header"><h6 class="mb-0">Movies</h6></li><li><a id="media_group_322787_download_movies_0" class="dropdown-item" href="/vis/a000000/a004700/a004720/moon_mapping_1080p30.mp4" target="_blank">
+									moon_mapping_1080p30.mp4 (1920x1080) [12.6 MB]
+								</a></li><li><a id="media_group_322787_download_movies_1" class="dropdown-item" href="/vis/a000000/a004700/a004720/moon_mapping_720p30.mp4" target="_blank">
+									moon_mapping_720p30.mp4 (1280x720) [6.5 MB]
+								</a></li><li><a id="media_group_322787_download_movies_2" class="dropdown-item" href="/vis/a000000/a004700/a004720/moon_mapping_720p30.webm" target="_blank">
+									moon_mapping_720p30.webm (1280x720) [2.3 MB]
+								</a></li><li><a id="media_group_322787_download_movies_3" class="dropdown-item" href="/vis/a000000/a004700/a004720/moon_mapping_360p30.mp4" target="_blank">
+									moon_mapping_360p30.mp4 (640x360) [1.8 MB]
+								</a></li><li><hr class="dropdown-divider"></li><li id="media_group_322787_frame sets_download" class="dropdown-header"><h6 class="mb-0">Frame sets</h6></li><li><a id="media_group_322787_download_frame sets_0" class="dropdown-item" href="/vis/a000000/a004700/a004720/frames/1920x1080_16x9_30p/" target="_blank">
+									1920x1080_16x9_30p (1920x1080) [300 Item(s)]
+								</a></li><li><hr class="dropdown-divider"></li><li id="media_group_322787_images_download" class="dropdown-header"><h6 class="mb-0">Images</h6></li><li><a id="media_group_322787_download_images_0" class="dropdown-item" href="/vis/a000000/a004700/a004720/plane2sphere.0220_print.jpg" target="_blank">
+									plane2sphere.0220_print.jpg (1024x576) [82.6 KB]
+								</a></li><li><hr class="dropdown-divider"></li><li id="media_group_322787_hyperwall shows_download" class="dropdown-header"><h6 class="mb-0">Hyperwall shows</h6></li><li><a id="media_group_322787_download_hyperwall shows_0" class="dropdown-item" href="/vis/a000000/a004700/a004720/moon_mapping_1080p30.mp4.hwshow" target="_blank">
+									moon_mapping_1080p30.mp4.hwshow [186 bytes]
+								</a></li><li><hr class="dropdown-divider"></li></ul></div></div><!-- Description --><p>This animation illustrates how color and displacement maps are used in 3D animation software to paint and model an object like the Moon.</p></div></div></div></section>
+
+					
+				
+					
+						
+
+<section id="media_group_322788" ><div class="px-0 px-md-3 px-lg-4 mb-0-last-p"><!-- Description --><p>Within 3D animation software, an object like the Moon begins as a simple geometric shape, in this case a sphere. Texture maps like the ones on this page are used to add detail to the model. The color map tells the software how to paint the surface, and the displacement map tells it how to add the shape details that define the lunar terrain. Without them, the Moon model is just a smooth, monochrome ball. Although these maps are flat rectangles, the software understands them as maps of a spherical surface and knows how to warp them onto spherical geometry.</p><p>Each pixel in these texture maps corresponds to a point on the lunar surface defined by a longitude-latitude pair. Pixels in the color map contain the "base color" of the surface, before applying the effects of varying light and camera angles (called incidence angle <em>i</em> and emission angle <em>e</em> in the technical description). Pixels in the displacement map contain the height of the surface at the corresponding locations.</p></div></section>
+
+					
+				
+					
+						
+
+<section id="media_group_379233" ><!-- Title --><h2 class="fs-3">More Data</h2><div class="px-0 px-md-3 px-lg-4 mb-0-last-p"><!-- Description --><p>These maps are a tiny subset of <a class="link" href="http://pds-geosciences.wustl.edu/missions/lro/">the data publicly archived</a> by the LRO instrument teams. All of the data is in standard and fairly simple PDS file formats (files with ".IMG" filename extensions). Although not typically supported by general-purpose computer graphics software, these formats are directly readable by some GIS programs. The data formats are documented in PDS labels, which are either separate text files with a ".LBL" filename extension or embedded as fixed-length headers. Other than the possible header, most .IMG files are uncompressed 2D binary arrays of numbers. Some data is also available in TIFF or JPEG2000 formats.</p><p>As of this writing, the best global-scale elevation data for equatorial and mid-latitude regions of the Moon, at resolutions up to 512 pixels per degree, is <a class="link" href="http://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/sldem2015/">SLDEM2015</a>. For regions near the poles, where the density of laser shots is much higher, the <a class="link" href="http://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/polar/">GDR data in polar stereo</a> projection reaches resolutions of five meters per pixel.</p><p>The LROC narrow-angle camera (NAC) has imaged most of the Moon's surface at a resolution of one meter per pixel or better. LROC imagery can be explored graphically using its <a class="link" href="https://quickmap.lroc.asu.edu">Quickmap</a> interface and searched on its <a class="link" href="http://wms.lroc.asu.edu/lroc/rdr_product_select">RDR Product Select</a> page. Of particular interest are the Topographic Products (menu option in the upper left of the page), which are matched with high-resolution DEMs derived from stereo image pairs. This dataset includes all of the Apollo landing sites and dozens of other locations of interest.</p></div></section>
+
+					
+				
+			</div>
+			<hr>
+		
+
+		
+		
+			<section id="section_keywords" class="vstack gap-2">
+				
+					<!-- NASA science categories -->
+					<ul id="nasa_science_categories" class="list-unstyled hstack flex-wrap gap-2 mb-0">
+						
+							<li>
+								<a
+									href="/search?nasa_science_categories=Planets &amp; Moons"
+									class="btn btn-primary hover-grow fw-bold"
+								>
+									<span class="bi bi-moon-fill me-1" aria-hidden="true"></span> Planets & Moons
+								</a>
+							</li>
+						
+					</ul>
+				
+
+				
+					<!-- Keywords -->
+					<ul id="keywords" class="list-unstyled hstack flex-wrap gap-2 mb-0">
+						
+							<li>
+								<a
+									href="/search?keywords=Albedo"
+									class="btn btn-sm btn-secondary hover-grow"
+								>Albedo</a>
+							</li>
+						
+							<li>
+								<a
+									href="/search?keywords=Elevation Map"
+									class="btn btn-sm btn-secondary hover-grow"
+								>Elevation Map</a>
+							</li>
+						
+							<li>
+								<a
+									href="/search?keywords=HDTV"
+									class="btn btn-sm btn-secondary hover-grow"
+								>HDTV</a>
+							</li>
+						
+							<li>
+								<a
+									href="/search?keywords=Hyperwall"
+									class="btn btn-sm btn-secondary hover-grow"
+								>Hyperwall</a>
+							</li>
+						
+							<li>
+								<a
+									href="/search?keywords=Laser Altimeter"
+									class="btn btn-sm btn-secondary hover-grow"
+								>Laser Altimeter</a>
+							</li>
+						
+							<li>
+								<a
+									href="/search?keywords=LOLA"
+									class="btn btn-sm btn-secondary hover-grow"
+								>LOLA</a>
+							</li>
+						
+							<li>
+								<a
+									href="/search?keywords=LRO"
+									class="btn btn-sm btn-secondary hover-grow"
+								>LRO</a>
+							</li>
+						
+							<li>
+								<a
+									href="/search?keywords=LROC"
+									class="btn btn-sm btn-secondary hover-grow"
+								>LROC</a>
+							</li>
+						
+							<li>
+								<a
+									href="/search?keywords=Lunar Reconnaissance Orbiter"
+									class="btn btn-sm btn-secondary hover-grow"
+								>Lunar Reconnaissance Orbiter</a>
+							</li>
+						
+							<li>
+								<a
+									href="/search?keywords=map"
+									class="btn btn-sm btn-secondary hover-grow"
+								>map</a>
+							</li>
+						
+							<li>
+								<a
+									href="/search?keywords=Mosaic"
+									class="btn btn-sm btn-secondary hover-grow"
+								>Mosaic</a>
+							</li>
+						
+					</ul>
+				
+			</section>
+			<hr>
+		
+
+		
+		
+			<section id="section_credits">
+				<h2 class="fs-3">Credits</h2>
+				
+					<!-- Credit header box -->
+					<div class="card p-3 mb-2 mb-0-last-p">
+						<p><b>Please give credit for this item to:</b><br /> NASA's Scientific Visualization Studio</p>
+					</div>
+				
+				
+					<!-- Credit list -->
+					<ul class="list-unstyled vstack gap-2">
+						
+							<li class="row">
+								<div class="col-6 col-md-4 col-lg-3 text-end">
+									<h3 class="fs-6 mb-0 lh-base">
+										
+											Visualizer
+										
+									</h3>
+								</div>
+								<div class="col-6 col-md-8 col-lg-9 text-start border-start">
+									<ul class="list-unstyled">
+										
+											<li>
+												
+
+
+
+<a href="/search/?people=Ernie%20Wright" class="link">
+		Ernie Wright
+	</a>
+	
+		(USRA)
+	
+	
+		<a href="https://orcid.org/0000-0002-5970-5019"><img
+				src="/static/detailspage/images/ORCID-iD_icon_vector.svg"
+				alt="ORCID logo. It consists of the text 'id' in lowercase inside of a green circle."
+				title="See this person's other publications"
+				class="bg-transparent"
+				style="height: 1.5rem; width: 1.5rem;"
+			></a>
+
+											</li>
+										
+									</ul>
+								</div>
+							</li>
+						
+							<li class="row">
+								<div class="col-6 col-md-4 col-lg-3 text-end">
+									<h3 class="fs-6 mb-0 lh-base">
+										
+											Scientist
+										
+									</h3>
+								</div>
+								<div class="col-6 col-md-8 col-lg-9 text-start border-start">
+									<ul class="list-unstyled">
+										
+											<li>
+												
+
+
+
+<a href="/search/?people=Noah%20Petro" class="link">
+		Noah Petro
+	</a>
+	
+		(NASA/GSFC)
+	
+	
+		<a href="https://orcid.org/0000-0003-4676-077"><img
+				src="/static/detailspage/images/ORCID-iD_icon_vector.svg"
+				alt="ORCID logo. It consists of the text 'id' in lowercase inside of a green circle."
+				title="See this person's other publications"
+				class="bg-transparent"
+				style="height: 1.5rem; width: 1.5rem;"
+			></a>
+
+											</li>
+										
+									</ul>
+								</div>
+							</li>
+						
+					</ul>
+				
+			</section>
+			<hr>
+		
+
+
+
+		
+
+		
+		
+
+		
+		
+			<!-- Datasets -->
+			<section id="section_datasets" class="row">
+				<h2 class="fs-3">Datasets used</h2>
+				<ul class="list-unstyled  mx-0">
+					
+						
+							
+
+	<li class="dataset card p-3 mb-2">
+		<div class="card-title hstack flex-wrap">
+			<h2 class="fs-5 fw-normal search-text me-auto search-text mb-0">
+				DEM (Digital Elevation Map) [LRO: LOLA]
+			</h2>
+			<span class="btn btn-sm btn-secondary disabled">ID: 653</span>
+		</div>
+
+		<div class="card-subtitle hstack flex-wrap hide-last-vr gap-2 search-text">
+			
+			
+				<span>Sensor: LOLA</span> <span class="vr"></span>
+			
+			
+			
+		</div>
+
+		<div class="card-body vstack p-2 gap-2">
+			
+			
+			
+			
+			<a href="/search/?datasets=653" class="link">See all pages that use this dataset<span class="bi bi-chevron-right mx-2" aria-hidden="true"></span></a>
+		</div>
+	</li>
+
+
+						
+							
+
+	<li class="dataset card p-3 mb-2">
+		<div class="card-title hstack flex-wrap">
+			<h2 class="fs-5 fw-normal search-text me-auto search-text mb-0">
+				LROC WAC Color Mosaic (Natural Color Hapke Normalized WAC Mosaic) [Lunar Reconnaissance Orbiter: LRO Camera]
+			</h2>
+			<span class="btn btn-sm btn-secondary disabled">ID: 1015</span>
+		</div>
+
+		<div class="card-subtitle hstack flex-wrap hide-last-vr gap-2 search-text">
+			
+				<span>Type: Mosaic</span> <span class="vr"></span>
+			
+			
+				<span>Sensor: LRO Camera</span> <span class="vr"></span>
+			
+			
+				<span>Collected by: Arizona State University</span>
+				<span class="vr"></span>
+			
+			
+		</div>
+
+		<div class="card-body vstack p-2 gap-2">
+			
+				<p class="mb-0 search-text">
+					This natural-color global mosaic is based on the <a class="link" href='http://wms.lroc.asu.edu/lroc/view_rdr/WAC_HAPKE_NORMALIZED'>'Hapke normalized'</a> mosaic from LRO's wide-angle camera. The data has been gamma corrected, white balanced, and range adjusted to more closely match human vision.
+				</p>
+			
+			
+			
+			
+			<a href="/search/?datasets=1015" class="link">See all pages that use this dataset<span class="bi bi-chevron-right mx-2" aria-hidden="true"></span></a>
+		</div>
+	</li>
+
+
+						
+					
+				</ul>
+				<p class="text-muted mb-0">
+					Note: While we identify the data sets used on this page, we do not store any further details, nor the data sets themselves on our site.
+				</p>
+			</section>
+			<hr>
+		
+
+		
+		
+
+		
+		
+			<!-- Related pages -->
+			<section id="section_related_pages">
+				
+
+<div class="row">
+	
+	
+	
+	
+	
+	
+		<!-- Products -->
+		<div class="col-auto">
+			
+
+
+
+
+
+
+	
+		
+			<!-- Title -->
+			<h2 class="fs-3">Used as a Source In</h2>
+		
+		
+		
+		<div class="position-relative">
+			<ul id="accordion_related_pages_products_card_gallery" class="list-unstyled hstack flex-wrap">
+				<!-- Pages -->
+				
+					
+
+
+
+
+<!-- Tile tile_details_page_14992 --><li
+			id="tile_details_page_14992"
+			class="tile-gallery-tile card flex-shrink-0 rounded overflow-hidden position-relative p-0 m-0"
+			style="width: 320px; max-width: 80vw; flex: none;"
+		><!-- Card header --><div
+					id="tile_details_page_14992_header"
+					class="position-relative"
+				><!-- Image topper --><a
+							href="/14992/"
+							title="Go to this page"
+							class="card-img-top bg-dark"
+						><div class="ratio ratio-16x9"><img
+									src="/vis/a010000/a014900/a014992/Moon_Phases_Waning_Thumbnail_V2_Small.jpg"
+									alt="Animation of the Moon’s near side in a waning gibbous phase and its far side in the opposite phase (waxing crescent)."
+									style="object-fit: cover"
+									loading="lazy"
+								></div></a><!-- ID Badge --><span class="position-absolute top-0 start-0 badge bg-dark bg-opacity-75 fs-6 fw-normal rounded-0" style="border-bottom-right-radius: var(--bs-border-radius) !important;"> ID: 14992 </span></div><div
+					id="tile_details_page_14992_body"
+					class="position-absolute bottom-0 w-100"
+				><!-- Type badge --><span class="start-0 badge bg-dark bg-opacity-75 fs-6 fw-normal rounded-0" style="border-top-right-radius: var(--bs-border-radius) !important;"><span class="bi bi-play-fill me-1" aria-hidden="true"></span> Animation
+							</span><!-- Card body --><div class="bg-dark bg-opacity-75 w-100 fs-6 text-white py-1 px-2"><div
+								style="max-height: 225px;"
+							><h3
+										id="tile_details_page_14992_body_title"
+										class="flex-shrink-0 mb-0 fs-6"
+									><a
+											href="/14992/"
+											title="Go to this page"
+											class="link link-light card-title overflow-hidden mb-0"
+											tabindex="-1"
+											style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1;"
+										>
+											Lunar Near and Far Side Phases
+										</a></h3></div></div></div></li>
+
+				
+					
+
+
+
+
+<!-- Tile tile_details_page_14959 --><li
+			id="tile_details_page_14959"
+			class="tile-gallery-tile card flex-shrink-0 rounded overflow-hidden position-relative p-0 m-0"
+			style="width: 320px; max-width: 80vw; flex: none;"
+		><!-- Card header --><div
+					id="tile_details_page_14959_header"
+					class="position-relative"
+				><!-- Image topper --><a
+							href="/14959/"
+							title="Go to this page"
+							class="card-img-top bg-dark"
+						><div class="ratio ratio-16x9"><img
+									src="/vis/a010000/a014900/a014959/Moon-Model-Preview-Main.jpg"
+									alt="Image of a 3D Moon model in an animated scene file."
+									style="object-fit: cover"
+									loading="lazy"
+								></div></a><!-- ID Badge --><span class="position-absolute top-0 start-0 badge bg-dark bg-opacity-75 fs-6 fw-normal rounded-0" style="border-bottom-right-radius: var(--bs-border-radius) !important;"> ID: 14959 </span></div><div
+					id="tile_details_page_14959_body"
+					class="position-absolute bottom-0 w-100"
+				><!-- Type badge --><span class="start-0 badge bg-dark bg-opacity-75 fs-6 fw-normal rounded-0" style="border-top-right-radius: var(--bs-border-radius) !important;"><span class="bi bi-hand-index-thumb-fill me-1" aria-hidden="true"></span> Interactive
+							</span><!-- Card body --><div class="bg-dark bg-opacity-75 w-100 fs-6 text-white py-1 px-2"><div
+								style="max-height: 225px;"
+							><h3
+										id="tile_details_page_14959_body_title"
+										class="flex-shrink-0 mb-0 fs-6"
+									><a
+											href="/14959/"
+											title="Go to this page"
+											class="link link-light card-title overflow-hidden mb-0"
+											tabindex="-1"
+											style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1;"
+										>
+											Moon 3D Models for Web, AR, and Animation
+										</a></h3></div></div></div></li>
+
+				
+			</ul>
+		</div>
+	
+
+
+		</div>
+	
+</div>
+<hr>
+
+			</section>
+		
+
+		
+		<section id="release_time">
+			<h2 class="visually-hidden">Release date</h2>
+			<p class="text-muted mb-0">
+				
+					This page was originally published on Friday, September 6, 2019.
+					<br>
+				
+				This page was last updated on Friday, January 9, 2026 at 3:33 PM EST.
+			</p>
+		</section>
+		<hr>
+
+		
+		<section id="section_recommended_pages">
+			 
+
+
+
+<div id="recommended_pages" class="card-gallery-ajax-wrapper">
+	<input type="hidden" id="recommended_pages_var_can_load" value="true">
+	<input type="hidden" id="recommended_pages_var_is_loading" value="false" class="card-gallery-ajax-trigger">
+	<input type="hidden" id="recommended_pages_var_url" value="/api/detailspage/4720/recommended/display">
+	<input type="hidden" id="recommended_pages_var_params" value="">
+	
+		<!-- Title -->
+		<h2 class="fs-3">You may also like...</h2>
+	
+	
+	<div class="position-relative" style="height: 480px; width: 100%">
+		<div id="recommended_pages_results">
+			<!-- This gets filled in dynamically via. AJAX -->
+		</div>
+		<div id="recommended_pages_loader" class="w-100 h-100 position-relative rounded">
+			<div class="position-absolute w-100 h-100">
+				<div class="d-flex justify-content-center align-items-center h-100">
+					<div class="loader"></div>
+				</div>
+			</div>
+			<div class="placeholder-wave w-100 h-100">
+				<div class="card bg-gray-300 placeholder w-100 h-100"></div>
+			</div>
+		</div>
+		<div id="recommended_pages_no_results_warning" class="w-100 h-100 position-relative" style="display: none;">
+			<div class="d-flex justify-content-center align-items-center h-100">
+				<h4 class="fs-3 my-auto">No results.</h4>
+			</div>
+		</div>
+		<div id="recommended_pages_error_warning" class="w-100 h-100 position-relative" style="display: none;">
+			<div class="d-flex justify-content-center align-items-center h-100">
+				<h4 class="fs-3 my-auto">An error occurred. Please reload this page and try again.</h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</section>
+	</article>
+
+			</div>
+		</main>
+		<footer>
+			<!-- Footer Javascript -->
+			
+				
+				<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&subagency=GSFC&yt=true&dclink=true"></script>
+				<script id="parsely-cfg" src="https://cdn.parsely.com/keys/svs.gsfc.nasa.gov/p.js" async="" defer=""></script>
+			
+			<script
+				src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+				onerror="document.write(`<script src='/static/svs/js/bootstrap.bundle.min.js'>\x3C/script>`)"
+			></script>
+
+			<script src="/static/svs/js/script.js"></script>
+			
+	<script src="/static/svs/js/card-galleries.js"></script>
+
+
+			<!-- Bottom navigation bar -->
+			<nav id="bottom-navbar" class="navbar navbar-dark text-light">
+				<div class="container">
+					<div class="row w-100">
+						<!-- Brands -->
+						<div class="col-12 col-lg d-flex justify-content-center align-items-center">
+							<!-- NASA brand -->
+							<a href="https://www.nasa.gov/" class="link">
+								<img src="/static/svs/images/nasa-meatball.svg" height="60" alt="NASA Home Page">
+							</a>
+							<!-- USA.gov brand -->
+							<a
+								href="https://www.usa.gov/" class="link"
+							>
+								<img src="/static/svs/images/USAgov_logo.svg" height="60" alt="USA.gov Home Page">
+							</a>
+						</div>
+						<hr class="d-block d-lg-none my-2">
+						<div class="col-12 col-sm d-flex align-items-center">
+							<!-- Privacy and guidelines links -->
+							<div class="text-sm-end w-100">
+								
+									<div class="navbar-text">
+										<a href="https://www.nasa.gov/about/highlights/HP_Privacy.html" class="link link-light">Privacy Policy and Important Notices</a>
+										<br>
+										<a href="https://www.nasa.gov/multimedia/guidelines/index.html" class="link link-light">Reproduction Guidelines</a>
+									</div>
+								
+							</div>
+						</div>
+						<div class="col-auto d-none d-sm-flex align-items-center justify-content-center">
+							<div class="vr h-100 start-50"></div>
+						</div>
+						<div class="col-12 col-sm d-flex align-items-center">
+							<!-- Contact links -->
+							<div class="text-sm-start w-100">
+								
+									<div id="site-contacts" class="navbar-text">
+										<div>
+	NASA Official: <span class="email-link flex-nowrap" data-user="mark.u.subbarao" data-linktext="Mark SubbaRao"></span>
+</div>
+ <div>
+	Site Curator: <span class="email-link flex-nowrap" data-user="ella.kaplan" data-linktext="Ella Kaplan"></span>
+</div>
+
+									</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+# Third-party attribution and reuse
+
+The MIT license applies to our original code/documentation, not to every file
+in this repository. No NASA, JPL, USGS, ESA or STScI endorsement is implied.
+The embedded image data in `data.js` retains the same attribution as its source.
+
+## Libraries
+
+Three.js r160: Copyright © 2010–2023 three.js authors, MIT. The full notice is
+included at `vendor/THREE-LICENSE.txt`. Python packages and Playwright are build
+or test dependencies; their packages retain their respective licenses.
+
+## Solar System Scope illustrations
+
+Files: `assets/699-illustration.jpg`, `799-illustration.jpg`,
+`899-illustration.jpg`, `saturn-ring.png`, and derivatives embedded in `data.js`.
+
+Author: **Solar System Scope / INOVE**.
+[Source](https://www.solarsystemscope.com/textures/).
+License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
+
+These textures use NASA imagery as a basis, enhanced colours and artist-filled
+missing areas. They are illustrations, not complete observed globes. We resize
+or re-encode cloud textures, map them to reference ellipsoids, and map the ring
+strip onto sourced main ring dimensions with an explicit Cassini division.
+The ring texture has not been scientifically registered feature by feature.
+
+Saturn and Uranus files were downloaded from Wikimedia mirrors of the same
+author's work. Exact URLs and original SHA-256 values are in the asset manifest.
+
+## NASA / JPL / USGS observation-derived products
+
+- Earth: NASA Blue Marble, [SVS 2915](https://svs.gsfc.nasa.gov/2915/).
+- Moon: NASA SVS / LRO, [CGI Moon Kit](https://svs.gsfc.nasa.gov/4720/).
+  This processed colour product includes source-author repairs and polar
+  supplementation, as explained in the body panel.
+- Sun: NASA JPL, STEREO and SDO, [SVS 30362](https://svs.gsfc.nasa.gov/30362/).
+  EUV 304 Å false colour; visual reference on a nominal solar sphere.
+- Mercury: MESSENGER Team / Arizona State University / USGS Astrogeology,
+  [2013 global mosaic](https://astrogeology.usgs.gov/search/map/mercury_messenger_mdis_global_mosaic_250m).
+  Uses the 1024-pixel preview, with three total border columns cropped.
+- Io: USGS Astrogeology / Galileo / Voyager,
+  [global colour mosaic](https://astrogeology.usgs.gov/search/map/io_galileo_ssi_global_color_merge_mosaic_1km).
+- Titan: NASA/JPL-Caltech/Space Science Institute,
+  [PIA19658](https://science.nasa.gov/resource/titan-global-map-june-2015/).
+  Near-IR map, cropped to remove the printed coordinate frame.
+- Pluto reference image: NASA/Johns Hopkins University Applied Physics
+  Laboratory/Southwest Research Institute,
+  [global perspective](https://www.nasa.gov/image-article/pluto-global-perspective/).
+  Displayed as a reference image, not a verified globe texture.
+- Venus, Mars and older satellite mosaics: Caltech/JPL/USGS and the individual
+  creators listed in the [JPL texture archive](https://space.jpl.nasa.gov/tmaps/).
+  These are historical visualization products, not scientific analysis maps.
+
+Public agency imagery may carry individual third-party notices. Preserve the
+credits and consult each original product page before reuse beyond this atlas.
+See [NASA media guidelines](https://www.nasa.gov/nasa-brand-center/images-and-media/)
+and [JPL image use policy](https://www.jpl.nasa.gov/jpl-image-use-policy/).
+
+## Hubble OPAL
+
+Jupiter uses the original OPAL-derived map. Saturn, Uranus and Neptune OPAL files
+are retained as source evidence but are not the default complete-globe display.
+
+This work used data acquired from the NASA/ESA HST Space Telescope, associated
+with OPAL program (PI: Simon, GO13937), and archived by the Space Telescope
+Science Institute, which is operated by the Association of Universities for
+Research in Astronomy, Inc., under NASA contract NAS 5-26555. All maps are
+available at [doi:10.17909/T9G593](https://doi.org/10.17909/T9G593).
+
+## Numerical sources
+
+JPL SSD discovery/physical tables, Horizons vector responses, NAIF generic
+PCK/LSK kernels and IAU nominal solar radius. Source files preserve their original
+headers and notices. Our parsed catalogue is a transformation of these sources,
+not a claim of ownership over the measurements. See `docs/DATA.md`.

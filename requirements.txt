@@ -1,0 +1,4 @@
+numpy>=1.26,<3
+Pillow>=10,<13
+lxml>=5,<7
+spiceypy==8.2.0
