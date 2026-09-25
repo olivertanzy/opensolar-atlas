@@ -41,6 +41,7 @@ const {chromium}=require('playwright');
   await page.locator('[data-anatomy-action="cutaway"]').click();
   async function checkPan(){
    await page.locator('[data-anatomy-action="head"]').click();
+   await page.waitForFunction(()=>Number(document.querySelector('.anatomy-canvas canvas').dataset.target?.split(',')[1])>1.3);
    const before=(await canvas.getAttribute('data-target')).split(',').map(Number);
    assert(before[1]>1.3,'Head focus changes orbit target');
    await page.locator('[data-anatomy-action="pan"]').click();
